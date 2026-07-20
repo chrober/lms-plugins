@@ -1,0 +1,13 @@
+name: Validate repository feed
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  xml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse repo.xml
+        run: python -c "import xml.etree.ElementTree as ET; ET.parse('repo.xml')"
