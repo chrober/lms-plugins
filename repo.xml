@@ -31,29 +31,29 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="BetterCallBliss" version="0.14.2" minTarget="8.5" maxTarget="*">
+    <plugin name="BetterCallBliss" version="0.14.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
-      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.14.2/lms-better-call-bliss-0.14.2.zip</url>
-      <sha>5437739ecf10e9e7c1a640537d1f90fb0a46890b</sha>
+      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.14.3/lms-better-call-bliss-0.14.3.zip</url>
+      <sha>3b3617ffa190bc1ca84553badf49194650b4d758</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>unix</target>
     </plugin>
-    <plugin name="BetterCallBliss" version="0.14.2" minTarget="8.5" maxTarget="*">
+    <plugin name="BetterCallBliss" version="0.14.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
-      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.14.2/lms-better-call-bliss-0.14.2.zip</url>
-      <sha>5437739ecf10e9e7c1a640537d1f90fb0a46890b</sha>
+      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.14.3/lms-better-call-bliss-0.14.3.zip</url>
+      <sha>3b3617ffa190bc1ca84553badf49194650b4d758</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>mac</target>
     </plugin>
-    <plugin name="BetterCallBliss" version="0.14.2" minTarget="8.5" maxTarget="*">
+    <plugin name="BetterCallBliss" version="0.14.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
-      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.14.2/lms-better-call-bliss-0.14.2.zip</url>
-      <sha>5437739ecf10e9e7c1a640537d1f90fb0a46890b</sha>
+      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.14.3/lms-better-call-bliss-0.14.3.zip</url>
+      <sha>3b3617ffa190bc1ca84553badf49194650b4d758</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
