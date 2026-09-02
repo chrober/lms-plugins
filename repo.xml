@@ -31,5 +31,32 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
+    <plugin name="BlissMixerExt" version="0.1.0" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Experimental</title>
+      <desc lang="EN">Experimental companion features for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.1.0/lms-blissmixer-ext-linux-0.1.0.zip</url>
+      <sha>c501a152626e991e0ed641fe041e0f569a9de8f4</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="BlissMixerExt" version="0.1.0" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Experimental</title>
+      <desc lang="EN">Experimental companion features for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.1.0/lms-blissmixer-ext-mac-0.1.0.zip</url>
+      <sha>0cfc1106a10789d9fbf9be63761f7bd21d44dbcb</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="BlissMixerExt" version="0.1.0" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Experimental</title>
+      <desc lang="EN">Experimental companion features for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.1.0/lms-blissmixer-ext-windows-0.1.0.zip</url>
+      <sha>fd36e2fffb7cc8e1e588b5d1d88f1e776dde8eb0</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
   </plugins>
 </extensions>
