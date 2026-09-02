@@ -4,33 +4,6 @@
     <title lang="EN">chrober's LMS Plugins</title>
   </details>
   <plugins>
-    <plugin name="BlissMixer" version="0.9.1" minTarget="7.9.0" maxTarget="*">
-      <title lang="EN">BlissMixer (Dynamic Weights)</title>
-      <desc lang="EN">Mix songs using Bliss analysis with dynamic seed-based weighting</desc>
-      <url>https://github.com/chrober/lms-blissmixer/releases/download/0.9.1/lms-blissmixer-linux-0.9.1.zip</url>
-      <sha>1cd749fdc9326d81b042ae236ff8c10d054f2fa7</sha>
-      <creator>Craig Drummond / chrober</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="BlissMixer" version="0.9.1" minTarget="7.9.0" maxTarget="*">
-      <title lang="EN">BlissMixer (Dynamic Weights)</title>
-      <desc lang="EN">Mix songs using Bliss analysis with dynamic seed-based weighting</desc>
-      <url>https://github.com/chrober/lms-blissmixer/releases/download/0.9.1/lms-blissmixer-mac-0.9.1.zip</url>
-      <sha>06797610cfae899c8b94a241c2c10211523f3a93</sha>
-      <creator>Craig Drummond / chrober</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="BlissMixer" version="0.9.1" minTarget="7.9.0" maxTarget="*">
-      <title lang="EN">BlissMixer (Dynamic Weights)</title>
-      <desc lang="EN">Mix songs using Bliss analysis with dynamic seed-based weighting</desc>
-      <url>https://github.com/chrober/lms-blissmixer/releases/download/0.9.1/lms-blissmixer-windows-0.9.1.zip</url>
-      <sha>d13c7b9123f55bb2b46b177d44ef8e22e476e40a</sha>
-      <creator>Craig Drummond / chrober</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="BetterCallBliss" version="0.16.0" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
