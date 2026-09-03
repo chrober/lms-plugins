@@ -31,29 +31,29 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="BlissMixerExt" version="0.1.6" minTarget="9.0" maxTarget="*">
+    <plugin name="BlissMixerExt" version="0.2.0" minTarget="9.0" maxTarget="*">
       <title lang="EN">Bliss Mixer Extensions</title>
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.1.6/lms-blissmixer-ext-linux-0.1.6.zip</url>
-      <sha>5e7b33441f32e737818a87dc5498e571ee523691</sha>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.2.0/lms-blissmixer-ext-linux-0.2.0.zip</url>
+      <sha>03876d7fd1bd1379203536ba253b4d06e54b4fbb</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>unix</target>
     </plugin>
-    <plugin name="BlissMixerExt" version="0.1.6" minTarget="9.0" maxTarget="*">
+    <plugin name="BlissMixerExt" version="0.2.0" minTarget="9.0" maxTarget="*">
       <title lang="EN">Bliss Mixer Extensions</title>
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.1.6/lms-blissmixer-ext-mac-0.1.6.zip</url>
-      <sha>575793448f7698329b9a47ea670c172f57da7ba8</sha>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.2.0/lms-blissmixer-ext-mac-0.2.0.zip</url>
+      <sha>5891ba6c011e84cbbe068304cb49b61c0f5be548</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>mac</target>
     </plugin>
-    <plugin name="BlissMixerExt" version="0.1.6" minTarget="9.0" maxTarget="*">
+    <plugin name="BlissMixerExt" version="0.2.0" minTarget="9.0" maxTarget="*">
       <title lang="EN">Bliss Mixer Extensions</title>
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.1.6/lms-blissmixer-ext-windows-0.1.6.zip</url>
-      <sha>04b9a62bf8d9f82c4da2b8310ba85c12311069cd</sha>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.2.0/lms-blissmixer-ext-windows-0.2.0.zip</url>
+      <sha>b3e82213dc3b7e6bded34073910e98853a1626bc</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
