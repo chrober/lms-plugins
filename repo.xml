@@ -4,33 +4,6 @@
     <title lang="EN">chrober's LMS Plugins</title>
   </details>
   <plugins>
-    <plugin name="BlissMixerExt" version="0.4.0" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Extensions</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.4.0/lms-blissmixer-ext-linux-0.4.0.zip</url>
-      <sha>6e2eda9cb91c211f07eed1a5b1dd8ba24c8fe3f3</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="BlissMixerExt" version="0.4.0" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Extensions</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.4.0/lms-blissmixer-ext-mac-0.4.0.zip</url>
-      <sha>ddaf3f3d50efe6e38daaf3455a688479ed9358db</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="BlissMixerExt" version="0.4.0" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Extensions</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.4.0/lms-blissmixer-ext-windows-0.4.0.zip</url>
-      <sha>f049654bb3bd08b2bbc6b7018d5d689d7acce8e8</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="BetterCallBliss" version="0.17.2" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
@@ -54,6 +27,33 @@
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
       <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.17.2/lms-better-call-bliss-windows-0.17.2.zip</url>
       <sha>6a6df5f86feadc5f7171f51e4cd24997eb4c7ee0</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="BlissMixerExt" version="0.4.1" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Extensions</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.4.1/lms-blissmixer-ext-linux-0.4.1.zip</url>
+      <sha>97a913eeb4a1f0b49d6aeb06a6cd96e018f03459</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="BlissMixerExt" version="0.4.1" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Extensions</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.4.1/lms-blissmixer-ext-mac-0.4.1.zip</url>
+      <sha>05de561395b6bb0cf1e8dce69bd9d0a4db2c21d9</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="BlissMixerExt" version="0.4.1" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Extensions</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-ext/releases/download/0.4.1/lms-blissmixer-ext-windows-0.4.1.zip</url>
+      <sha>9701e44af926f1b7d5eda4a927f9b1b456739f21</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
