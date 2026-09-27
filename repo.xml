@@ -4,33 +4,6 @@
     <title lang="EN">chrober's LMS Plugins</title>
   </details>
   <plugins>
-    <plugin name="BlissMixerLab" version="0.6.0" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Lab</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.6.0/lms-blissmixer-lab-linux-0.6.0.zip</url>
-      <sha>e4536c4258fa489f46684bae1aa74049778ed320</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="BlissMixerLab" version="0.6.0" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Lab</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.6.0/lms-blissmixer-lab-mac-0.6.0.zip</url>
-      <sha>9bf755c48a5eca0e4eb5c2c01254e58270a439c0</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="BlissMixerLab" version="0.6.0" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Lab</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.6.0/lms-blissmixer-lab-windows-0.6.0.zip</url>
-      <sha>a1dab0d60cac2f3b75756964389393da63549ebe</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="BetterCallBliss" version="0.19.4" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
@@ -54,6 +27,33 @@
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
       <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.19.4/lms-better-call-bliss-windows-0.19.4.zip</url>
       <sha>a3490dd6ba6a41102a0a9e56cb49220c22b5d8d2</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="BlissMixerLab" version="0.7.0" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Lab</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.7.0/lms-blissmixer-lab-linux-0.7.0.zip</url>
+      <sha>95b9afcc554c2821e5ad05761dc8fd3e524351e5</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="BlissMixerLab" version="0.7.0" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Lab</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.7.0/lms-blissmixer-lab-mac-0.7.0.zip</url>
+      <sha>85bc7f866e81efe98839e2c9cefbff7dd9738455</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="BlissMixerLab" version="0.7.0" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Lab</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.7.0/lms-blissmixer-lab-windows-0.7.0.zip</url>
+      <sha>0b4109813395378997abfec4efec013cf396878d</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
