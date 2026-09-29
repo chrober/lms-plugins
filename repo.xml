@@ -58,29 +58,29 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="LibrarySignals" version="0.1.0" minTarget="8.5" maxTarget="*">
+    <plugin name="LibrarySignals" version="0.2.0" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Library Signals</title>
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.1.0/lms-guidance-library-signals-linux-0.1.0.zip</url>
-      <sha>58658a33bd5bd051d84cab3f877492eaf908ead5</sha>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.2.0/lms-guidance-library-signals-linux-0.2.0.zip</url>
+      <sha>16f9b398d035b862065e9d2ec67aedb44047d0ae</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>unix</target>
     </plugin>
-    <plugin name="LibrarySignals" version="0.1.0" minTarget="8.5" maxTarget="*">
+    <plugin name="LibrarySignals" version="0.2.0" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Library Signals</title>
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.1.0/lms-guidance-library-signals-mac-0.1.0.zip</url>
-      <sha>5ad3a41235cbb4675e21b21dcceb9fb833c7962c</sha>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.2.0/lms-guidance-library-signals-mac-0.2.0.zip</url>
+      <sha>134153aa8062b8fae4bfa9f43a564ac575b37b8d</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>mac</target>
     </plugin>
-    <plugin name="LibrarySignals" version="0.1.0" minTarget="8.5" maxTarget="*">
+    <plugin name="LibrarySignals" version="0.2.0" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Library Signals</title>
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.1.0/lms-guidance-library-signals-windows-0.1.0.zip</url>
-      <sha>45bf2f04fa3a9c4f9d91c9d46c618186e7a91485</sha>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.2.0/lms-guidance-library-signals-windows-0.2.0.zip</url>
+      <sha>40d3b227a220efbb2a203b56ae97000e10e34f65</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
