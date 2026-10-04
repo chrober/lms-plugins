@@ -58,29 +58,29 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="BlissMixerLab" version="0.9.1" minTarget="9.0" maxTarget="*">
+    <plugin name="BlissMixerLab" version="0.10.0" minTarget="9.0" maxTarget="*">
       <title lang="EN">Bliss Mixer Lab</title>
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.9.1/lms-blissmixer-lab-linux-0.9.1.zip</url>
-      <sha>dfc9852396e1bd21951a65f2e03a02867ed6ca3f</sha>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.0/lms-blissmixer-lab-linux-0.10.0.zip</url>
+      <sha>cad2c83d961291b526051606098922388e6b0ff8</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>unix</target>
     </plugin>
-    <plugin name="BlissMixerLab" version="0.9.1" minTarget="9.0" maxTarget="*">
+    <plugin name="BlissMixerLab" version="0.10.0" minTarget="9.0" maxTarget="*">
       <title lang="EN">Bliss Mixer Lab</title>
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.9.1/lms-blissmixer-lab-mac-0.9.1.zip</url>
-      <sha>87fb764cd6f2750652cb882073e2599de721c520</sha>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.0/lms-blissmixer-lab-mac-0.10.0.zip</url>
+      <sha>fa8560758bc134913c74dd77bb9a6ad3551e7748</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>mac</target>
     </plugin>
-    <plugin name="BlissMixerLab" version="0.9.1" minTarget="9.0" maxTarget="*">
+    <plugin name="BlissMixerLab" version="0.10.0" minTarget="9.0" maxTarget="*">
       <title lang="EN">Bliss Mixer Lab</title>
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.9.1/lms-blissmixer-lab-windows-0.9.1.zip</url>
-      <sha>94886357ad4ac3c2e349f3c7f975a17ad97f9a84</sha>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.0/lms-blissmixer-lab-windows-0.10.0.zip</url>
+      <sha>61f5af2b9a03212503ea84c93560d93aacbb3e9b</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
