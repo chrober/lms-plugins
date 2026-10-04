@@ -89,7 +89,7 @@
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
       <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.2.0/lms-guidance-lastfm-linux-0.2.0.zip</url>
-      <sha>b2b8bacf9d118d8667a925d4154f930d8375bb10</sha>
+      <sha>18b6a6d14c75108848789c68df01c82e03e492a4</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>unix</target>
@@ -98,7 +98,7 @@
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
       <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.2.0/lms-guidance-lastfm-mac-0.2.0.zip</url>
-      <sha>f7bf1905f9b9e8c305b344894847f037606103e4</sha>
+      <sha>98699f26fbc4bd85e9bda1c135fc9c72549f472c</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>mac</target>
@@ -107,7 +107,7 @@
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
       <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.2.0/lms-guidance-lastfm-windows-0.2.0.zip</url>
-      <sha>67dc997470d8be52e764d29648ef96bd994c958a</sha>
+      <sha>a62f1d7e75bf29d89a33ee89b70c065bae56f9db</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
