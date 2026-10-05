@@ -16,19 +16,9 @@ Add this URL as an additional repository in Lyrion Music Server:
   the original plugin, contributes the separate **Bliss (Lab)** "Don't Stop the
   Music" provider, and owns its experimental mixer, preference-learning survey,
   learner, and learned matrix.
-
-## Requirements
-
-[Craig Drummond's original Bliss Mixer](https://github.com/CDrummond/lms-blissmixer)
-is the required owner of library analysis and `bliss.db`; it is not distributed
-by this repository. Bliss Mixer Lab currently requires Bliss Mixer 0.10.0
-or newer and Lyrion Music Server 9.0 or newer. Better Call Bliss treats Bliss
-Mixer Lab and its learned matrix as optional.
-
-## Publishing
-
-The Better Call Bliss and Bliss Mixer Lab release workflows update
-`repo.xml` only after installable GitHub Release packages and checksums exist.
-The feed references immutable release assets rather than local builds, workflow
-artifacts, or scaffold ZIPs. Platform-specific entries are published for Linux,
-macOS, and Windows as appropriate.
+- [Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals) -
+  an optional provider of play-count, last-played, and library-age signals for
+  compatible Bliss hosts.
+- [Bliss Guidance: Last.fm](https://github.com/chrober/lms-guidance-lastfm) -
+  an optional provider of Last.fm similar-track and similar-artist evidence for
+  compatible Bliss hosts.
