@@ -31,33 +31,6 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="LastFmGuidance" version="0.2.3" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Last.fm</title>
-      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.2.3/lms-guidance-lastfm-linux-0.2.3.zip</url>
-      <sha>12bad3298522730beedb5cb0fc4dc76fc7f5a7f9</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="LastFmGuidance" version="0.2.3" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Last.fm</title>
-      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.2.3/lms-guidance-lastfm-mac-0.2.3.zip</url>
-      <sha>53f26aeb0ac5f2ec66e8e51c479d5fbd013129b1</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="LastFmGuidance" version="0.2.3" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Last.fm</title>
-      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.2.3/lms-guidance-lastfm-windows-0.2.3.zip</url>
-      <sha>6bd0e671e5ccdc0704ccdf717a3ffcf0b9539ebb</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="LibrarySignals" version="0.3.1" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Library Signals</title>
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
@@ -108,6 +81,33 @@
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
       <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.9/lms-better-call-bliss-windows-0.22.9.zip</url>
       <sha>a73e9baa5746dda170ded1c791e026ce82308540</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="LastFmGuidance" version="0.3.0" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Last.fm</title>
+      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.0/lms-guidance-lastfm-linux-0.3.0.zip</url>
+      <sha>7bb912de1401e5a97e515a6fbaaaa91966f6ac10</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="LastFmGuidance" version="0.3.0" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Last.fm</title>
+      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.0/lms-guidance-lastfm-mac-0.3.0.zip</url>
+      <sha>8868f03a78f4e7161aa3ecd8fd94ac88c3e7e917</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="LastFmGuidance" version="0.3.0" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Last.fm</title>
+      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.0/lms-guidance-lastfm-windows-0.3.0.zip</url>
+      <sha>3f319fc6c233a1040ef828b04b5575593a60e808</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
