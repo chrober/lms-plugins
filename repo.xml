@@ -85,29 +85,29 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="LastFmGuidance" version="0.3.2" minTarget="8.5" maxTarget="*">
+    <plugin name="LastFmGuidance" version="0.3.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.2/lms-guidance-lastfm-linux-0.3.2.zip</url>
-      <sha>359ab5ff577fef158b9e138244b8f8267313262f</sha>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.3/lms-guidance-lastfm-linux-0.3.3.zip</url>
+      <sha>58e012698f91c5ecb6fa9f502c554d6143f0a05e</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>unix</target>
     </plugin>
-    <plugin name="LastFmGuidance" version="0.3.2" minTarget="8.5" maxTarget="*">
+    <plugin name="LastFmGuidance" version="0.3.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.2/lms-guidance-lastfm-mac-0.3.2.zip</url>
-      <sha>300634d7c65d3f2a8a26a24dbcba6f5a99719669</sha>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.3/lms-guidance-lastfm-mac-0.3.3.zip</url>
+      <sha>2c368433bd4f181f68206c21f74fe7b0a176694b</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>mac</target>
     </plugin>
-    <plugin name="LastFmGuidance" version="0.3.2" minTarget="8.5" maxTarget="*">
+    <plugin name="LastFmGuidance" version="0.3.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.2/lms-guidance-lastfm-windows-0.3.2.zip</url>
-      <sha>c3351ae7b21b881d23626f5c59850ce04dd8d34e</sha>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.3/lms-guidance-lastfm-windows-0.3.3.zip</url>
+      <sha>e2b7bc1ef5be17a5da19527f0102a4bbf0990c1c</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
