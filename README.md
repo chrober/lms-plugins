@@ -49,3 +49,7 @@ Each plugin is developed and documented in its own repository. Please use the co
 
 
 Licenses, attributions, and upstream project credits are listed in the individual plugin repositories.
+
+## License
+
+This feed repository is licensed under [GPL-3.0-only](LICENSE). Individual plugins and their bundled components have their own licensing and attribution requirements.
