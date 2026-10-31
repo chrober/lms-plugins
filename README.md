@@ -12,7 +12,7 @@ Extend CDrummond's [**Bliss Mixer**](https://github.com/CDrummond/lms-blissmixer
 
 | Plugin | What does it add? | Role |
 | --- | --- | --- |
-| **[Better Call Bliss](https://github.com/chrober/lms-better-call-bliss)** | Improve the flow of saved playlists and player queues, add bridging tracks, extend a playlist, or build a musical route to a chosen track or album. Preview the result before applying it. | Playlist and queue optimizer |
+| **[Better Call Bliss](https://github.com/chrober/lms-better-call-bliss)** | Improve saved playlists and player queues, add bridging tracks, extend playlists, or build musical routes to selected tracks or albums. Editor jobs offer a read-only preview; Bliss me there shortcuts apply successful routes automatically after queue validation. | Playlist and queue optimizer |
 | **[Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab)** | Explore experimental Bliss features: learn from your preferences, try a separate **Bliss (Lab)** Don't Stop the Music mode, and fine-tune artist repeat behavior. | Experimental Bliss companion |
 | **[Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals)** | Adds listening-history and library-age guidance to Better Call Bliss and Bliss Mixer Lab, so they can favor rarely played songs, tracks not heard for a long time, or recent additions. | Optional guidance provider |
 | **[Bliss Guidance: Last.fm](https://github.com/chrober/lms-guidance-lastfm)** | Adds Last.fm similar-track and similar-artist guidance to Better Call Bliss and Bliss Mixer Lab. Artist relationships can also be stored locally for offline-friendly use. | Optional guidance provider |
