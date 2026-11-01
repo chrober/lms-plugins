@@ -4,33 +4,6 @@
     <title lang="EN">chrober's LMS Plugins</title>
   </details>
   <plugins>
-    <plugin name="BetterCallBliss" version="0.22.9" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Better Call Bliss</title>
-      <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
-      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.9/lms-better-call-bliss-linux-0.22.9.zip</url>
-      <sha>d00b8d9364931b8ff660c81fe8b5fbd6e160951f</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="BetterCallBliss" version="0.22.9" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Better Call Bliss</title>
-      <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
-      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.9/lms-better-call-bliss-mac-0.22.9.zip</url>
-      <sha>424d90723af516b5c18c52231a5dcf44515701bd</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="BetterCallBliss" version="0.22.9" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Better Call Bliss</title>
-      <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
-      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.9/lms-better-call-bliss-windows-0.22.9.zip</url>
-      <sha>a73e9baa5746dda170ded1c791e026ce82308540</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="LastFmGuidance" version="0.3.5" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Last.fm</title>
       <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
@@ -108,6 +81,33 @@
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
       <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.6/lms-blissmixer-lab-windows-0.10.6.zip</url>
       <sha>e8659b6c76c312fdef1d6bedd68aa843683ca945</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="BetterCallBliss" version="0.22.10" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Better Call Bliss</title>
+      <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
+      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.10/lms-better-call-bliss-linux-0.22.10.zip</url>
+      <sha>fa1a48cf1a46fb03e5ec7d82cbf66f79fbd29633</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="BetterCallBliss" version="0.22.10" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Better Call Bliss</title>
+      <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
+      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.10/lms-better-call-bliss-mac-0.22.10.zip</url>
+      <sha>fc1e71341c5261210a08040fe041e32b11625b79</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="BetterCallBliss" version="0.22.10" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Better Call Bliss</title>
+      <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
+      <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.10/lms-better-call-bliss-windows-0.22.10.zip</url>
+      <sha>235e146e34bc1c15a8618dde8a58c6477ca27dff</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
