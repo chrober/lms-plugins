@@ -4,33 +4,6 @@
     <title lang="EN">chrober's LMS Plugins</title>
   </details>
   <plugins>
-    <plugin name="BlissMixerLab" version="0.10.5" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Lab</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.5/lms-blissmixer-lab-linux-0.10.5.zip</url>
-      <sha>f591db90d1546e0ee08d69c9c6ebd5cd93c5cdf9</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="BlissMixerLab" version="0.10.5" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Lab</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.5/lms-blissmixer-lab-mac-0.10.5.zip</url>
-      <sha>e6a5af76569afbbac0dac9b852666dc1d307fd2e</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="BlissMixerLab" version="0.10.5" minTarget="9.0" maxTarget="*">
-      <title lang="EN">Bliss Mixer Lab</title>
-      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
-      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.5/lms-blissmixer-lab-windows-0.10.5.zip</url>
-      <sha>0ca07fe57f1cd26120051de94f6b372d984f3a8b</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="BetterCallBliss" version="0.22.9" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
@@ -108,6 +81,33 @@
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
       <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.4/lms-guidance-library-signals-windows-0.3.4.zip</url>
       <sha>34203e6a2f139a61507f4c5947bf7eb67afdfcbc</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="BlissMixerLab" version="0.10.6" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Lab</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.6/lms-blissmixer-lab-linux-0.10.6.zip</url>
+      <sha>53717a3b68c207b098a779a79c4b6d30ed233ff3</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="BlissMixerLab" version="0.10.6" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Lab</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.6/lms-blissmixer-lab-mac-0.10.6.zip</url>
+      <sha>223cb0b789e69bcbcd3caba38aa994144582d2a6</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="BlissMixerLab" version="0.10.6" minTarget="9.0" maxTarget="*">
+      <title lang="EN">Bliss Mixer Lab</title>
+      <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
+      <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.10.6/lms-blissmixer-lab-windows-0.10.6.zip</url>
+      <sha>e8659b6c76c312fdef1d6bedd68aa843683ca945</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
