@@ -58,33 +58,6 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="LastFmGuidance" version="0.3.4" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Last.fm</title>
-      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.4/lms-guidance-lastfm-linux-0.3.4.zip</url>
-      <sha>62614815122bd5ae2347bd45b4a21af62ec80159</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="LastFmGuidance" version="0.3.4" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Last.fm</title>
-      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.4/lms-guidance-lastfm-mac-0.3.4.zip</url>
-      <sha>5276793e7005cb485d3167b8b9b844c50d80af7c</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="LastFmGuidance" version="0.3.4" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Last.fm</title>
-      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
-      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.4/lms-guidance-lastfm-windows-0.3.4.zip</url>
-      <sha>1bd1ca7b9a113e72da2a7d4b2a9148c0d496051c</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="LibrarySignals" version="0.3.3" minTarget="8.5" maxTarget="*">
       <title lang="EN">Bliss Guidance: Library Signals</title>
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
@@ -108,6 +81,33 @@
       <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
       <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.3/lms-guidance-library-signals-windows-0.3.3.zip</url>
       <sha>e9b1147dc7b46eab101b5b19c4442306b36d5b64</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="LastFmGuidance" version="0.3.5" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Last.fm</title>
+      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.5/lms-guidance-lastfm-linux-0.3.5.zip</url>
+      <sha>0a7842282ef607dc1deba158381539ca29541193</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="LastFmGuidance" version="0.3.5" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Last.fm</title>
+      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.5/lms-guidance-lastfm-mac-0.3.5.zip</url>
+      <sha>035901cde3adaaae9c3de0090c5c206a80a3e37c</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="LastFmGuidance" version="0.3.5" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Last.fm</title>
+      <desc lang="EN">Optional Last.fm similarity guidance for compatible Bliss hosts</desc>
+      <url>https://github.com/chrober/lms-guidance-lastfm/releases/download/v0.3.5/lms-guidance-lastfm-windows-0.3.5.zip</url>
+      <sha>cc8933bb8f346283c70c9bade7024350e4ef5f12</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
