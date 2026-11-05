@@ -58,33 +58,6 @@
       <category>playlists</category>
       <target>windows</target>
     </plugin>
-    <plugin name="LibrarySignals" version="0.3.7" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Library Signals</title>
-      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.7/lms-guidance-library-signals-linux-0.3.7.zip</url>
-      <sha>31f95da2fe77382d098292b8fc095979c8958a60</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="LibrarySignals" version="0.3.7" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Library Signals</title>
-      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.7/lms-guidance-library-signals-mac-0.3.7.zip</url>
-      <sha>b9ba149e2cd26b2c5dade36cb8547625d84cd00f</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="LibrarySignals" version="0.3.7" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Library Signals</title>
-      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.7/lms-guidance-library-signals-windows-0.3.7.zip</url>
-      <sha>4ba5ff33e67104682ab2fcefe35c33fb4edaf82f</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="BetterCallBliss" version="0.22.15" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
@@ -108,6 +81,33 @@
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
       <url>https://github.com/chrober/lms-better-call-bliss/releases/download/0.22.15/lms-better-call-bliss-windows-0.22.15.zip</url>
       <sha>632e590ceaa083cd1110b350fd9dcb454c9c8406</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="LibrarySignals" version="0.3.8" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Library Signals</title>
+      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.8/lms-guidance-library-signals-linux-0.3.8.zip</url>
+      <sha>48724ac5c16a907e5280b49f01bb1aac5a19ad76</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="LibrarySignals" version="0.3.8" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Library Signals</title>
+      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.8/lms-guidance-library-signals-mac-0.3.8.zip</url>
+      <sha>16fc2d6b6b7e035bcb0e81c0f4e2476c35a1a2d9</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="LibrarySignals" version="0.3.8" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Library Signals</title>
+      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.8/lms-guidance-library-signals-windows-0.3.8.zip</url>
+      <sha>2baa129ae13aa1f779da4f914134d0057b1ba7d3</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
