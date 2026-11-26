@@ -1,6 +1,6 @@
 # Concept for the LMS Plugins Wiki
 
-**Status:** Proposal for review — 26 November 2026 (expanded with lightweight, portable and private listening and Lyrion Display as an optional companion)
+**Status:** Proposal for review — 26 November 2026 (expanded with lightweight, portable and private listening, related plugins and recommended client apps)
 
 ## 1. Purpose and review of existing documentation
 
@@ -37,7 +37,7 @@ Retain the READMEs largely as they are; the Wiki is a complementary, cross-plugi
 
 Beyond musical features, the Wiki should communicate the benefits of owning and controlling a local music system: modest hardware requirements, portable listening, independence from internet connectivity, and the option to keep music selection and listening history private. These are benefits of the wider Lyrion and Bliss ecosystem, complemented by the plugins in this collection.
 
-[Lyrion Display](https://github.com/chrober/lyrion-display) is a related, independent Android app that complements the listening experience with a dedicated Now Playing display. It belongs in the Wiki as a peripheral topic, not as another plugin in the collection or an additional editorial pillar. Its own README remains the source for installation, compatibility and support.
+[Lyrion Display](https://github.com/chrober/lyrion-display) is a related, independent Android app that complements the listening experience with a dedicated Now Playing display. It belongs in the Wiki as a peripheral topic, not as another plugin in the collection or an additional editorial pillar. Its own README remains the source for installation, compatibility and support. The Wiki should also acknowledge the wider Lyrion ecosystem, explain the required and optional third-party plugins, and recommend suitable clients for Android and Apple devices. These are curated recommendations relevant to the documented scenarios, not an attempt to catalogue every Lyrion extension.
 
 ## 2. Proposed information architecture
 
@@ -47,6 +47,7 @@ Use a hybrid architecture with **usage scenarios as primary navigation** and ind
 - **Getting started**
   - Understanding Bliss and its extensions
   - Which plugins do I need?
+  - Build your Lyrion setup (required, recommended and optional plugins; recommended client apps)
   - Installation and first steps
 - **Make more of your playlists**
   - Make your playlists flow better
@@ -83,6 +84,7 @@ Use a hybrid architecture with **usage scenarios as primary navigation** and ind
   - Common questions and troubleshooting
 - **Related projects** (a small sidebar section)
   - [Lyrion Display](https://github.com/chrober/lyrion-display) — a dedicated Now Playing display for your Lyrion music system
+  - Build your Lyrion setup — links to relevant third-party plugins and recommended mobile clients
 
 This is the logical structure, not necessarily a one-page-per-entry plan. Closely related scenarios can initially share a page to keep the Wiki manageable.
 
@@ -122,7 +124,7 @@ The home page could also serve as a landing page for visitors from the Lyrion co
 >
 > **New here?** Start with *Which plugins do I need?*
 
-For the actual Wiki, use genuine plugin screenshots and purpose-built illustrations rather than generic stock photography.
+For the actual Wiki, use genuine plugin screenshots and purpose-built illustrations rather than generic stock photography. The home page's getting-started link should lead to a clear overview of required, recommended and optional plugins and suitable Android/Apple clients; avoid listing all dependencies on the landing page.
 
 ## 4. Explain the Bliss ecosystem in simple language
 
@@ -144,7 +146,30 @@ flowchart TB
     Lab -. optional learned preferences .-> BCB
 ```
 
-The guidance connections apply to supported workflows, notably Bliss (Lab) DSTM and Better Call Bliss optimization.
+The guidance connections apply to supported workflows, notably Bliss (Lab) DSTM and Better Call Bliss optimization. Keep the main music-selection diagram simple; use a second ecosystem diagram or the Getting Started overview to show external dependencies and client options.
+
+### Wider ecosystem: data sources and user interfaces
+
+```mermaid
+flowchart TB
+    LMS["Lyrion Music Server"] --> Bliss["Bliss Mixer — required foundation"]
+    LMS --> Skin["Material Skin — recommended interface"]
+    Bliss --> BCB["Better Call Bliss"]
+    Bliss --> Lab["Bliss Mixer Lab"]
+    LMS -. native listening history .-> LS["Library Signals"]
+    APC["Alternative Play Count"] -. optional history source .-> LS
+    LM["LastMix"] -. optional source .-> LF["Last.fm Guidance"]
+    API["Last.fm API"] -. alternative source .-> LF
+    LS -. optional guidance .-> BCB
+    LS -. optional guidance .-> Lab
+    LF -. optional guidance .-> BCB
+    LF -. optional guidance .-> Lab
+    Skin --> Android["LMS Material App — Android"]
+    Skin --> Apple["LyrPlay — iPhone and iPad"]
+    Skin --> Display["Lyrion Display — dedicated read-only screen"]
+```
+
+Material Skin is a user interface, not a component of the music-selection algorithm. The client apps are alternatives or companions, not mandatory components of the collection. Material Skin is specifically required for Better Call Bliss's destination shortcuts, Lab's Material-specific player-library integration and Lyrion Display, and for the Material-based mobile interfaces shown here. LyrPlay also offers an integrated audio player; the diagram describes its mobile control interface, not all of its platform-specific features.
 
 Suggested explanation:
 
@@ -377,6 +402,69 @@ Combine rows for multiple goals. The original Bliss Mixer is the required founda
 
 Offline preferred can use stored artist relationships; it is not strict offline-only, and track relationships are not all permanently stored. Last.fm is not a streaming source in this context.
 
+### Build your Lyrion setup
+
+Place this curated overview within **Getting Started**, after the scenario-based plugin selector. Explain the practical benefit of each project, give credit to its developers, link to its own documentation and distinguish server-side plugins from device-side apps. Required means necessary for the stated feature, not for every possible Lyrion installation.
+
+#### Required server plugins
+
+| Project | Why use it? | Requirement |
+| --- | --- | --- |
+| [Bliss Mixer](https://github.com/CDrummond/lms-blissmixer) — Craig Drummond | Understands how your local music sounds and provides the analysis used for intelligent music selection. | Required by Better Call Bliss and Bliss Mixer Lab. Install, enable and complete its library analysis first. The guidance providers themselves do not directly need a separate Bliss analysis; they need a compatible host for practical use. |
+
+#### Recommended server plugins
+
+| Project | Why use it? | Requirement |
+| --- | --- | --- |
+| [Material Skin](https://github.com/CDrummond/lms-material) — Craig Drummond | A modern, responsive interface for browsing music, managing playlists and controlling players on a variety of devices. Recommended for a convenient overall experience. | Not generally required for the Better Call Bliss editor or basic Lab mixing. Required for the three **Bliss me there...** shortcuts, Lab's optional Material-specific library integration, LMS Material App, LyrPlay's Material-based mobile interface and Lyrion Display. |
+
+#### Optional server plugins and data sources
+
+| Project | Why use it? | Requirement |
+| --- | --- | --- |
+| [Alternative Play Count](https://github.com/AF-1/lms-alternativeplaycount) | An alternative listening-history source. Library Signals can use its play counts and last-played dates to help you rediscover music. | Optional. Lyrion's native history is sufficient. Select Alternative Play Count as the source only if installed and enabled; library age still comes from Lyrion. Do not imply support for its skip-history or DPSV signals. |
+| [LastMix](https://github.com/michaelherger/LastMix) — Michael Herger | Creates Last.fm-based mixes in its own right and can also supply related-track/artist information to Last.fm Guidance. | Optional. If selected as the guidance provider's source, LastMix must be installed and enabled. Alternatively use the provider's direct API Key source. The offline artist-relationship library is available only with the API Key source. |
+
+For Last.fm Guidance, an existing custom API key saved in LastMix can also be reused in direct API Key mode without needing LastMix to be enabled. Distinguish this from choosing LastMix itself as the source. Do not present LastMix as mandatory or as equivalent to the Bliss-first guidance provider.
+
+#### Recommended client and companion apps
+
+These run on the user's device, not on the Lyrion server. They do not replace the server or any of the four collection plugins. Users can also access Material Skin directly in a web browser.
+
+| Project | Platform | What you can do |
+| --- | --- | --- |
+| [LMS Material App](https://github.com/CDrummond/lms-material-app) — Craig Drummond | Android | Browse your music collection, select music, manage queues and control your Lyrion players via Material Skin. Recommended Android control client. Requires a reachable Lyrion server with Material Skin installed; it does not have to be the default skin. |
+| [LyrPlay](https://github.com/mtxmiller/LyrPlay) ([App Store](https://apps.apple.com/app/lyrplay/id6746776736)) | iPhone and iPad | Recommended Apple mobile alternative: browse and control Lyrion via Material Skin, and optionally use your device itself as a Lyrion audio player. Requires a reachable Lyrion server and Material Skin for the mobile interface. The app also has an Apple TV player offering; consult its own documentation for platform-specific requirements and capabilities. |
+| [Lyrion Display](https://github.com/chrober/lyrion-display) | Compatible Fire TV, Android TV and Android tablets/phones | Optional dedicated fullscreen Now Playing display for an existing player. Read-only, not a playback controller. Requires Material Skin and a reachable Lyrion server. |
+
+**Browse, select and control** with LMS Material App or LyrPlay; **see what's playing** with Lyrion Display. A user can use a control client on a phone and a separate dedicated display in the same room. No client app is mandatory for the core Bliss plugins. Do not claim that the Android and Apple apps have identical capabilities or that all device-specific features have been tested by the author.
+
+#### Example setups
+
+| Listening goal | Suggested setup |
+| --- | --- |
+| Improve saved playlists | Bliss Mixer + Better Call Bliss; Material Skin recommended |
+| Enjoy personalized continuous mixes | Bliss Mixer + Bliss Mixer Lab; optionally Library Signals or Last.fm Guidance |
+| Rediscover overlooked tracks using richer listening history | Bliss Mixer + either compatible host + Library Signals; optionally Alternative Play Count |
+| Add Last.fm knowledge | Bliss Mixer + either compatible host + Last.fm Guidance; configure either LastMix or a direct API key |
+| Travel with a compact local music system | Raspberry Pi + locally accessible music + prepared Bliss analysis + desired extensions; Material Skin in a browser or LMS Material App (Android) / LyrPlay (iPhone and iPad) as a controller, optionally Lyrion Display on a separate reachable device |
+| Enjoy music at home with a dedicated display | Lyrion + Material Skin + existing player + Lyrion Display; optionally LMS Material App or LyrPlay for control |
+
+For the portable/private examples, distinguish internet-independent operation from loss of connectivity to the local server. The apps can access a reachable local Lyrion system without relying on a permanent internet connection for local browsing and control. Avoid blanket privacy guarantees about device operating systems, third-party apps or optional online features. Initial installation, online updates and some optional capabilities may need internet access.
+
+### Cross-links to scenario articles
+
+| Wiki page | External project or client context |
+| --- | --- |
+| Understanding Bliss | Credit Bliss Mixer and explain the wider ecosystem without implying that all optional components are required. |
+| Getting Started | Required/recommended/optional overview and suggested setups, with Android and Apple client choices. |
+| Take a Musical Journey | Material Skin as a functional prerequisite; mobile control clients can access the Material interface where supported. |
+| Keep the Music Playing | Material Skin and the Lab's optional virtual player-library integration. |
+| Rediscover Your Music | Alternative Play Count as an optional local history source; Lyrion Display as a visual companion. |
+| Explore Musical Connections | LastMix versus direct Last.fm API access, including the distinction for offline artist information. |
+| Your Music, Anywhere, Under Your Control | Local listening history, optional online data acquisition, Android/Apple controls and optional dedicated display on a reachable local network. |
+| Plugins and FAQ | Link to the relevant external projects and their support documentation; clearly separate them from this collection. |
+
 ## 8. Visual documentation strategy
 
 Use visuals that explain a feature rather than decorate a page.
@@ -408,19 +496,19 @@ Start with approximately **13 content pages**, plus a sidebar and footer.
 | --- | --- |
 | Home | Introduction and scenario navigation |
 | Understanding Bliss | Ecosystem and plugin relationships |
-| Getting Started | Plugin selection, requirements and installation |
+| Getting Started | Plugin selection, requirements and installation; Build your Lyrion setup (external plugins and recommended Android/Apple apps) |
 | Make Your Playlists Flow | Reordering and bridging |
 | Extend Your Playlists | Longer listening sessions |
 | Improve Your Player Queue | Working with live queues |
 | Take a Musical Journey | All three destination shortcuts |
 | Keep the Music Playing | DSTM, artist repeat behavior and virtual libraries |
 | Personalize Your Mixes | Preference learning and its use in both hosts |
-| Rediscover Your Music | All Library Signals scenarios; optional Now Playing display example |
-| Explore Musical Connections | Last.fm guidance, combined guidance and offline listening |
+| Rediscover Your Music | All Library Signals scenarios; optional Alternative Play Count and Now Playing display examples |
+| Explore Musical Connections | Last.fm guidance, combined guidance, LastMix versus API Key sources and offline listening |
 | Your Music, Anywhere, Under Your Control | Raspberry Pi, travel, internet-independent listening, local data and privacy; optional Last.fm preparation and local Now Playing display |
-| Plugins and FAQ | Plugin references, limitations and troubleshooting |
+| Plugins and FAQ | Plugin references, limitations, troubleshooting and links to related third-party projects |
 
-Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Add a small **Related projects** sidebar section linking to Lyrion Display; keep it outside the plugin reference. No additional content page is required for this companion app. Split topics into dedicated pages later as content grows, without changing the overall architecture.
+Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Add a small **Related projects** sidebar section linking to Lyrion Display and to the Build your Lyrion setup section for relevant external plugins and recommended clients; keep these distinct from the collection's plugin reference. No additional content page is required for this companion app. Split topics into dedicated pages later as content grows, without changing the overall architecture.
 
 ## 10. Editorial principles
 
@@ -447,6 +535,8 @@ Consistently communicate that:
 - Local-first listening and optional online guidance must be clearly distinguished; avoid promising that every plugin or Lyrion feature is inherently offline or private.
 - Credit Lyrion, CDrummond's Bliss Mixer and the underlying Bliss technology for their foundational contributions. Describe Raspberry Pi 4 as the author's tested setup, not a universal performance benchmark.
 - Present Lyrion Display as an independent, optional Android companion, not an LMS plugin or a Bliss integration. Credit Craig Drummond's Material Skin for the Now Playing interface and themes. Keep app-specific installation and support documentation in its own repository.
+
+- Clearly distinguish required server plugins, generally recommended interfaces, optional data sources and client-side apps. State feature-specific requirements near the corresponding scenario. Recommend LMS Material App for Android and LyrPlay for iPhone/iPad as choices rather than dependencies; refer readers to their own documentation and do not imply official endorsement or complete author testing.
 
 Preserve the established compatibility wording: developed and tested with Lyrion 9.1; older versions may work but have not been tested. Link to the plugin READMEs for exact requirements and technical details rather than duplicating them.
 
@@ -516,6 +606,6 @@ A fifth, cross-cutting theme is **freedom and control — your music, anywhere, 
 
 Lyrion Display adds an optional visual dimension to the overall listening experience, particularly rediscovery and portable/local listening. It is a related project, not a sixth pillar. Keep the core Wiki focused on the four collection plugins and the five established themes.
 
-Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch.
+Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch. Include Build your Lyrion setup in the initial Getting Started page so readers understand the foundation, recommended interfaces, optional sources and Android/Apple clients before trying the scenarios.
 
 This is a concept for review, not the published Wiki. The chat's interactive selector and visual mockups have been translated into Markdown-compatible tables, diagrams and descriptions; final screenshots and illustrations remain to be prepared.
