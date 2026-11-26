@@ -1,6 +1,6 @@
 # Concept for the LMS Plugins Wiki
 
-**Status:** Proposal for review — 26 November 2026 (expanded with lightweight, portable and private listening)
+**Status:** Proposal for review — 26 November 2026 (expanded with lightweight, portable and private listening and Lyrion Display as an optional companion)
 
 ## 1. Purpose and review of existing documentation
 
@@ -36,6 +36,8 @@ The READMEs, particularly their “What can I do with it?” sections, provide a
 Retain the READMEs largely as they are; the Wiki is a complementary, cross-plugin documentation layer.
 
 Beyond musical features, the Wiki should communicate the benefits of owning and controlling a local music system: modest hardware requirements, portable listening, independence from internet connectivity, and the option to keep music selection and listening history private. These are benefits of the wider Lyrion and Bliss ecosystem, complemented by the plugins in this collection.
+
+[Lyrion Display](https://github.com/chrober/lyrion-display) is a related, independent Android app that complements the listening experience with a dedicated Now Playing display. It belongs in the Wiki as a peripheral topic, not as another plugin in the collection or an additional editorial pillar. Its own README remains the source for installation, compatibility and support.
 
 ## 2. Proposed information architecture
 
@@ -79,6 +81,8 @@ Use a hybrid architecture with **usage scenarios as primary navigation** and ind
   - Bliss Guidance: Last.fm
 - **Help and frequently asked questions**
   - Common questions and troubleshooting
+- **Related projects** (a small sidebar section)
+  - [Lyrion Display](https://github.com/chrober/lyrion-display) — a dedicated Now Playing display for your Lyrion music system
 
 This is the logical structure, not necessarily a one-page-per-entry plan. Closely related scenarios can initially share a page to keep the Wiki manageable.
 
@@ -111,6 +115,10 @@ The home page could also serve as a landing page for visitors from the Lyrion co
 > **Your music, anywhere, under your control**
 >
 > Run your music server on a small Raspberry Pi, take it with you when travelling, or enjoy music at home without relying on online recommendation services. Your local music collection, Bliss analysis and listening history can stay with you. Even without internet access, you can create mixes, improve playlists and rediscover music you already own.
+>
+> **See what's playing**
+>
+> As an optional companion, [Lyrion Display](https://github.com/chrober/lyrion-display) turns a compatible Fire TV, Android TV or Android tablet into a dedicated Now Playing display for your Lyrion system.
 >
 > **New here?** Start with *Which plugins do I need?*
 
@@ -151,6 +159,10 @@ Suggested explanation:
 > You can choose the extensions that suit your listening habits. You don't need to install all of them.
 
 Explain the **Bliss-first principle** in everyday language: additional information helps choose between musically suitable songs rather than replacing acoustic similarity. No discussion of Rust engines, native binaries, databases, scoring algorithms or provider interfaces is needed here.
+
+### Optional companion: the visual listening experience
+
+Lyrion Display is independent of the Bliss ecosystem. It connects to Lyrion Music Server and presents Craig Drummond's existing Material Skin fullscreen Now Playing view. It neither selects music nor controls playback. A conceptual listening-experience diagram may show the music server providing playback to existing Lyrion players and, separately, Now Playing information through Material Skin to Lyrion Display. Do not draw a direct functional dependency from any Bliss extension to the app.
 
 ## 5. Usage scenario catalogue
 
@@ -228,6 +240,33 @@ This is a distinct user benefit, not merely a technical requirement or another L
 **Before you leave home:** install and configure the required plugins, complete the Bliss analysis, ensure the music files are accessible offline, optionally train the preference survey and download Last.fm artist information, and test playback and mixing with internet access disconnected. Updates or downloads can be performed during a separate connected maintenance session if desired.
 
 **Give credit where it belongs.** Local music hosting and local playback are Lyrion capabilities. Local acoustic analysis and the foundation for Bliss-based music selection come from [Bliss Mixer by Craig Drummond](https://github.com/CDrummond/lms-blissmixer) and the underlying Bliss technology. The plugins in this collection build on that foundation: Better Call Bliss adds local playlist and queue transformations; Bliss Mixer Lab adds experimental mixing and optional learned preferences; Library Signals uses locally stored listening information; Last.fm Guidance optionally adds stored external artist relationships. The portability and privacy benefits are shared ecosystem strengths, not inventions of this collection alone.
+
+### Peripheral usage scenarios: Lyrion Display
+
+| Scenario | Benefit |
+| --- | --- |
+| Bring your music to life on the big screen | See album artwork, artist and track information on a compatible TV while your usual Lyrion player continues playing. |
+| Give an old tablet a new purpose | Use a compatible Android tablet as a dedicated Now Playing display beside your stereo. |
+| Rediscover music at a glance | When a Library Signals-guided mix brings back a forgotten song, immediately see which artist and album it comes from, where artwork and metadata are available. |
+| Your music experience travels with you | Pair a portable Raspberry Pi music server with an Android display on the same reachable local network, even without internet access. |
+
+The app complements these experiences without being required for any of them. It works with ordinary Lyrion playback, regardless of whether Bliss or the collection's plugins are installed.
+
+**Proposed short article insert — More than just listening**
+
+> Rediscovering music is even more enjoyable when you can see what's playing. An album cover, an artist's name or a forgotten song title can bring back memories and encourage you to explore your collection further.
+>
+> [Lyrion Display](https://github.com/chrober/lyrion-display) turns a compatible Fire TV, Android TV or Android tablet into a dedicated, fullscreen Now Playing display using Material Skin.
+>
+> It requires no additional server plugin beyond Material Skin, no account and no cloud service. It works alongside your existing Lyrion setup, regardless of which mixing or music discovery plugins you use.
+>
+> Whether you're listening at home or running a portable music server without internet access, it's another way to make your music collection part of your everyday surroundings.
+>
+> [Discover Lyrion Display](https://github.com/chrober/lyrion-display)
+
+Keep this insert short and cross-link it from **Rediscover Your Music** and **Your Music, Anywhere, Under Your Control**. Include a subtle home-page link and a **Related projects** sidebar entry. No standalone Wiki article is planned initially.
+
+**Requirements and boundaries:** a compatible Android-based device (Android 5.1 or newer), a reachable Lyrion server with Material Skin enabled, and an existing Lyrion player. Authenticated Lyrion servers are not currently supported. The app is read-only; control playback with your usual Lyrion clients. It does not require Bliss Mixer, any of the four collection plugins or the separate Material Android app. The fullscreen interface and themes are provided by Craig Drummond's Material Skin. Internet-independent use requires local network reachability and locally available media/metadata; it does not imply that the TV or Android operating system itself never contacts online services. Refer to the [app README](https://github.com/chrober/lyrion-display) for device compatibility, installation and detailed limitations.
 
 ## 6. Consistent structure for each scenario
 
@@ -319,6 +358,8 @@ Your mixes will continue to be based on acoustic similarity. Library Signals sim
 
 You can also use Library Signals with Better Call Bliss to guide music added to playlists.
 
+**Optional companion:** If you have a dedicated screen beside your stereo or in your living room, [Lyrion Display](https://github.com/chrober/lyrion-display) can show the artist, album and track that you have just rediscovered. It is independent of the mixing and guidance plugins.
+
 ## 7. Plugin selection guide
 
 A page titled **Which plugins do I need?** should make dependencies immediately understandable. The interactive prototype in the original discussion is represented here by a static decision table, suitable for GitHub Wiki Markdown.
@@ -353,6 +394,7 @@ Use visuals that explain a feature rather than decorate a page.
 | Last.fm offline preparation screenshots | Explain preparation for offline listening | Medium |
 | Raspberry Pi and local music setup illustration | Explain portable, internet-independent listening | Medium |
 | Local vs optional online data-flow diagram | Explain privacy and where music knowledge resides | High |
+| Actual Lyrion Display Now Playing screenshot | Illustrate the optional visual listening experience, using the app repository's existing screenshot | Low (peripheral topic) |
 
 Use Material Skin for most screenshots while explicitly indicating which features require it. Better Call Bliss's editor does not require Material Skin; its destination shortcuts do.
 
@@ -373,12 +415,12 @@ Start with approximately **13 content pages**, plus a sidebar and footer.
 | Take a Musical Journey | All three destination shortcuts |
 | Keep the Music Playing | DSTM, artist repeat behavior and virtual libraries |
 | Personalize Your Mixes | Preference learning and its use in both hosts |
-| Rediscover Your Music | All Library Signals scenarios |
+| Rediscover Your Music | All Library Signals scenarios; optional Now Playing display example |
 | Explore Musical Connections | Last.fm guidance, combined guidance and offline listening |
-| Your Music, Anywhere, Under Your Control | Raspberry Pi, travel, internet-independent listening, local data and privacy; optional Last.fm preparation |
+| Your Music, Anywhere, Under Your Control | Raspberry Pi, travel, internet-independent listening, local data and privacy; optional Last.fm preparation and local Now Playing display |
 | Plugins and FAQ | Plugin references, limitations and troubleshooting |
 
-Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Split topics into dedicated pages later as content grows, without changing the overall architecture.
+Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Add a small **Related projects** sidebar section linking to Lyrion Display; keep it outside the plugin reference. No additional content page is required for this companion app. Split topics into dedicated pages later as content grows, without changing the overall architecture.
 
 ## 10. Editorial principles
 
@@ -404,6 +446,7 @@ Consistently communicate that:
 - Bliss Mixer Lab is experimental by design.
 - Local-first listening and optional online guidance must be clearly distinguished; avoid promising that every plugin or Lyrion feature is inherently offline or private.
 - Credit Lyrion, CDrummond's Bliss Mixer and the underlying Bliss technology for their foundational contributions. Describe Raspberry Pi 4 as the author's tested setup, not a universal performance benchmark.
+- Present Lyrion Display as an independent, optional Android companion, not an LMS plugin or a Bliss integration. Credit Craig Drummond's Material Skin for the Now Playing interface and themes. Keep app-specific installation and support documentation in its own repository.
 
 Preserve the established compatibility wording: developed and tested with Lyrion 9.1; older versions may work but have not been tested. Link to the plugin READMEs for exact requirements and technical details rather than duplicating them.
 
@@ -470,6 +513,8 @@ The four editorial themes:
 These four musical themes can remain the editorial identity of the Wiki regardless of how many plugins are added to the collection in future.
 
 A fifth, cross-cutting theme is **freedom and control — your music, anywhere, under your control**: lightweight hardware, portability, internet independence and privacy through local music selection. It should be visible on the home page and have a dedicated article, not be buried under Last.fm configuration. This dimension describes a shared strength of the Lyrion and Bliss ecosystem and the collection's extensions.
+
+Lyrion Display adds an optional visual dimension to the overall listening experience, particularly rediscovery and portable/local listening. It is a related project, not a sixth pillar. Keep the core Wiki focused on the four collection plugins and the five established themes.
 
 Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch.
 
