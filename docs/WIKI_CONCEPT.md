@@ -1,6 +1,6 @@
 # Concept for the LMS Plugins Wiki
 
-**Status:** Proposal for review — 26 November 2026
+**Status:** Proposal for review — 26 November 2026 (expanded with lightweight, portable and private listening)
 
 ## 1. Purpose and review of existing documentation
 
@@ -35,6 +35,8 @@ The READMEs, particularly their “What can I do with it?” sections, provide a
 
 Retain the READMEs largely as they are; the Wiki is a complementary, cross-plugin documentation layer.
 
+Beyond musical features, the Wiki should communicate the benefits of owning and controlling a local music system: modest hardware requirements, portable listening, independence from internet connectivity, and the option to keep music selection and listening history private. These are benefits of the wider Lyrion and Bliss ecosystem, complemented by the plugins in this collection.
+
 ## 2. Proposed information architecture
 
 Use a hybrid architecture with **usage scenarios as primary navigation** and individual plugin descriptions as secondary reference material. Readers should not need to understand the ecosystem before discovering its benefits.
@@ -64,6 +66,12 @@ Use a hybrid architecture with **usage scenarios as primary navigation** and ind
   - Personalized playlists and mixes
   - Combining listening history and Last.fm
   - Music discovery without internet access
+- **Your music, anywhere, under your control**
+  - A lightweight music server on a Raspberry Pi
+  - Take your music collection travelling
+  - Listen without an internet connection
+  - Keep your listening habits private at home
+  - Prepare optional Last.fm information for offline use
 - **Plugin reference**
   - Better Call Bliss
   - Bliss Mixer Lab
@@ -76,7 +84,7 @@ This is the logical structure, not necessarily a one-page-per-entry plan. Closel
 
 ## 3. Wiki home page
 
-The home page could also serve as a landing page for visitors from the Lyrion community forum. Introduce four reasons to explore the collection rather than immediately introducing four plugins.
+The home page could also serve as a landing page for visitors from the Lyrion community forum. Introduce four musical reasons to explore the collection rather than immediately introducing four plugins, followed by a cross-cutting benefit: local, portable and private listening.
 
 ### Proposed home-page copy
 
@@ -99,6 +107,10 @@ The home page could also serve as a landing page for visitors from the Lyrion co
 > **Explore musical connections**
 >
 > Discover relationships between tracks and artists beyond their acoustic similarities.
+>
+> **Your music, anywhere, under your control**
+>
+> Run your music server on a small Raspberry Pi, take it with you when travelling, or enjoy music at home without relying on online recommendation services. Your local music collection, Bliss analysis and listening history can stay with you. Even without internet access, you can create mixes, improve playlists and rediscover music you already own.
 >
 > **New here?** Start with *Which plugins do I need?*
 
@@ -186,6 +198,36 @@ Some scenarios below are explicitly described in the READMEs; others are practic
 | I take my music server on holiday | Prepare artist relationships for offline-friendly listening | Either host + Last.fm |
 
 The combined scenarios are particularly valuable because they communicate the benefits of the ecosystem as a whole.
+
+### Lightweight, portable and private listening
+
+| Scenario | Benefit | What makes it possible |
+| --- | --- | --- |
+| I don't want to keep a large computer running just to listen to music | A compact, low-resource local music server | Lyrion + Bliss Mixer; compatible collection plugins |
+| I want to take my music collection on holiday or on a camping trip | Bring the server, local music and prepared analysis with you | Lyrion + Bliss Mixer; optional Better Call Bliss and Lab |
+| I have unreliable or no internet access | Keep mixing, optimizing playlists and rediscovering locally available tracks | Local Bliss analysis, local music, optional learned preferences and Library Signals |
+| I prefer not to send my listening habits or music queries to online services | Use local music selection and local listening history on an internet-isolated setup | Lyrion + Bliss Mixer; optional Library Signals and Lab; no live online guidance |
+| I want some Last.fm knowledge available while travelling | Prepare and reuse locally stored artist relationships | Last.fm Guidance with API Key source; Offline preferred; compatible host |
+
+### Dedicated article: Your music, anywhere, under your control
+
+> “I want a small music server that I can take with me, and I don't want my music experience to depend on having an internet connection.”
+
+This is a distinct user benefit, not merely a technical requirement or another Last.fm feature. It merits a dedicated page, cross-linked from Getting Started, Rediscover Your Music, Explore Musical Connections and the home page.
+
+**A small music server, not a cloud service.** A Raspberry Pi 4 is the author's actual development and test platform and a practical example of the modest hardware on which the collection can run. Avoid universal performance guarantees or quantified resource claims without measurements; library size, initial analysis, optimization workload and storage affect performance.
+
+**Take your music along.** A portable setup could consist of a Raspberry Pi, a power supply, a local music drive or other storage accessible without the internet, and a player/controller on a local network. Illustrate everyday examples such as a holiday apartment, campervan or remote location. A local network can work without an internet connection; internet isolation does not necessarily mean disconnecting the player and server from one another.
+
+**Keep your music knowledge with you.** Once the local library has been prepared, Bliss acoustic analysis, Lyrion play counts and last-played information, library-addition dates and optional learned preferences can remain locally available. The collection's playlist and mixing capabilities can operate on those local resources. Library Signals adds music rediscovery without requiring an external recommendation service.
+
+**Privacy at home.** The same setup can deliberately be isolated from the internet, rather than merely being offline while travelling. Local analysis and locally guided selection do not inherently require sending track or artist queries to a recommendation service. Avoid claiming that every LMS feature, third-party plugin or controller is network-free: online metadata, scrobbling, streaming, updates and Last.fm queries may use the internet depending on configuration. For a firm no-internet guarantee, enforce isolation at the network level and use locally available media. A LAN-only setup is not necessarily a strict physical air gap; explain that distinction without unnecessary networking jargon.
+
+**Optional Last.fm preparation.** Last.fm Guidance can acquire artist relationships while connected, using its API Key source, and retain them locally for later use. Offline preferred can reuse stored artist information and degrade gracefully when the network is unavailable. Track relationships use a separate short-lived cache, so not all track information will necessarily be available offline. Offline preferred is not a strict offline-only setting: it may still make online requests if connectivity is available. For an internet-isolated setup, rely on actual network isolation (or leave Last.fm guidance disabled if no external data is wanted). Be explicit that initial acquisition sends requests to Last.fm; storing the results locally does not undo those earlier requests. Keep the distinction between fully local analysis/history and previously downloaded external knowledge.
+
+**Before you leave home:** install and configure the required plugins, complete the Bliss analysis, ensure the music files are accessible offline, optionally train the preference survey and download Last.fm artist information, and test playback and mixing with internet access disconnected. Updates or downloads can be performed during a separate connected maintenance session if desired.
+
+**Give credit where it belongs.** Local music hosting and local playback are Lyrion capabilities. Local acoustic analysis and the foundation for Bliss-based music selection come from [Bliss Mixer by Craig Drummond](https://github.com/CDrummond/lms-blissmixer) and the underlying Bliss technology. The plugins in this collection build on that foundation: Better Call Bliss adds local playlist and queue transformations; Bliss Mixer Lab adds experimental mixing and optional learned preferences; Library Signals uses locally stored listening information; Last.fm Guidance optionally adds stored external artist relationships. The portability and privacy benefits are shared ecosystem strengths, not inventions of this collection alone.
 
 ## 6. Consistent structure for each scenario
 
@@ -309,6 +351,8 @@ Use visuals that explain a feature rather than decorate a page.
 | Guidance settings screenshots | Show how to enable and configure providers | High |
 | Preference survey screenshots | Explain personalization | Medium |
 | Last.fm offline preparation screenshots | Explain preparation for offline listening | Medium |
+| Raspberry Pi and local music setup illustration | Explain portable, internet-independent listening | Medium |
+| Local vs optional online data-flow diagram | Explain privacy and where music knowledge resides | High |
 
 Use Material Skin for most screenshots while explicitly indicating which features require it. Better Call Bliss's editor does not require Material Skin; its destination shortcuts do.
 
@@ -316,7 +360,7 @@ Establish a consistent visual language: original tracks gray, currently playing 
 
 ## 9. Scope of the initial Wiki
 
-Start with approximately **12 content pages**, plus a sidebar and footer.
+Start with approximately **13 content pages**, plus a sidebar and footer.
 
 | Proposed Wiki page | Content |
 | --- | --- |
@@ -331,6 +375,7 @@ Start with approximately **12 content pages**, plus a sidebar and footer.
 | Personalize Your Mixes | Preference learning and its use in both hosts |
 | Rediscover Your Music | All Library Signals scenarios |
 | Explore Musical Connections | Last.fm guidance, combined guidance and offline listening |
+| Your Music, Anywhere, Under Your Control | Raspberry Pi, travel, internet-independent listening, local data and privacy; optional Last.fm preparation |
 | Plugins and FAQ | Plugin references, limitations and troubleshooting |
 
 Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Split topics into dedicated pages later as content grows, without changing the overall architecture.
@@ -357,6 +402,8 @@ Consistently communicate that:
 - Additional guidance expresses preferences, not guaranteed track selections.
 - Audio files are not modified.
 - Bliss Mixer Lab is experimental by design.
+- Local-first listening and optional online guidance must be clearly distinguished; avoid promising that every plugin or Lyrion feature is inherently offline or private.
+- Credit Lyrion, CDrummond's Bliss Mixer and the underlying Bliss technology for their foundational contributions. Describe Raspberry Pi 4 as the author's tested setup, not a universal performance benchmark.
 
 Preserve the established compatibility wording: developed and tested with Lyrion 9.1; older versions may work but have not been tested. Link to the plugin READMEs for exact requirements and technical details rather than duplicating them.
 
@@ -420,8 +467,10 @@ The four editorial themes:
 - **Rediscovery** — get more value out of a collection that may have been accumulated over decades.
 - **Musical exploration** — discover interesting connections and journeys within that collection.
 
-These themes can remain the editorial identity of the Wiki regardless of how many plugins are added to the collection in future.
+These four musical themes can remain the editorial identity of the Wiki regardless of how many plugins are added to the collection in future.
 
-Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages.
+A fifth, cross-cutting theme is **freedom and control — your music, anywhere, under your control**: lightweight hardware, portability, internet independence and privacy through local music selection. It should be visible on the home page and have a dedicated article, not be buried under Last.fm configuration. This dimension describes a shared strength of the Lyrion and Bliss ecosystem and the collection's extensions.
+
+Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch.
 
 This is a concept for review, not the published Wiki. The chat's interactive selector and visual mockups have been translated into Markdown-compatible tables, diagrams and descriptions; final screenshots and illustrations remain to be prepared.
