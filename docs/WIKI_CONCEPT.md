@@ -165,11 +165,11 @@ flowchart TB
     LF -. optional guidance .-> BCB
     LF -. optional guidance .-> Lab
     Skin --> Android["LMS Material App — Android"]
-    Skin --> Apple["LyrPlay — iPhone and iPad"]
+    Skin --> Apple["LyrPlay — iPhone/iPad controller"]
     Skin --> Display["Lyrion Display — dedicated read-only screen"]
 ```
 
-Material Skin is a user interface, not a component of the music-selection algorithm. The client apps are alternatives or companions, not mandatory components of the collection. Material Skin is specifically required for Better Call Bliss's destination shortcuts, Lab's Material-specific player-library integration and Lyrion Display, and for the Material-based mobile interfaces shown here. LyrPlay also offers an integrated audio player; the diagram describes its mobile control interface, not all of its platform-specific features.
+Material Skin is a user interface, not a component of the music-selection algorithm. The client apps are alternatives or companions, not mandatory components of the collection. Material Skin is specifically required for Better Call Bliss's destination shortcuts, Lab's Material-specific player-library integration and Lyrion Display, and for the Material-based mobile interfaces shown here. LyrPlay is recommended here primarily as the Apple alternative to LMS Material App for browsing music and controlling existing Lyrion players. Its integrated audio player is an additional capability, not the reason for this recommendation.
 
 Suggested explanation:
 
@@ -434,7 +434,7 @@ These run on the user's device, not on the Lyrion server. They do not replace th
 | Project | Platform | What you can do |
 | --- | --- | --- |
 | [LMS Material App](https://github.com/CDrummond/lms-material-app) — Craig Drummond | Android | Browse your music collection, select music, manage queues and control your Lyrion players via Material Skin. Recommended Android control client. Requires a reachable Lyrion server with Material Skin installed; it does not have to be the default skin. |
-| [LyrPlay](https://github.com/mtxmiller/LyrPlay) ([App Store](https://apps.apple.com/app/lyrplay/id6746776736)) | iPhone and iPad | Recommended Apple mobile alternative: browse and control Lyrion via Material Skin, and optionally use your device itself as a Lyrion audio player. Requires a reachable Lyrion server and Material Skin for the mobile interface. The app also has an Apple TV player offering; consult its own documentation for platform-specific requirements and capabilities. |
+| [LyrPlay](https://github.com/mtxmiller/LyrPlay) ([App Store](https://apps.apple.com/app/lyrplay/id6746776736)) — Eric Miller | iPhone and iPad | Recommended Apple alternative to LMS Material App: browse your music collection, select music, manage queues and control your existing Lyrion players through the integrated Material Skin interface. Requires a reachable Lyrion server with Material Skin. Its built-in audio player is an optional additional benefit; refer to the app's own documentation for playback and platform-specific features. |
 | [Lyrion Display](https://github.com/chrober/lyrion-display) | Compatible Fire TV, Android TV and Android tablets/phones | Optional dedicated fullscreen Now Playing display for an existing player. Read-only, not a playback controller. Requires Material Skin and a reachable Lyrion server. |
 
 **Browse, select and control** with LMS Material App or LyrPlay; **see what's playing** with Lyrion Display. A user can use a control client on a phone and a separate dedicated display in the same room. No client app is mandatory for the core Bliss plugins. Do not claim that the Android and Apple apps have identical capabilities or that all device-specific features have been tested by the author.
@@ -536,7 +536,7 @@ Consistently communicate that:
 - Credit Lyrion, CDrummond's Bliss Mixer and the underlying Bliss technology for their foundational contributions. Describe Raspberry Pi 4 as the author's tested setup, not a universal performance benchmark.
 - Present Lyrion Display as an independent, optional Android companion, not an LMS plugin or a Bliss integration. Credit Craig Drummond's Material Skin for the Now Playing interface and themes. Keep app-specific installation and support documentation in its own repository.
 
-- Clearly distinguish required server plugins, generally recommended interfaces, optional data sources and client-side apps. State feature-specific requirements near the corresponding scenario. Recommend LMS Material App for Android and LyrPlay for iPhone/iPad as choices rather than dependencies; refer readers to their own documentation and do not imply official endorsement or complete author testing.
+- Clearly distinguish required server plugins, generally recommended interfaces, optional data sources and client-side apps. State feature-specific requirements near the corresponding scenario. Recommend LMS Material App for Android and LyrPlay for iPhone/iPad primarily as comparable controller choices rather than dependencies; refer readers to their own documentation and do not imply official endorsement or complete author testing. LyrPlay's additional player functionality is peripheral to this Wiki; do not expand into mobile playback, transcoding or Apple TV setup unless directly relevant to a documented scenario.
 
 Preserve the established compatibility wording: developed and tested with Lyrion 9.1; older versions may work but have not been tested. Link to the plugin READMEs for exact requirements and technical details rather than duplicating them.
 
