@@ -8,7 +8,7 @@ Think about two songs that sound as though they belong together. They might shar
 
 <figure class="guide-figure" markdown="1">
 ![Bliss Mixer supplies acoustic analysis to Better Call Bliss and Bliss Mixer Lab; optional guidance contributes to both hosts](assets/images/bliss-ecosystem.svg)
-<figcaption>The two main plugins work independently. Guidance plugins add information to a compatible host, not another playback engine.</figcaption>
+<figcaption>The two main plugins work independently. Guidance plugins add information to a compatible playlist or mixing plugin, not another playback engine.</figcaption>
 </figure>
 
 | Plugin | What it does for you |
@@ -16,7 +16,7 @@ Think about two songs that sound as though they belong together. They might shar
 | [Bliss Mixer](https://github.com/CDrummond/lms-blissmixer) | Creates sound-based mixes and provides the analysis required by the two extensions. |
 | [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss) | Improves saved playlists and queues, inserts or adds suitable tracks, and creates musical routes. |
 | [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab) | Offers experimental mixing, personal preference learning and the separate Bliss (Lab) Don't Stop the Music option. |
-| [Library Signals](https://github.com/chrober/lms-guidance-library-signals) | Gives a compatible host additional knowledge from your play counts, last-played dates and library age. |
+| [Library Signals](https://github.com/chrober/lms-guidance-library-signals) | Gives a compatible playlist or mixing plugin additional knowledge from your play counts, last-played dates and library age. |
 | [Last.fm Guidance](https://github.com/chrober/lms-guidance-lastfm) | Adds Last.fm similar-artist and similar-track knowledge to supported selection workflows. |
 
 Don't Stop the Music (DSTM) is Lyrion's way of choosing more tracks when your current queue needs continuing. The Lab adds its own provider without replacing the original Bliss provider. You can try it and return to your usual choice.
@@ -31,6 +31,11 @@ Imagine that Bliss finds several songs which would fit your current music. Perha
 </figure>
 
 The guidance plugins do not play songs on their own or override repeat rules. Install and explicitly enable them in Better Call Bliss or Bliss Mixer Lab. For the Lab, additional guidance applies to its supported DSTM workflow; do not assume every Lab menu action uses it.
+
+<figure class="guide-figure" markdown="1">
+![One local music collection supports playlists and continuous listening through Bliss](assets/images/listening-worlds.svg)
+<figcaption>Choose the way you want to listen; you can use either extension independently.</figcaption>
+</figure>
 
 ## Do I need the whole collection?
 

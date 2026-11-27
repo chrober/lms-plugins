@@ -15,7 +15,7 @@ Musical similarity is partly subjective. Perhaps you care more about the atmosph
 
 1. Open the Lab settings and choose **Open Similarity Survey**.
 2. Listen to the available examples and answer the comparisons according to your own sense of musical similarity.
-3. Complete survey answers and use the training functionality to create a personal learned matrix.
+3. Complete survey answers and choose **Run Learning** to learn your personal musical preferences.
 4. In the Lab settings, review **Learned matrix influence** and use a supported Adaptive mixing strategy.
 5. Try **Bliss (Lab)** DSTM or the Lab's **Create bliss mix (Lab)** action. Listen and compare with standard Bliss mixing.
 
@@ -23,7 +23,10 @@ The learned model influences how acoustic similarities are evaluated, rather tha
 
 ## How much influence?
 
-For Adaptive mixing with multiple seeds, **Learned matrix influence** blends learned similarity with the normal variance-based calculation. At 0% the multi-seed calculation uses variance only; at 100% it uses the learned matrix only. A single seed uses the valid learned matrix directly when applicable, rather than the multi-seed blend. Without a valid learned matrix, the host uses its normal fallback behavior.
+Use **Learned matrix influence** to decide how strongly your personal preferences affect supported Adaptive mixes based on several starting songs.
+
+??? info "How the learning settings work"
+    For multiple seeds, 0% uses the normal variance-based calculation, while 100% uses the learned matrix only. A single seed uses the valid learned matrix directly when applicable. Without a valid learned matrix, the normal fallback applies.
 
 Start with a moderate influence and listen to a few sessions before changing it again. The exact setting is a preference, not a quality score.
 

@@ -14,7 +14,7 @@ Sometimes you don't want to create a new playlist or interrupt the music. You si
 **What you need:** Bliss Mixer with completed analysis, Better Call Bliss and a player with a suitable queue containing at least two local tracks in the selected source scope.
 
 1. In **Extras → Better Call Bliss**, select a player queue as the source.
-2. Select the upcoming tracks as the source scope. The editor captures a snapshot when the job starts.
+2. Choose **Use only upcoming tracks**. The editor captures a snapshot when the job starts.
 3. Choose the order and addition options — for example, optimize the order with no additions.
 4. Generate a **Preview** and review the result.
 5. Choose the same player as the output and **Replace upcoming tracks**. Apply the result.
@@ -30,7 +30,7 @@ The current track and playback state are preserved. If the player has advanced w
 | **Append to queue** | Add the result to the end of the queue. |
 | **Play next** | Insert the result after the current track. |
 
-The editor also supports full-queue and current-plus-upcoming source scopes. Source scope and output action are different decisions: first select what to work with, then choose where the result belongs.
+The editor also supports the full queue and **Use now-playing and upcoming tracks** as source options. Source scope and output action are different decisions: first select what to work with, then choose where the result belongs.
 
 !!! tip "Keep a favorite song playing"
     If preserving the currently playing track matters, use **Replace upcoming tracks**, not **Replace queue**. Always review the preview before applying.

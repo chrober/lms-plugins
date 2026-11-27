@@ -23,7 +23,7 @@ You can also prefer frequently or recently played tracks, or older library addit
 
 - Bliss Mixer with completed library analysis.
 - [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab) for Don't Stop the Music mixes, or [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss) for supported playlist and queue workflows.
-- [Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals), enabled separately in the host you use.
+- [Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals), enabled separately in the playlist or mixing plugin you use.
 
 Library Signals reads native Lyrion listening data by default. If you use [Alternative Play Count](https://github.com/AF-1/lms-alternativeplaycount), you can select its history as an alternative for play counts and last-played dates; library age still comes from Lyrion. No additional online service is needed. Missing data is treated neutrally, not as evidence that a track was never played.
 
@@ -35,7 +35,7 @@ Library Signals reads native Lyrion listening data by default. If you use [Alter
 4. Select **Bliss (Lab)** as the Don't Stop the Music provider and start with a song you feel like hearing.
 5. Let the session continue, then compare it with a session without the provider enabled.
 
-Try the other signals in the same way. Start with one preference rather than changing everything at once.
+Try the other signals in the same way. For a hidden-gems session, favor lower play counts; for an evening of new albums, favor more recent library additions. For a nostalgic mix, favor earlier last-played dates. Start with one preference rather than changing everything at once.
 
 ## What changes — and what doesn't?
 

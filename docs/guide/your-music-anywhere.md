@@ -48,7 +48,7 @@ This is control over your setup, not a promise that all Lyrion components, appli
 If you enjoy Last.fm guidance, you can prepare some artist information before a trip.
 
 1. While online, configure the [Last.fm provider](explore-musical-connections.md) with its **API Key** source and a valid key.
-2. Choose the desired artist graph scope and settings. Click **Update offline Last.fm library** and monitor coverage and progress.
+2. Choose the desired artist collection scope and settings. Click **Update offline Last.fm library** and monitor coverage and progress.
 3. Select **Offline preferred** and enable Last.fm Guidance in Bliss Mixer Lab and/or Better Call Bliss, wherever you plan to use it.
 4. Disconnect internet access and test the intended playback and mixing workflow before leaving.
 
@@ -58,11 +58,12 @@ The API Key source's retained data is subject to Last.fm's API terms and the pro
 
 ## Before you leave
 
-- Check your music files, Bliss analysis and plugin installations while the internet is disconnected.
-- Check the local network, power supply and your preferred controller and player.
-- Try a playlist preview and Bliss (Lab) DSTM with the library you will take.
-- If you want personal or Last.fm guidance, prepare it before departure.
-- Back up important settings, training data and music.
+!!! tip "Your offline listening checklist"
+    - Check your music files, Bliss analysis and plugin installations while the internet is disconnected.
+    - Check the local network, power supply and your preferred controller and player.
+    - Try a playlist preview and Bliss (Lab) DSTM with the library you will take.
+    - If you want personal or Last.fm guidance, prepare it before departure.
+    - Back up important settings, training data and music.
 
 A compatible Android tablet or Fire TV with [Lyrion Display](https://github.com/chrober/lyrion-display) can show what's playing on your local system using Material Skin. It is an optional read-only companion, not a player or mixing requirement.
 

@@ -17,7 +17,7 @@ A collection of favorite tracks can move abruptly between quiet, atmospheric son
 
 1. Open **Extras → Better Call Bliss**.
 2. Select a saved playlist.
-3. Choose to optimize the track order without adding tracks.
+3. Under **Source-track order**, choose **Optimize source order**, with no additional tracks.
 4. Run **Preview**. Review the proposed order before making any change.
 5. Save the result as a new playlist and listen to both versions.
 
@@ -35,8 +35,8 @@ Sometimes the order of your songs matters. Perhaps the first song sets the scene
 ### Try it
 
 1. In the editor, select your source playlist.
-2. Choose to preserve the existing order and add bridging tracks.
-3. Let the plugin decide where additions are useful, or request a fixed number per gap.
+2. Under **Source-track order**, choose **Preserve source order and fill gaps**.
+3. Choose automatic transition improvements if you want bridges only where they are useful, or a fixed number of bridges per gap if you want the same number between every pair of original songs. A fixed number must be feasible for every gap.
 4. Preview the new sequence. Check which songs were added, then save a separate copy.
 
 You can also [turn a short playlist into a longer listening session](extend-your-playlists.md) by choosing a supported track-count or duration target. Review the preview before applying it.

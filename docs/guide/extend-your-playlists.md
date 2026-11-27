@@ -37,7 +37,7 @@ The original playlist is not changed by generating a preview. The final length i
 
 ## Keep the mood right
 
-Choose a **Candidate library** such as Dinner & Lounge, Summer or Sunday Jazz if you want new songs to come from a particular part of your collection. Original songs remain valid even if they are outside that virtual library. [Learn how to switch a player's musical world](keep-the-music-playing.md#music-for-every-season-mood-and-moment).
+Choose a **Candidate library** such as Dinner & Lounge, Summer or Sunday Jazz if you want new songs to come from a particular part of your collection. Original songs remain valid even if they are outside that virtual library. [Learn how to switch a player's musical world](music-for-every-season.md).
 
 If the music is already playing, you can [work with the current queue](improve-your-player-queue.md) instead of creating a saved playlist. To make additions more personal, try [Library Signals](rediscover-your-music.md) or [Last.fm Guidance](explore-musical-connections.md).
 

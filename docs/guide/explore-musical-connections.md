@@ -32,7 +32,7 @@ With API Key mode, you can enter your own key or reuse a saved custom LastMix AP
 4. Start a Bliss (Lab) DSTM session, or preview a Better Call Bliss playlist optimization with additions.
 5. Compare the results with the provider disabled.
 
-Track and artist relationships are two complementary sources of information. They help rank eligible candidates; they do not guarantee that a specific related artist will appear, bring remote tracks into your collection or override repeat rules.
+Track and artist relationships are two complementary sources of information. They help rank suitable tracks; they do not guarantee that a specific related artist will appear, bring remote tracks into your collection or override repeat rules.
 
 ## Related music you haven't heard in a while
 
@@ -41,7 +41,7 @@ Track and artist relationships are two complementary sources of information. The
 <figcaption>Combine preferences within the same eligible local pool. Neither provider operates as an independent mixer.</figcaption>
 </figure>
 
-Enable both Last.fm Guidance and [Library Signals](rediscover-your-music.md) in a supported host. For example, favor artists related to the current music while giving rarely heard tracks a little more attention.
+Enable both Last.fm Guidance and [Library Signals](rediscover-your-music.md) in a supported mixing or playlist plugin. For example, start with a favorite Miles Davis recording. Last.fm might help identify related artists already in your collection, while Library Signals can give a rarely played John Coltrane recording more weight if it is also a suitable musical match. This is an illustrative listening idea, not a predicted recommendation.
 
 Keep the influences moderate at first. These preferences can reinforce each other or point toward different candidates. The host still makes the final selection using its supported rules and acoustic checks.
 

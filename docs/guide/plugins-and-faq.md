@@ -10,7 +10,7 @@
 | Project | Start here |
 | --- | --- |
 | [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss) | [Playlists](make-your-playlists-flow.md), [extension](extend-your-playlists.md), [queues](improve-your-player-queue.md), [musical routes](take-a-musical-journey.md) |
-| [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab) | [DSTM and virtual libraries](keep-the-music-playing.md), [personal preferences](personalize-your-mixes.md) |
+| [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab) | [Continuous listening](keep-the-music-playing.md), [seasonal libraries](music-for-every-season.md), [personal preferences](personalize-your-mixes.md) |
 | [Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals) | [Rediscover your music](rediscover-your-music.md) |
 | [Bliss Guidance: Last.fm](https://github.com/chrober/lms-guidance-lastfm) | [Explore musical connections](explore-musical-connections.md), [offline preparation](your-music-anywhere.md) |
 
@@ -24,9 +24,17 @@ No. Start with Bliss Mixer and its completed analysis. Choose Better Call Bliss 
 
 No. It runs alongside it and adds separate Lab actions and the Bliss (Lab) DSTM provider. You can switch back to standard Bliss.
 
+### Why can't I find the plugins in Lyrion?
+
+Check that the additional repository URL is entered in **Settings → Plugins**, apply the change and restart if requested. Confirm that your server platform and Lyrion version meet the plugin's requirements. See [installation](getting-started.md#install-the-collection).
+
+### Why are my local songs not available for a Bliss mix?
+
+Check that Bliss Mixer is enabled, its analysis has completed, and the music files are accessible to your server. Newly added music may need analysis. If a virtual library is selected, check that it contains suitable analyzed tracks.
+
 ### Why isn't my guidance plugin doing anything?
 
-Installing a guidance provider alone is not enough. Enable it in the settings of Better Call Bliss or Bliss Mixer Lab. For the Lab, use a supported Bliss (Lab) DSTM workflow. Verify the provider's data source and preferences, and remember that guidance does not guarantee a particular track.
+Installing a guidance provider alone is not enough. Enable it in the settings of Better Call Bliss or Bliss Mixer Lab. For the Lab, use a supported Bliss (Lab) DSTM workflow. Verify the provider's data source and preferences. Compare two previews or listening sessions with the guidance disabled and enabled; missing history or relationship information may contribute no preference, and remember that guidance does not guarantee a particular track.
 
 ### Why can't I see or use Bliss me there...?
 
@@ -42,7 +50,7 @@ A small candidate library, missing analysis, unavailable files, tight repeat win
 
 ### Why do I still hear songs outside my selected virtual library?
 
-Changing the player's library restricts new candidates in supported workflows, not existing queue entries. Check the actual player library, the two Material synchronization options, and any explicit Better Call Bliss candidate-library selection. See [the seasonal listening scenario](keep-the-music-playing.md#music-for-every-season-mood-and-moment).
+Changing the player's library restricts new candidates in supported workflows, not existing queue entries. Check the actual player library, the two Material synchronization options, and any explicit Better Call Bliss candidate-library selection. See [the seasonal listening scenario](music-for-every-season.md).
 
 ### Can I use the plugins without the internet?
 

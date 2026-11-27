@@ -2,11 +2,6 @@
 
 You don't need a complicated system or every available plugin. Start with a working Lyrion server, a local music collection and Bliss Mixer. Add the extensions that match your listening habits.
 
-<figure class="guide-figure" markdown="1">
-![A local Lyrion server, optionally on piCorePlayer, with native or bridged players, Material Skin controllers and an optional dedicated display](assets/images/setup-map.svg)
-<figcaption>Your server selects music; native Lyrion players or compatible devices connected through optional bridges play it. Phones and tablets control the server, and a separate display can show what's playing.</figcaption>
-</figure>
-
 ## Choose your plugins
 
 | I want to… | Add to Bliss Mixer |
@@ -16,7 +11,7 @@ You don't need a complicated system or every available plugin. Start with a work
 | Teach Bliss my musical preferences | Bliss Mixer Lab; optionally Better Call Bliss for supported playlist workflows |
 | Rediscover overlooked tracks | Library Signals + **Bliss Mixer Lab** (automatic mixes) or **Better Call Bliss** (playlists and queues) |
 | Consider musical relationships from Last.fm | Last.fm Guidance + **Bliss Mixer Lab** (automatic mixes) or **Better Call Bliss** (playlists and queues) |
-| Switch a player to a seasonal or mood-specific library | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended |
+| Switch a player to a seasonal or mood-specific library | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended — [see the seasonal listening guide](music-for-every-season.md) |
 
 For the two guidance options, install the guidance plugin **and at least one of the two named mixing or playlist plugins**. You can use both if you want guidance in both workflows. Enable the provider separately in each plugin's settings. See [Understanding Bliss](understanding-bliss.md) for the roles of the four plugins.
 
@@ -24,6 +19,29 @@ For the two guidance options, install the guidance plugin **and at least one of 
 
 - [Bliss Mixer](https://github.com/CDrummond/lms-blissmixer) by Craig Drummond. Install and enable it, then complete its analysis of your local music library. Better Call Bliss and Bliss Mixer Lab use that analysis and the existing Bliss installation.
 - A working [Lyrion Music Server](https://lyrion.org/) and compatible local library. The collection was developed and tested with **Lyrion 9.1**; older versions may work but have not been tested. Official plugin-feed packages include platform-specific binaries where needed; consult the individual plugin's requirements.
+
+## Install the collection
+
+1. Install and enable Bliss Mixer and complete its library analysis.
+2. Open **Lyrion Settings → Plugins** and add the following URL as an additional plugin repository:
+
+    ```text
+    https://raw.githubusercontent.com/chrober/lms-plugins/main/repo.xml
+    ```
+
+3. Apply the change, install the plugins you want and restart Lyrion if requested.
+4. Follow the individual setup instructions: [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss#installation), [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab#installation), [Library Signals](https://github.com/chrober/lms-guidance-library-signals#installation), or [Last.fm Guidance](https://github.com/chrober/lms-guidance-lastfm#installation).
+5. If you install a guidance plugin, configure its defaults and **enable it in Better Call Bliss or Bliss Mixer Lab, wherever you want to use it** where you want it to work. Installing a provider alone does not affect a mix.
+
+!!! tip "Try one change at a time"
+    Start with a standard Bliss mix or a playlist preview. Then add one extension or guidance preference and compare. It is easier to understand the effect of an individual setting.
+
+<figure class="guide-figure" markdown="1">
+![A local Lyrion server, optionally on piCorePlayer, with native or bridged players, Material Skin controllers and an optional dedicated display](assets/images/setup-map.svg)
+<figcaption>Your server selects music; native Lyrion players or compatible devices connected through optional bridges play it. Phones and tablets control the server, and a separate display can show what's playing.</figcaption>
+</figure>
+
+## Build on the setup you already have
 
 ## Your server
 
@@ -77,22 +95,6 @@ The bridges are not required for native Lyrion players. Device discovery, suppor
 | [Lyrion Display](https://github.com/chrober/lyrion-display) | Optional fullscreen read-only Now Playing companion for compatible Fire TV, Android TV and tablets. |
 
 These apps require a reachable Lyrion server with Material Skin. You can also use Material Skin directly in a web browser. None of the apps is needed for the core Bliss extensions. Consult the app repositories for device compatibility and installation.
-
-## Install the collection
-
-1. Install and enable Bliss Mixer and complete its library analysis.
-2. Open **Lyrion Settings → Plugins** and add the following URL as an additional plugin repository:
-
-    ```text
-    https://raw.githubusercontent.com/chrober/lms-plugins/main/repo.xml
-    ```
-
-3. Apply the change, install the plugins you want and restart Lyrion if requested.
-4. Follow the individual setup instructions: [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss#installation), [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab#installation), [Library Signals](https://github.com/chrober/lms-guidance-library-signals#installation), or [Last.fm Guidance](https://github.com/chrober/lms-guidance-lastfm#installation).
-5. If you install a guidance plugin, configure its defaults and **enable it on the settings page of the host** where you want it to work. Installing a provider alone does not affect a mix.
-
-!!! tip "Try one change at a time"
-    Start with a standard Bliss mix or a playlist preview. Then add one extension or guidance preference and compare. It is easier to understand the effect of an individual setting.
 
 ## Listen locally
 
