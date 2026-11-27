@@ -1,6 +1,6 @@
-# Concept for the LMS Plugins Wiki
+# Concept for the Lyrion Plugins User Guide
 
-**Status:** Proposal for review — 26 November 2026 (expanded with lightweight, portable and private listening, related plugins and recommended client apps)
+**Status:** Concept and implementation baseline for review — 26 November 2026 (expanded with lightweight, portable and private listening, related plugins and recommended client apps)
 
 ## 1. Purpose and review of existing documentation
 
@@ -616,7 +616,7 @@ Start with approximately **13 content pages**, plus a sidebar and footer.
 | Your Music, Anywhere, Under Your Control | Raspberry Pi, travel, internet-independent listening, local data and privacy; optional Last.fm preparation and local Now Playing display |
 | Plugins and FAQ | Plugin references, limitations, troubleshooting and links to related third-party projects |
 
-Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Add a small **Related projects** sidebar section linking to Lyrion Display and to the Build your Lyrion setup section for relevant external plugins and recommended clients; keep these distinct from the collection's plugin reference. No additional content page is required for this companion app. Split topics into dedicated pages later as content grows, without changing the overall architecture.
+Use MkDocs navigation and its shared page layout for consistent navigation. The following structure was originally planned for a Wiki; translate it into site navigation rather than publishing Wiki-specific files. Add a small **Related projects** sidebar section linking to Lyrion Display and to the Build your Lyrion setup section for relevant external plugins and recommended clients; keep these distinct from the collection's plugin reference. No additional content page is required for this companion app. Split topics into dedicated pages later as content grows, without changing the overall architecture.
 
 ## 10. Editorial principles
 
@@ -651,54 +651,42 @@ Consistently communicate that:
 
 Preserve the established compatibility wording: developed and tested with Lyrion 9.1; older versions may work but have not been tested. Link to the plugin READMEs for exact requirements and technical details rather than duplicating them.
 
-## 11. Proposed Wiki implementation and publication
+## 11. Documentation implementation and publication
 
-The repository has Wiki enabled and the GitHub connection has normal repository write permissions. Direct Wiki-specific operations are not available through the current connector; the existing Wiki's page inventory could not be verified through it.
+**Decision for the first implementation: GitHub Pages with Material for MkDocs**, rather than a separately maintained GitHub Wiki. The original information architecture and scenario-driven content remain applicable. Use the existing public repository as the source of truth, and a project-specific GitHub Pages site, independently of other chrober Pages projects.
 
-GitHub stores Wikis in separate Git repositories. The Wiki remote is:
-
-```text
-https://github.com/chrober/lms-plugins.wiki.git
-```
-
-Consider maintaining the canonical Wiki source in the main `lms-plugins` repository:
+- Expected site address: https://chrober.github.io/lms-plugins/ (subject to the repository's Pages configuration).
+- Keep the concept in `docs/WIKI_CONCEPT.md`, outside the public site source.
+- Use `docs/guide/` for public Markdown, custom SVG illustrations, screenshots and styles. Use MkDocs navigation rather than Wiki-specific sidebar/footer files.
+- Version the MkDocs configuration and direct Python dependencies. Use local assets, responsive navigation, built-in search, light/dark palettes and no external analytics or remote font dependencies.
+- Validate a strict MkDocs build on branch pushes and pull requests. Upload the generated static website for review. Validate local links and required custom visuals.
+- Use a separate GitHub Actions publishing workflow. Initially it is manual and restricted to the default branch, after review and explicit confirmation. Pages must be enabled with **GitHub Actions** as the source before deployment. No separate personal access token should be needed for standard repository Pages deployment.
+- Keep the existing plugin feed, its URL and validation workflow unchanged. Do not publish, change Pages settings or touch any other project site during the prototype review.
+- Once the first version is approved, decide whether to enable automatic publication after merges. The public website is generated from the repository, never edited directly.
 
 ```text
 lms-plugins/
-├── .github/
-│   └── workflows/
-│       └── publish-wiki.yml
-├── wiki/
-│   ├── Home.md
-│   ├── _Sidebar.md
-│   ├── _Footer.md
-│   ├── Getting-Started.md
-│   ├── Understanding-Bliss.md
-│   ├── Make-Your-Playlists-Flow.md
-│   ├── ...
-│   └── images/
+├── .github/workflows/
+│   ├── validate.yml
+│   ├── validate-docs.yml
+│   └── publish-docs.yml
+├── docs/
+│   ├── WIKI_CONCEPT.md
+│   ├── DEVELOPMENT.md
+│   └── guide/
+│       ├── index.md
+│       ├── understanding-bliss.md
+│       ├── getting-started.md
+│       ├── make-your-playlists-flow.md
+│       ├── rediscover-your-music.md
+│       └── assets/
+├── mkdocs.yml
+├── requirements-docs.txt
 ├── README.md
 └── repo.xml
 ```
 
-```mermaid
-flowchart TB
-    Source["Markdown documentation<br/>lms-plugins/wiki/"] --> Review["Pull request and review"]
-    Review --> Publish["GitHub Actions publishes Wiki"]
-    Publish --> Wiki["Public GitHub Wiki<br/>lms-plugins.wiki.git"]
-```
-
-Advantages:
-
-- Create and edit source pages through the existing GitHub connection.
-- Review documentation changes through normal pull requests.
-- Validate internal links and referenced images in CI.
-- Publish changes automatically after merging.
-- Keep the Wiki source accessible in the normal repository.
-
-**Open implementation questions:** verify authentication and push permissions against the separate Wiki repository before relying on automatic publication. If the Wiki is not initialized, its first page must be created. Check for existing pages before any synchronization; avoid inadvertently overwriting them. The publication workflow is a proposal, not an implemented or tested capability.
-
-GitHub documentation: [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis), [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages).
+The initial implementation deliberately publishes only the five completed articles in its navigation. Remaining planned articles are added as they become ready; do not generate empty pages or broken links. Genuine screenshots must be captured from the relevant running plugin versions; do not fabricate interface images when captures are unavailable. Record missing screenshots in the development review checklist.
 
 ## 12. Recommended direction and rollout
 
@@ -717,6 +705,6 @@ A fifth, cross-cutting theme is **freedom and control — your music, anywhere, 
 
 Lyrion Display adds an optional visual dimension to the overall listening experience, particularly rediscovery and portable/local listening. It is a related project, not a sixth pillar. Keep the core Wiki focused on the four collection plugins and the five established themes.
 
-Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Deliver the first scenario pages with their finished custom explanatory graphics (including the reference-style before/after playlist illustration), not as text-only drafts. Use them as the visual quality baseline for subsequent articles. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch. Include Build your Lyrion setup in the initial Getting Started page so readers understand the foundation, recommended interfaces, optional sources and Android/Apple clients before trying the scenarios.
+Start by implementing the home page, ecosystem explanation, getting-started guide, site navigation and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Deliver the first scenario pages with their finished custom explanatory graphics (including the reference-style before/after playlist illustration), not as text-only drafts. Use them as the visual quality baseline for subsequent articles. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch. Include Build your Lyrion setup in the initial Getting Started page so readers understand the foundation, recommended interfaces, optional sources and Android/Apple clients before trying the scenarios.
 
-This is a concept for review, not the published Wiki. The chat's interactive selector and visual mockups have been translated into Markdown-compatible tables, diagrams and descriptions; final screenshots and custom illustrations remain to be prepared. Their creation and review are mandatory deliverables of the documentation implementation, not optional follow-up work.
+This is the concept and editorial plan, not the published documentation. The chat's interactive selector and visual mockups have been translated into Markdown-compatible tables, diagrams and descriptions; final screenshots and custom illustrations remain to be prepared. Their creation and review are mandatory deliverables of the documentation implementation, not optional follow-up work.

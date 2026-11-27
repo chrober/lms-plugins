@@ -1,0 +1,48 @@
+# User guide development
+
+The first five articles are a reviewable vertical slice of the full [editorial concept](WIKI_CONCEPT.md). The remaining eight articles are deliberately not published as empty stubs.
+
+## Preview locally
+
+With Python 3.12 installed:
+
+```powershell
+py -3.12 -m venv .venv-docs
+.\.venv-docs\Scripts\python.exe -m pip install -r requirements-docs.txt
+.\.venv-docs\Scripts\python.exe -m mkdocs serve
+```
+
+Open http://127.0.0.1:8000/. For other platforms, use the equivalent Python virtual-environment interpreter. To validate:
+
+```powershell
+.\.venv-docs\Scripts\python.exe -m mkdocs build --strict
+.\.venv-docs\Scripts\python.exe scripts/validate-guide.py
+```
+
+## Preview without installing MkDocs
+
+Download the **user-guide-preview** artifact from a successful **Validate user guide** Actions run, extract it, open a terminal in the extracted folder, and run:
+
+```powershell
+py -m http.server 8000
+```
+
+Open http://localhost:8000/. Serve the files rather than opening the HTML directly so navigation and search can load their assets correctly.
+
+## Review checklist
+
+- Read the five pages on desktop and a narrow mobile viewport; review navigation, search and both themes.
+- Confirm the actual workflow and wording against the plugin versions installed on a Lyrion 9.1 test server.
+- Review each custom SVG for clear labels and appropriate simplification. No graphs are measured optimization results.
+- Capture actual screenshots for the first release: Better Call Bliss Extras editor (source/strategy), read-only preview showing reorder and bridging; Library Signals settings and host enablement, and the Bliss (Lab) DSTM selector. Capture at a readable scale, anonymize player names, local addresses and private library content when necessary, and give each image useful alt text.
+- The reviewed upstream READMEs did not provide these specific UI captures. They are outstanding, not simulated. The conceptual SVGs are included now; add genuine screenshots before approving the relevant practical sections for publication.
+- Review the Home page's introductory summaries; the other eight articles are still planned, including seasonal player libraries, offline/private use, musical routes and preference learning.
+
+## Publish after review
+
+1. Merge an approved documentation PR into main.
+2. In this repository only, choose **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+3. On the default branch, manually dispatch **Publish user guide** with confirmation enabled.
+4. Check the deployment URL, navigation, search and asset paths at the project URL. The first deployment is manual; subsequent automatic publishing can be considered separately.
+
+The existing plugin feed, validation workflow and other Pages projects are independent. Do not enable a custom domain or alter another site's configuration for this guide.

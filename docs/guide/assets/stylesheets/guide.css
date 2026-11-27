@@ -1,0 +1,13 @@
+/* Local system fonts; no external font or analytics requests. */
+.md-typeset h1 { font-weight: 650; letter-spacing: -.025em; }
+.md-typeset h2 { font-weight: 600; }
+.md-typeset .lead { font-size: 1.12em; line-height: 1.6; max-width: 46rem; }
+.md-typeset .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .72em; font-weight: 700; color: var(--md-accent-fg-color); }
+.md-typeset .scenario-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,14rem),1fr)); gap: .75rem; margin: 1.4rem 0; }
+.md-typeset .scenario-card { border: 1px solid var(--md-default-fg-color--lightest); border-radius: .6rem; padding: 1rem; }
+.md-typeset .scenario-card h3 { margin: 0 0 .45rem; font-size: 1.05rem; }
+.md-typeset .scenario-card p { margin: .4rem 0; }
+.md-typeset figure.guide-figure { margin: 1.4rem 0; max-width: 100%; }
+.md-typeset figure.guide-figure img { width: 100%; display: block; border-radius: .6rem; }
+.md-typeset figure.guide-figure figcaption { max-width: 100%; font-style: normal; font-size: .75rem; color: var(--md-default-fg-color--light); margin-top: .55rem; text-align: left; }
+.md-typeset .callout { border-left: .2rem solid var(--md-accent-fg-color); padding: .3rem .85rem; margin: 1.2rem 0; }
