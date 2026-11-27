@@ -64,6 +64,17 @@ for article, images in REQUIRED.items():
         except ET.ParseError as exc:
             errors.append(f"Invalid SVG {path}: {exc}")
 
+for image in ("listening-moods-mobile.svg", "rediscovery-signals-mobile.svg", "musical-connections-mobile.svg"):
+    path = GUIDE / "assets" / "images" / image
+    try:
+        root = ET.parse(path).getroot()
+        if not root.get("viewBox") or root.find("{http://www.w3.org/2000/svg}title") is None:
+            errors.append(f"Invalid mobile illustration: {path}")
+        if not (SITE / "assets" / "images" / image).is_file():
+            errors.append(f"Missing generated mobile illustration: {image}")
+    except (OSError, ET.ParseError) as exc:
+        errors.append(f"Invalid mobile illustration {path}: {exc}")
+
 pages = {path.resolve(): parse(path) for path in SITE.rglob("*.html")}
 if not pages:
     errors.append("No generated HTML found; run mkdocs build first.")

@@ -47,6 +47,8 @@ markdown_extensions:
   - pymdownx.superfences
 extra_css:
   - assets/stylesheets/guide.css
+extra_javascript:
+  - assets/javascripts/guide.js
 nav:
   - Home: index.md
   - Getting started:

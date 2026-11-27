@@ -46,3 +46,7 @@ Open http://localhost:8000/. Serve the files rather than opening the HTML direct
 4. Check the deployment URL, navigation, search and asset paths at the project URL. The first deployment is manual; subsequent automatic publishing can be considered separately.
 
 The existing plugin feed, validation workflow and other Pages projects are independent. Do not enable a custom domain or alter another site's configuration for this guide.
+
+## Editorial and visual revision
+
+The guide now has 14 articles, including a separate seasonal listening page. The home page leads with listening scenarios. The desktop illustrations remain local SVGs; three have narrow-screen versions selected at up to 600px. Full-size links open the original illustration in a new tab. Dark mode deliberately retains the readable light illustration palettes with a subtle outline rather than inverting semantic colors. Check home headings, seasonal navigation, full-size links, mobile artwork, and theme switching in the browser before publication. Genuine plugin screenshots remain outstanding.
