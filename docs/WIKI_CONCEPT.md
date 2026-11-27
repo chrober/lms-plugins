@@ -361,10 +361,11 @@ Each scenario should have a recognizable editorial structure:
 
 1. **The situation:** A relatable everyday listening experience.
 2. **What you can achieve:** The outcome, without technical jargon.
-3. **What you need:** Required plugins and optional enhancements.
-4. **How to do it:** A short step-by-step guide using actual UI terminology.
-5. **What to expect:** The practical result and relevant limitations.
-6. **Try this as well:** Related scenarios or useful plugin combinations.
+3. **See the idea:** An explanatory illustration, comparison or diagram that makes the main benefit immediately understandable. Include at least one purposeful custom visual for each major scenario or group of closely related scenarios; do not rely on screenshots alone.
+4. **What you need:** Required plugins and optional enhancements.
+5. **How to do it:** A short step-by-step guide using actual UI terminology, supported by real screenshots wherever they help users locate controls.
+6. **What to expect:** The practical result and relevant limitations.
+7. **Try this as well:** Related scenarios or useful plugin combinations.
 
 ### Example A — Make your playlists flow better
 
@@ -532,13 +533,25 @@ For the portable/private examples, distinguish internet-independent operation fr
 
 ## 8. Visual documentation strategy
 
-Use visuals that explain a feature rather than decorate a page.
+**Custom explanatory illustrations and graphics are an essential, mandatory part of the final documentation, not optional decoration.** The finished guide must not consist of text and screenshots alone. Every major scenario should include a purposeful visual explanation, either within the scenario itself or in a directly related shared illustration. Plan these visuals alongside the articles, rather than adding them as an afterthought.
+
+Use three complementary types of visual content:
+
+- **Custom conceptual illustrations:** simplify the musical idea and show the benefit at a glance, without requiring the reader to understand the algorithm or interface.
+- **Before/after comparisons and workflow diagrams:** explain what changes, what stays unchanged, and how the plugins work together.
+- **Actual product screenshots:** show the real interface, its terminology, relevant settings and the actions the reader should take.
+
+A useful article pattern is a relatable listening situation, a short explanation of the benefit, a custom illustration, and then practical steps with real screenshots where appropriate. Prefer visuals that convey a distinct idea; do not add stock photos or redundant graphics merely to fill space.
 
 | Visual element | Purpose | Priority |
 | --- | --- | --- |
-| Playlist before/after diagrams | Explain reordering | High |
-| Bridging track diagrams | Explain preserving the original order | High |
-| Musical route diagrams | Explain the three destination actions | High |
+| Custom playlist before/after illustrations | Explain reordering using the same recognizable tracks in both panels, with a clear visual contrast between abrupt and smoother transitions | Required for this scenario |
+| Custom bridging-track illustrations | Compare the unchanged original sequence with the newly inserted tracks and improved transitions | Required for this scenario |
+| Playlist extension graphics | Show a short source playlist becoming a longer session, with original and added tracks distinguishable | High |
+| Musical route diagrams | Explain the three destination actions, including the currently playing track, upcoming queue, inserted bridge and destination | Required for these scenarios |
+| Personalization and rediscovery illustrations | Show how listening preferences, listening history and library age influence choices among musically suitable tracks | High |
+| Material/player-library scope diagram | Distinguish a client-only browse filter from the selected player's library, then show its effect on Lab DSTM and Better Call Bliss candidate selection | Required for this scenario |
+| Library-specific Christmas exception comparison | Contrast normal Christmas exclusion with the selected Christmas library exception in Lab DSTM, with other filters remaining active | High |
 | Plugin relationship diagram | Explain the ecosystem | High |
 | Actual Better Call Bliss screenshots | Show how to use the editor | High |
 | Actual DSTM selection screenshots | Show where to select Bliss (Lab) | High |
@@ -546,13 +559,42 @@ Use visuals that explain a feature rather than decorate a page.
 | Guidance settings screenshots | Show how to enable and configure providers | High |
 | Preference survey screenshots | Explain personalization | Medium |
 | Last.fm offline preparation screenshots | Explain preparation for offline listening | Medium |
-| Raspberry Pi and local music setup illustration | Explain portable, internet-independent listening | Medium |
+| Raspberry Pi and local music setup illustration | Explain portable, internet-independent listening using an original conceptual illustration of a compact server, local music, local network and controllers | High |
 | Local vs optional online data-flow diagram | Explain privacy and where music knowledge resides | High |
 | Actual Lyrion Display Now Playing screenshot | Illustrate the optional visual listening experience, using the app repository's existing screenshot | Low (peripheral topic) |
 
 Use Material Skin for most screenshots while explicitly indicating which features require it. Better Call Bliss's editor does not require Material Skin; its destination shortcuts do.
 
-Establish a consistent visual language: original tracks gray, currently playing tracks green, added tracks blue and destination tracks orange. Add text labels so that color is not the only means of conveying meaning.
+### Reference illustration — before and after playlist optimization
+
+Use the previously supplied before/after playlist graphic as a concrete design reference, not merely as a generic suggestion to add diagrams. Recreate this kind of original explanatory illustration for the published guide.
+
+- Two stacked, clearly labeled panels: **Before — illustrative playlist** and **After — same tracks, optimized order**.
+- Eight recognizable tracks A–H, represented by rounded bars with fixed heights and colors for the same track in both panels. The before sequence is A, B, C, D, E, F, G, H; the after sequence in the reference is E, A, C, H, G, D, B, F.
+- A subtle dashed line connects adjacent bar tops. Before: conspicuous changes in musical character. After: a more gradual progression. The illustration should make the benefit of reordering intuitively clear without removing or adding songs.
+- Calm muted blue, green and orange tones, generous whitespace, direct track labels, minimal visual clutter and a short explanatory caption under each panel.
+- Explicit caveat: this is a simplified illustration using one hypothetical musical characteristic. Real Bliss optimization considers multiple acoustic characteristics and configured constraints; the graphic is not measured data, an actual optimization result, a promise of monotonically increasing musical energy or a claim that every transition will improve.
+
+### Visual design and implementation guidelines
+
+Establish a consistent visual language: in queue and route diagrams, original tracks gray, currently playing tracks green, added tracks blue and destination tracks orange. In the before/after musical-character illustration, colors group illustrative characteristics instead of track roles; keep the same color and height for each track across panels and do not conflate these two conventions. Add text labels and, where useful, a legend so that color is not the only means of conveying meaning.
+
+Use original vector graphics (prefer SVG for clean, scalable explanatory illustrations), Mermaid for simple structural diagrams, and real screenshots for actual controls. Keep source graphics with the documentation and use relative links. Make graphics legible on mobile screens and in light and dark themes; supply meaningful alternative text and captions. Do not use fabricated screenshots, real-looking measurements for invented data, or imagery that overstates a feature's behavior. Treat diagrams as editorial content and review their factual accuracy as part of the article review.
+
+### Visual coverage and acceptance criteria
+
+| Article / topic | Expected explanatory visual |
+| --- | --- |
+| Understanding Bliss / Build your Lyrion setup | Ecosystem map distinguishing required foundation, hosts, optional guidance, external plugins and controller/display apps |
+| Make Your Playlists Flow | Before/after reordering and a separate preserved-order bridging comparison |
+| Extend Your Playlists / Improve Your Player Queue | Original vs newly added tracks; distinguish the playing track and protected/current queue from future additions |
+| Take a Musical Journey | Separate clear route illustrations for each of the three destination actions |
+| Keep the Music Playing | Continuous mixing sequence and seasonal/mood-specific player-library synchronization, including the scoped Christmas exception |
+| Personalize Your Mixes / Rediscover Your Music | Conceptual examples of preference learning, forgotten favorites, rarely played songs and recent additions; guidance is not a guarantee of selection |
+| Explore Musical Connections | Acoustic suitability plus optional artist/track relationship guidance |
+| Your Music, Anywhere, Under Your Control | Local/portable system layout and data-flow comparison between internet-independent listening and optional online services |
+
+A major scenario is not ready for publication if its planned explanatory visual is missing. During review, verify that each illustration communicates the benefit without technical prerequisites, accurately reflects the implemented behavior, and complements rather than duplicates the screenshots. Shared illustrations are acceptable when they genuinely explain several related scenarios. The reference playlist graphic establishes the desired level of clarity and style; the final visual assets still need to be created.
 
 ## 9. Scope of the initial Wiki
 
@@ -589,6 +631,8 @@ Use GitHub's custom `_Sidebar.md` and `_Footer.md` for consistent navigation. Ad
 | Stored artist relationships | Persistent SQLite artist graph |
 
 Use technical terms when they correspond to actual UI labels or are needed to configure a feature.
+
+Explain important concepts through both words and visuals. Prefer original simplified illustrations when a screenshot would be too detailed to convey the idea. Use a consistent, calm design language, clear labels and one main message per graphic. Screenshots are evidence and orientation; conceptual graphics explain the benefit. Both are part of the documentation's editorial quality.
 
 Consistently communicate that:
 
@@ -673,6 +717,6 @@ A fifth, cross-cutting theme is **freedom and control — your music, anywhere, 
 
 Lyrion Display adds an optional visual dimension to the overall listening experience, particularly rediscovery and portable/local listening. It is a related project, not a sixth pillar. Keep the core Wiki focused on the four collection plugins and the five established themes.
 
-Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch. Include Build your Lyrion setup in the initial Getting Started page so readers understand the foundation, recommended interfaces, optional sources and Android/Apple clients before trying the scenarios.
+Start by implementing the home page, ecosystem explanation, getting-started guide, custom sidebar and two representative scenario pages: **Make Your Playlists Flow** and **Rediscover Your Music**. Establish the tone, level of detail, visual language and navigation before populating the remaining pages. Deliver the first scenario pages with their finished custom explanatory graphics (including the reference-style before/after playlist illustration), not as text-only drafts. Use them as the visual quality baseline for subsequent articles. Include the local-first positioning in the home page and prioritize the dedicated portable/private listening article in the next batch. Include Build your Lyrion setup in the initial Getting Started page so readers understand the foundation, recommended interfaces, optional sources and Android/Apple clients before trying the scenarios.
 
-This is a concept for review, not the published Wiki. The chat's interactive selector and visual mockups have been translated into Markdown-compatible tables, diagrams and descriptions; final screenshots and illustrations remain to be prepared.
+This is a concept for review, not the published Wiki. The chat's interactive selector and visual mockups have been translated into Markdown-compatible tables, diagrams and descriptions; final screenshots and custom illustrations remain to be prepared. Their creation and review are mandatory deliverables of the documentation implementation, not optional follow-up work.
