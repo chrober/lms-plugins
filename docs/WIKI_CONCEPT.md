@@ -59,7 +59,7 @@ Use a hybrid architecture with **usage scenarios as primary navigation** and ind
   - A different Don't Stop the Music experience
   - Teach Bliss your musical preferences
   - Avoid repetitive mixes
-  - Mix within a selected music collection
+  - Music for every season, mood and moment (virtual libraries and player-library synchronization)
 - **Rediscover your music collection**
   - Rediscover forgotten favorites
   - Give rarely played music a chance
@@ -104,7 +104,7 @@ The home page could also serve as a landing page for visitors from the Lyrion co
 >
 > **Keep the music playing**
 >
-> Enjoy continuous mixes that reflect your musical preferences, without having to decide what to play next.
+> Enjoy continuous mixes that reflect your musical preferences, without having to decide what to play next. Switch to a collection that suits your mood — Christmas music in December, surf rock on a summer afternoon, or quiet jazz after dinner — and let the music keep playing within it.
 >
 > **Rediscover the music you own**
 >
@@ -154,6 +154,10 @@ The guidance connections apply to supported workflows, notably Bliss (Lab) DSTM 
 flowchart TB
     LMS["Lyrion Music Server"] --> Bliss["Bliss Mixer — required foundation"]
     LMS --> Skin["Material Skin — recommended interface"]
+    VLC["Virtual Library Creator — optional"] -. creates virtual libraries .-> VL["Lyrion player-library selection"]
+    Skin -. Lab opt-in synchronization .-> VL
+    VL -. candidate scope .-> Lab
+    VL -. default candidate scope .-> BCB
     Bliss --> BCB["Better Call Bliss"]
     Bliss --> Lab["Bliss Mixer Lab"]
     LMS -. native listening history .-> LS["Library Signals"]
@@ -211,8 +215,66 @@ Some scenarios below are explicitly described in the READMEs; others are practic
 | I don't want to constantly choose what plays next | Automatic continuation with Bliss (Lab) | Bliss Mixer Lab |
 | Bliss doesn't always understand what I consider similar | Learn personal musical preferences | Bliss Mixer Lab |
 | The same artists appear too frequently | More precise artist repeat handling | Bliss Mixer Lab |
-| I want a dedicated Christmas music experience | Respect the player's virtual library and optionally suspend Christmas exclusions for that library | Bliss Mixer Lab |
-| I have separate collections for different moods | Restrict DSTM mixes to the selected player library | Bliss Mixer Lab |
+| It's December — let's get into the Christmas spirit | Select a Christmas virtual library and permit Christmas tracks in Bliss (Lab) DSTM | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended |
+| The sun is out — give me surf rock and summer sounds | Switch the selected player's library to a summer collection and keep the mix within it | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended |
+| I want music that fits my mood or the room | Pick a thematic player library and restrict new DSTM selections or playlist additions to that collection | Bliss Mixer Lab + Material Skin; optionally Better Call Bliss |
+
+### Featured scenario — Music for every season, mood and moment
+
+> “It's snowing outside, the lights are on, and I'm in the mood for Christmas music. I don't want to put together another playlist — I just want the music to keep playing.”
+
+Give this scenario a prominent subsection in **Keep the Music Playing**, with cross-links from playlist extension, personalization and Getting Started. The benefit is switching the musical world of a player in a single place, rather than merely filtering what a single browser can display.
+
+A virtual library is a named view of a subset of your existing music collection. The audio files stay where they are, and the same song can belong to several virtual libraries. [Virtual Library Creator](https://github.com/AF-1/lms-virtuallibrarycreator) by AF-1 makes it easy to create and manage these collections in a browser using selection criteria. It is strongly recommended for this scenario, but not required if the desired virtual libraries already exist.
+
+| Listening moment | Example virtual library | What you could do |
+| --- | --- | --- |
+| The first snow has arrived | Christmas | Start a festive song and let Bliss (Lab) DSTM continue within your Christmas collection. |
+| A sunny afternoon with the windows open | Summer / Surf Rock | Switch to a collection of surf rock, sunshine pop and other suitably tagged summer music. |
+| Coffee, rain and a quiet Sunday morning | Sunday Jazz | Keep the automatic mix within your selected jazz collection. |
+| Friends are coming over for dinner | Dinner & Lounge | Select a collection of suitable music, extend a short dinner playlist with Better Call Bliss, or let DSTM continue the session. |
+| It's time for a workout | Workout Rock | Keep new selections in the player's energetic rock collection. |
+| Everyone has a different taste | Living Room / Kids' Room | Assign different collections to different players rather than imposing a single browsing filter on the whole household. |
+
+These are examples of user-created collections, not built-in mood detection, automatic seasonal scheduling or ready-made virtual libraries. Membership depends on the rules and metadata used to create each library.
+
+**What you need:** Lyrion, an installed and analyzed Bliss Mixer library, Bliss Mixer Lab, Material Skin and at least one virtual library. Virtual Library Creator is recommended to define the collections conveniently. Better Call Bliss is optional for playlist and route workflows.
+
+**How to set it up**
+
+1. In **Extras → Virtual Library Creator**, create a named virtual library, for example **Christmas**, using suitable criteria such as genres or tags available in your collection. Enable it and let Lyrion finish creating it.
+2. In Material Skin, disable its own **Adjust player library** option to avoid conflicts with Lab's synchronization.
+3. In Bliss Mixer Lab settings, under **Material player-library synchronization**, enable **Use Material's library selection as the selected player's library**. For the reverse direction, also enable **Show the selected player's library in Material** if you want Material clients to follow the selected player's current library.
+4. Save the settings and reload each Material client. Select the intended player, then choose the desired virtual library in Material's library picker.
+5. For Christmas, under **Allow Christmas tracks in selected virtual libraries**, check the Christmas library if Bliss Mixer's Christmas exclusion would otherwise block those tracks. This exception is specifically for **Bliss (Lab)** DSTM, not a global override or an override for Better Call Bliss.
+6. Start a suitable track from the library and choose **Bliss (Lab)** as the Don't Stop the Music provider. When new music is needed, the mix selects new eligible tracks within the player's virtual library.
+
+**Why the synchronization matters**
+
+A library filter in Material is not necessarily the same thing as the virtual library assigned to a Lyrion player. With Lab's opt-in synchronization, picking a library in Material can change the selected player's actual library setting. Player-library-aware features then use that setting, rather than being limited to what happens in the current browser. With reverse synchronization enabled, Material can also follow the player's library. Other controllers need their own support to reflect library changes.
+
+```mermaid
+flowchart TB
+    VLC["Create a virtual library<br/>Virtual Library Creator (optional)"] --> Library["Christmas / Summer / Jazz"]
+    Library --> Picker["Choose library in Material Skin"]
+    Picker -->|"Lab: Material to player"| Player["Selected player's library"]
+    Player -. "Lab: player to Material (optional)" .-> Picker
+    Player --> DSTM["Bliss (Lab) DSTM<br/>New eligible tracks from that library"]
+    Player --> BCB["Better Call Bliss<br/>Default candidate library"]
+    Xmas["Allow Christmas tracks<br/>for selected libraries"] -. "Lab DSTM only" .-> DSTM
+```
+
+**What to expect**
+
+- Bliss (Lab) DSTM restricts new candidates to the assigned player library; acoustic suitability, repeat constraints and other configured filters remain active. The Christmas exception only suspends the Christmas exclusion for the chosen libraries in Lab DSTM.
+- Better Call Bliss can use the player library as its default candidate scope when opening the editor or resolving a route context, subject to explicit candidate-library selections. For a summer playlist, for instance, choose the Summer library and preview additions drawn from it. Existing source tracks and explicitly chosen destinations are distinct from new candidate tracks; do not imply that changing the library automatically purges or rewrites a queue or playlist.
+- The player-library setting affects the player and other features that respect it, not just the current Material browser. It does not force every controller or every third-party mixer to support it.
+- Changing the library is not a request to interrupt playback or replace the already queued songs. Use a suitable seed/current queue and allow subsequent DSTM selections to follow the new scope. Return to the full library when you want unrestricted listening.
+- The Christmas exception is optional, library-specific and not calendar-driven. If no eligible candidates remain, the library or other filters may need adjustment.
+
+**Visual plan:** show the Virtual Library Creator editor, the two Lab synchronization options and the Christmas exception list, followed by Material's library picker before and after selecting a themed library. Use a real example and demonstrate DSTM or a Better Call Bliss preview, clearly identifying new candidate tracks rather than implying all existing queue entries are filtered.
+
+Credit AF-1 for Virtual Library Creator and Craig Drummond for Material Skin and Bliss Mixer. This scenario combines their existing functionality with the Lab's synchronization and library-specific Christmas handling and the collection's library-aware music-selection workflows.
 
 ### Music rediscovery
 
@@ -393,6 +455,7 @@ A page titled **Which plugins do I need?** should make dependencies immediately 
 | --- | --- |
 | Improve or extend my playlists and queues | Better Call Bliss |
 | Enjoy continuous, automatic mixes | Bliss Mixer Lab |
+| Switch automatic mixes to a seasonal or mood-specific collection | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended to create the collections |
 | Personalize music selection based on my taste | Bliss Mixer Lab; optionally Better Call Bliss for playlists |
 | Rediscover music using my listening history | Either host + Library Signals |
 | Use Last.fm musical relationships | Either host + Last.fm Guidance |
@@ -422,6 +485,7 @@ Place this curated overview within **Getting Started**, after the scenario-based
 
 | Project | Why use it? | Requirement |
 | --- | --- | --- |
+| [Virtual Library Creator](https://github.com/AF-1/lms-virtuallibrarycreator) — AF-1 | Create and manage themed virtual libraries in a browser, e.g. Christmas, Summer or Sunday Jazz, which can be assigned to players. | Optional for the collection; specifically recommended for seasonal/mood-based library scenarios. Existing virtual libraries work without it. Lab provides the optional Material/player synchronization, not Virtual Library Creator. |
 | [Alternative Play Count](https://github.com/AF-1/lms-alternativeplaycount) | An alternative listening-history source. Library Signals can use its play counts and last-played dates to help you rediscover music. | Optional. Lyrion's native history is sufficient. Select Alternative Play Count as the source only if installed and enabled; library age still comes from Lyrion. Do not imply support for its skip-history or DPSV signals. |
 | [LastMix](https://github.com/michaelherger/LastMix) — Michael Herger | Creates Last.fm-based mixes in its own right and can also supply related-track/artist information to Last.fm Guidance. | Optional. If selected as the guidance provider's source, LastMix must be installed and enabled. Alternatively use the provider's direct API Key source. The offline artist-relationship library is available only with the API Key source. |
 
@@ -445,6 +509,7 @@ These run on the user's device, not on the Lyrion server. They do not replace th
 | --- | --- |
 | Improve saved playlists | Bliss Mixer + Better Call Bliss; Material Skin recommended |
 | Enjoy personalized continuous mixes | Bliss Mixer + Bliss Mixer Lab; optionally Library Signals or Last.fm Guidance |
+| Change the musical mood of a player with one library selection | Bliss Mixer + Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended; optionally Better Call Bliss for library-scoped playlist additions and routes |
 | Rediscover overlooked tracks using richer listening history | Bliss Mixer + either compatible host + Library Signals; optionally Alternative Play Count |
 | Add Last.fm knowledge | Bliss Mixer + either compatible host + Last.fm Guidance; configure either LastMix or a direct API key |
 | Travel with a compact local music system | Raspberry Pi + locally accessible music + prepared Bliss analysis + desired extensions; Material Skin in a browser or LMS Material App (Android) / LyrPlay (iPhone and iPad) as a controller, optionally Lyrion Display on a separate reachable device |
@@ -459,7 +524,7 @@ For the portable/private examples, distinguish internet-independent operation fr
 | Understanding Bliss | Credit Bliss Mixer and explain the wider ecosystem without implying that all optional components are required. |
 | Getting Started | Required/recommended/optional overview and suggested setups, with Android and Apple client choices. |
 | Take a Musical Journey | Material Skin as a functional prerequisite; mobile control clients can access the Material interface where supported. |
-| Keep the Music Playing | Material Skin and the Lab's optional virtual player-library integration. |
+| Keep the Music Playing | Featured seasonal/mood scenario: Virtual Library Creator, Material player-library synchronization, library-specific Christmas exception and DSTM. |
 | Rediscover Your Music | Alternative Play Count as an optional local history source; Lyrion Display as a visual companion. |
 | Explore Musical Connections | LastMix versus direct Last.fm API access, including the distinction for offline artist information. |
 | Your Music, Anywhere, Under Your Control | Local listening history, optional online data acquisition, Android/Apple controls and optional dedicated display on a reachable local network. |
@@ -477,6 +542,7 @@ Use visuals that explain a feature rather than decorate a page.
 | Plugin relationship diagram | Explain the ecosystem | High |
 | Actual Better Call Bliss screenshots | Show how to use the editor | High |
 | Actual DSTM selection screenshots | Show where to select Bliss (Lab) | High |
+| Virtual Library Creator, Lab library settings and Material library picker screenshots | Demonstrate changing the player's musical world and the Christmas exception | High |
 | Guidance settings screenshots | Show how to enable and configure providers | High |
 | Preference survey screenshots | Explain personalization | Medium |
 | Last.fm offline preparation screenshots | Explain preparation for offline listening | Medium |
@@ -501,7 +567,7 @@ Start with approximately **13 content pages**, plus a sidebar and footer.
 | Extend Your Playlists | Longer listening sessions |
 | Improve Your Player Queue | Working with live queues |
 | Take a Musical Journey | All three destination shortcuts |
-| Keep the Music Playing | DSTM, artist repeat behavior and virtual libraries |
+| Keep the Music Playing | DSTM, artist repeat behavior and featured seasonal/mood listening scenario using synchronized virtual player libraries and the Christmas exception |
 | Personalize Your Mixes | Preference learning and its use in both hosts |
 | Rediscover Your Music | All Library Signals scenarios; optional Alternative Play Count and Now Playing display examples |
 | Explore Musical Connections | Last.fm guidance, combined guidance, LastMix versus API Key sources and offline listening |
@@ -536,6 +602,7 @@ Consistently communicate that:
 - Credit Lyrion, CDrummond's Bliss Mixer and the underlying Bliss technology for their foundational contributions. Describe Raspberry Pi 4 as the author's tested setup, not a universal performance benchmark.
 - Present Lyrion Display as an independent, optional Android companion, not an LMS plugin or a Bliss integration. Credit Craig Drummond's Material Skin for the Now Playing interface and themes. Keep app-specific installation and support documentation in its own repository.
 
+- Describe virtual library selection as a deliberate user action, not automatic mood recognition or seasonal scheduling. Separate Material browsing from player-level scope, DSTM's library-specific Christmas exception from other filters, and new candidate selection from existing playlist or queue entries.
 - Clearly distinguish required server plugins, generally recommended interfaces, optional data sources and client-side apps. State feature-specific requirements near the corresponding scenario. Recommend LMS Material App for Android and LyrPlay for iPhone/iPad primarily as comparable controller choices rather than dependencies; refer readers to their own documentation and do not imply official endorsement or complete author testing. LyrPlay's additional player functionality is peripheral to this Wiki; do not expand into mobile playback, transcoding or Apple TV setup unless directly relevant to a documented scenario.
 
 Preserve the established compatibility wording: developed and tested with Lyrion 9.1; older versions may work but have not been tested. Link to the plugin READMEs for exact requirements and technical details rather than duplicating them.
