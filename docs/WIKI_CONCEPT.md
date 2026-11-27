@@ -47,7 +47,7 @@ Use a hybrid architecture with **usage scenarios as primary navigation** and ind
 - **Getting started**
   - Understanding Bliss and its extensions
   - Which plugins do I need?
-  - Build your Lyrion setup (required, recommended and optional plugins; recommended client apps)
+  - Build your Lyrion setup (server options, native and bridged players, required/recommended/optional plugins, recommended client apps)
   - Installation and first steps
 - **Make more of your playlists**
   - Make your playlists flow better
@@ -458,9 +458,9 @@ A page titled **Which plugins do I need?** should make dependencies immediately 
 | Enjoy continuous, automatic mixes | Bliss Mixer Lab |
 | Switch automatic mixes to a seasonal or mood-specific collection | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended to create the collections |
 | Personalize music selection based on my taste | Bliss Mixer Lab; optionally Better Call Bliss for playlists |
-| Rediscover music using my listening history | Either host + Library Signals |
-| Use Last.fm musical relationships | Either host + Last.fm Guidance |
-| Use stored Last.fm artist relationships offline | Either host + Last.fm Guidance (API Key source, offline preferred) |
+| Rediscover music using my listening history | Library Signals + Bliss Mixer Lab (automatic mixes) or Better Call Bliss (playlists/queues) |
+| Use Last.fm musical relationships | Last.fm Guidance + Bliss Mixer Lab (automatic mixes) or Better Call Bliss (playlists/queues) |
+| Use stored Last.fm artist relationships offline | Last.fm Guidance + Bliss Mixer Lab (automatic mixes) or Better Call Bliss (playlists/queues) (API Key source, offline preferred) |
 
 Combine rows for multiple goals. The original Bliss Mixer is the required foundation for the two hosts; complete its library analysis first. Better Call Bliss and Lab are independent and neither requires the other for basic operation. Providers are optional and must be enabled on the relevant host settings page. For guidance-only goals, suggest Lab for continuous listening and Better Call Bliss for playlist work.
 
@@ -469,6 +469,20 @@ Offline preferred can use stored artist relationships; it is not strict offline-
 ### Build your Lyrion setup
 
 Place this curated overview within **Getting Started**, after the scenario-based plugin selector. Explain the practical benefit of each project, give credit to its developers, link to its own documentation and distinguish server-side plugins from device-side apps. Required means necessary for the stated feature, not for every possible Lyrion installation.
+
+#### Server and playback options
+
+Mention [piCorePlayer](https://www.picoreplayer.org/) as an optional Raspberry Pi platform for a dedicated Lyrion server, a Squeezelite player or a combined server/player. Link to its [server installation guide](https://docs.picoreplayer.org/how-to/install_lms/). Do not imply that existing Lyrion users need to migrate their server.
+
+Under **Your players**, explain that original Squeezebox and Squeezelite players work directly, and that compatible existing network audio equipment can be integrated using Philippe's (philippe44) optional server-side bridges:
+
+| Project | Playback devices |
+| --- | --- |
+| [Chromecast Bridge (LMS-Cast)](https://github.com/philippe44/LMS-Cast) | Compatible Chromecast / Google Cast devices |
+| [AirPlay Bridge (LMS-Raop)](https://github.com/philippe44/LMS-Raop) | Compatible AirPlay receivers and speakers |
+| [UPnP/DLNA Bridge (LMS-uPnP)](https://github.com/philippe44/LMS-uPnP) | Compatible UPnP/DLNA audio renderers |
+
+Credit the upstream projects. Distinguish playback bridges from controllers and optional music-selection guidance. Show native and bridged players in the setup illustration. Device support, synchronization, playback formats and offline availability depend on the particular receiver and bridge; do not promise identical behavior to native players or imply that all combinations have been tested. Carry these options into the portable/local listening article where relevant.
 
 #### Required server plugins
 
@@ -511,8 +525,8 @@ These run on the user's device, not on the Lyrion server. They do not replace th
 | Improve saved playlists | Bliss Mixer + Better Call Bliss; Material Skin recommended |
 | Enjoy personalized continuous mixes | Bliss Mixer + Bliss Mixer Lab; optionally Library Signals or Last.fm Guidance |
 | Change the musical mood of a player with one library selection | Bliss Mixer + Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended; optionally Better Call Bliss for library-scoped playlist additions and routes |
-| Rediscover overlooked tracks using richer listening history | Bliss Mixer + either compatible host + Library Signals; optionally Alternative Play Count |
-| Add Last.fm knowledge | Bliss Mixer + either compatible host + Last.fm Guidance; configure either LastMix or a direct API key |
+| Rediscover overlooked tracks using richer listening history | Bliss Mixer + Bliss Mixer Lab (automatic mixes) or Better Call Bliss (playlists/queues) + Library Signals; optionally Alternative Play Count |
+| Add Last.fm knowledge | Bliss Mixer + Bliss Mixer Lab (automatic mixes) or Better Call Bliss (playlists/queues) + Last.fm Guidance; configure either LastMix or a direct API key |
 | Travel with a compact local music system | Raspberry Pi + locally accessible music + prepared Bliss analysis + desired extensions; Material Skin in a browser or LMS Material App (Android) / LyrPlay (iPhone and iPad) as a controller, optionally Lyrion Display on a separate reachable device |
 | Enjoy music at home with a dedicated display | Lyrion + Material Skin + existing player + Lyrion Display; optionally LMS Material App or LyrPlay for control |
 
@@ -604,7 +618,7 @@ Start with approximately **13 content pages**, plus a sidebar and footer.
 | --- | --- |
 | Home | Introduction and scenario navigation |
 | Understanding Bliss | Ecosystem and plugin relationships |
-| Getting Started | Plugin selection, requirements and installation; Build your Lyrion setup (external plugins and recommended Android/Apple apps) |
+| Getting Started | Plugin selection, requirements and installation; Build your Lyrion setup (piCorePlayer, native and bridged players, external plugins and recommended Android/Apple apps) |
 | Make Your Playlists Flow | Reordering and bridging |
 | Extend Your Playlists | Longer listening sessions |
 | Improve Your Player Queue | Working with live queues |

@@ -3,8 +3,8 @@
 You don't need a complicated system or every available plugin. Start with a working Lyrion server, a local music collection and Bliss Mixer. Add the extensions that match your listening habits.
 
 <figure class="guide-figure" markdown="1">
-![A local Lyrion server with Bliss Mixer and chosen extensions, Material Skin controllers and an optional dedicated display](assets/images/setup-map.svg)
-<figcaption>Your server selects music; your existing players play it. Phones and tablets can control the server, and a separate display can show what's playing.</figcaption>
+![A local Lyrion server, optionally on piCorePlayer, with native or bridged players, Material Skin controllers and an optional dedicated display](assets/images/setup-map.svg)
+<figcaption>Your server selects music; native Lyrion players or compatible devices connected through optional bridges play it. Phones and tablets control the server, and a separate display can show what's playing.</figcaption>
 </figure>
 
 ## Choose your plugins
@@ -14,16 +14,36 @@ You don't need a complicated system or every available plugin. Start with a work
 | Improve the flow of playlists and queues | Better Call Bliss |
 | Enjoy continuous mixes | Bliss Mixer Lab |
 | Teach Bliss my musical preferences | Bliss Mixer Lab; optionally Better Call Bliss for supported playlist workflows |
-| Rediscover overlooked tracks | Library Signals + either compatible host |
-| Consider musical relationships from Last.fm | Last.fm Guidance + either compatible host |
+| Rediscover overlooked tracks | Library Signals + **Bliss Mixer Lab** (automatic mixes) or **Better Call Bliss** (playlists and queues) |
+| Consider musical relationships from Last.fm | Last.fm Guidance + **Bliss Mixer Lab** (automatic mixes) or **Better Call Bliss** (playlists and queues) |
 | Switch a player to a seasonal or mood-specific library | Bliss Mixer Lab + Material Skin; Virtual Library Creator recommended |
 
-See [Understanding Bliss](understanding-bliss.md) for the roles of the four plugins.
+For the two guidance options, install the guidance plugin **and at least one of the two named mixing or playlist plugins**. You can use both if you want guidance in both workflows. Enable the provider separately in each plugin's settings. See [Understanding Bliss](understanding-bliss.md) for the roles of the four plugins.
 
 ## Required foundation
 
 - [Bliss Mixer](https://github.com/CDrummond/lms-blissmixer) by Craig Drummond. Install and enable it, then complete its analysis of your local music library. Better Call Bliss and Bliss Mixer Lab use that analysis and the existing Bliss installation.
 - A working [Lyrion Music Server](https://lyrion.org/) and compatible local library. The collection was developed and tested with **Lyrion 9.1**; older versions may work but have not been tested. Official plugin-feed packages include platform-specific binaries where needed; consult the individual plugin's requirements.
+
+## Your server
+
+Already running Lyrion on a computer or dedicated music server? You can keep using it. If you want a small, dedicated Raspberry Pi music system, [piCorePlayer](https://www.picoreplayer.org/) is an excellent option.
+
+piCorePlayer can run Lyrion Music Server, act as a Squeezelite music player, or combine both roles on the same Raspberry Pi. You can connect local storage or access your music on a NAS. See the [piCorePlayer server installation guide](https://docs.picoreplayer.org/how-to/install_lms/) to get started. It is an optional server platform, not a requirement for these plugins.
+
+## Your players
+
+You don't need to replace all your audio equipment to enjoy Lyrion. Use an original Squeezebox, a Squeezelite-based player (including piCorePlayer), or bring compatible network audio devices into your Lyrion system with these optional server-side bridge plugins by Philippe (philippe44).
+
+| Project | What you can use |
+| --- | --- |
+| [Chromecast Bridge (LMS-Cast)](https://github.com/philippe44/LMS-Cast) | Compatible Chromecast / Google Cast audio playback devices. |
+| [AirPlay Bridge (LMS-Raop)](https://github.com/philippe44/LMS-Raop) | Compatible AirPlay speakers, receivers and other audio devices. |
+| [UPnP/DLNA Bridge (LMS-uPnP)](https://github.com/philippe44/LMS-uPnP) | Compatible UPnP/DLNA network audio renderers, including some hi-fi streamers and receivers. |
+
+Install the appropriate bridge through Lyrion's third-party plugin manager and follow its setup instructions. Supported devices can then appear as players in Lyrion, so you can select music for them using your usual controllers and use the music-selection features described in this guide.
+
+The bridges are not required for native Lyrion players. Device discovery, supported formats, gapless playback, synchronization and offline behavior can vary with the bridge, receiver and configuration; check the linked projects for details. These are playback integrations, not guidance providers or controller apps.
 
 ## Recommended interface
 
@@ -65,7 +85,7 @@ These apps require a reachable Lyrion server with Material Skin. You can also us
 
 ## Listen locally
 
-The extensions have been tested by the author on a Raspberry Pi 4 setup. A compact server with locally accessible music and completed Bliss analysis is a useful starting point for travel or privacy-conscious home listening; performance depends on your library and hardware.
+The extensions have been tested by the author on a Raspberry Pi 4 setup. piCorePlayer is one way to build such a compact Lyrion server. A compact server with locally accessible music and completed Bliss analysis is a useful starting point for travel or privacy-conscious home listening; performance depends on your library and hardware.
 
 Local music selection and Library Signals can work without an internet connection. If you want Last.fm guidance while travelling, the API Key source lets you prepare an artist relationship library while online. Previously stored artist information can help later; track relationships use a separate short-lived cache. Offline preferred is not strict offline-only. For a firm no-internet setup, isolate the server at the network level, keep music and required assets local, and retain network connectivity between your server and controllers. Other services, metadata providers or devices may still have online features.
 
