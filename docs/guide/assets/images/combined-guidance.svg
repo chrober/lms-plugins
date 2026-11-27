@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="375" viewBox="0 0 800 375" role="img" aria-labelledby="title description">
 <title id="title">Combine optional guidance</title><desc id="description">The host selects among Bliss-eligible local music with optional guidance from Library Signals and Last.fm.</desc>
-<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" viewBox="0 0 12 10" overflow="visible"><path d="M0 0 L10 5 L0 10 Z" fill="#627577"/></marker></defs>
 <rect width="800" height="375" rx="16" fill="#f3f5f4"/><g font-family="system-ui, -apple-system, Segoe UI, sans-serif" fill="#233435">
-<path class="connector" d="M400 111 V257" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path class="connector" d="M200 230 V244 H310 V257" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-<path class="connector" d="M600 230 V244 H490 V257" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<g class="connector"><path d="M400 111 V253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M395 252 L400 261 L405 252 Z" fill="#627577"/></g>
+<g class="connector"><path d="M200 230 V244 H310 V253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/><path d="M310 249 L310 253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round"/><path d="M305 252 L310 261 L315 252 Z" fill="#627577"/></g>
+<g class="connector"><path d="M600 230 V244 H490 V253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/><path d="M490 249 L490 253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round"/><path d="M485 252 L490 261 L495 252 Z" fill="#627577"/></g>
 <rect x="210" y="24" width="380" height="82" rx="12" fill="#e6efeb" stroke="#9fb9ad"/>
 <text x="400" y="54" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Bliss-eligible local music</text>
 <text x="400" y="79" font-size="16" text-anchor="middle" font-weight="400" fill="#476060">Acoustic suitability and repeat rules</text>
