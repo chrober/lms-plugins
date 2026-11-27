@@ -24,7 +24,7 @@
 <text x="400" y="372" font-size="14" text-anchor="middle" font-weight="400" fill="#233435">LMS Material App / LyrPlay</text>
 <rect x="534" y="299" width="246" height="120" rx="12" fill="#f5e9db" stroke="#d7b18b"/>
 <text x="657" y="327" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Lyrion Display</text>
-<text x="657" y="350" font-size="15" text-anchor="middle" font-weight="400" fill="#233435">Optional Now Playing</text>
+<text x="657" y="350" font-size="15" text-anchor="middle" font-weight="400" fill="#233435">Uses Material Skin</text>
 <text x="400" y="450" font-size="16" text-anchor="middle" font-weight="400" fill="#526261">Lines show local connectivity, not audio or control direction.</text>
 <text x="400" y="476" font-size="18" text-anchor="middle" font-weight="400" fill="#233435">Internet access is optional for local listening.</text>
 <text x="400" y="498" font-size="16" text-anchor="middle" font-weight="400" fill="#526261">Some extra services and initial setup may need it.</text>
