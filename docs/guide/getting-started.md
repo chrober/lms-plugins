@@ -31,7 +31,7 @@ For the two guidance options, install the guidance plugin **and at least one of 
 
 3. Apply the change, install the plugins you want and restart Lyrion if requested.
 4. Follow the individual setup instructions: [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss#installation), [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab#installation), [Library Signals](https://github.com/chrober/lms-guidance-library-signals#installation), or [Last.fm Guidance](https://github.com/chrober/lms-guidance-lastfm#installation).
-5. If you install a guidance plugin, configure its defaults and **enable it in Better Call Bliss or Bliss Mixer Lab, wherever you want to use it** where you want it to work. Installing a provider alone does not affect a mix.
+5. If you install a guidance plugin, configure its defaults and **enable it in Better Call Bliss or Bliss Mixer Lab, wherever you want to use it**. Installing a provider alone does not affect a mix.
 
 !!! tip "Try one change at a time"
     Start with a standard Bliss mix or a playlist preview. Then add one extension or guidance preference and compare. It is easier to understand the effect of an individual setting.
@@ -100,7 +100,7 @@ These apps require a reachable Lyrion server with Material Skin. You can also us
 
 The extensions have been tested by the author on a Raspberry Pi 4 setup. piCorePlayer is one way to build such a compact Lyrion server. A compact server with locally accessible music and completed Bliss analysis is a useful starting point for travel or privacy-conscious home listening; performance depends on your library and hardware.
 
-Local music selection and Library Signals can work without an internet connection. If you want Last.fm guidance while travelling, the API Key source lets you prepare an artist relationship library while online. Previously stored artist information can help later; track relationships use a separate short-lived cache. Offline preferred is not strict offline-only. For a firm no-internet setup, isolate the server at the network level, keep music and required assets local, and retain network connectivity between your server and controllers. Other services, metadata providers or devices may still have online features.
+Local music selection and Library Signals can work without an internet connection. If you want Last.fm guidance while travelling, the API Key source lets you prepare a collection of artist relationships while online. Previously stored artist information can help later; track relationships use a separate short-lived cache. Offline preferred is not strict offline-only. For a firm no-internet setup, isolate the server at the network level, keep music and required assets local, and retain network connectivity between your server and controllers. Other services, metadata providers or devices may still have online features.
 
 ## Try your first scenario
 

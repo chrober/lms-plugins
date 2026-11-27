@@ -24,7 +24,7 @@ A virtual library is a named view of part of your existing collection. Your file
 A browse filter in Material Skin need not be the same as the actual library assigned to a player. Lab's optional synchronization connects these two choices.
 
 <figure class="guide-figure" markdown="1">
-![Virtual Library Creator supplies collections; Material's picker sets the selected player's library, which restricts new Lab DSTM candidates and supplies Better Call Bliss's default available music.](assets/images/player-library-sync.svg)
+![Virtual Library Creator supplies collections; Material's picker sets the selected player's library, which restricts new Lab DSTM candidates and determines the default library for new Better Call Bliss tracks.](assets/images/player-library-sync.svg)
 <figcaption>The change belongs to the selected player, not just the current browser. Reverse synchronization is a separate option; other controllers require their own support.</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ A browse filter in Material Skin need not be the same as the actual library assi
 3. Open Bliss Mixer Lab settings. Under **Material player-library synchronization**, enable **Use Material's library selection as the selected player's library**.
 4. Optionally enable **Show the selected player's library in Material** for the reverse direction. Save the settings and reload each Material client.
 5. Select the desired player, then choose your virtual library using the Material library picker.
-6. Start a suitable song and select **Bliss (Lab)** as the DSTM provider. Subsequent new tracks are selected from to the player's assigned library.
+6. Start a suitable song and select **Bliss (Lab)** as the DSTM provider. Subsequent new tracks are selected from the player's assigned library.
 
 ## It's Christmas — let the festive music play
 

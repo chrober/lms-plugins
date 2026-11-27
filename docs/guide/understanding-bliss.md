@@ -23,14 +23,14 @@ Don't Stop the Music (DSTM) is Lyrion's way of choosing more tracks when your cu
 
 ## Sound first, additional knowledge second
 
-Imagine that Bliss finds several songs which would fit your current music. Perhaps one is a forgotten favorite, one is a new arrival and one is an artist you play frequently. Acoustic suitability still matters; optional guidance helps choose among the songs that are eligible.
+Imagine that Bliss finds several songs which would fit your current music. Perhaps one is a forgotten favorite, one is a new arrival and one is an artist you play frequently. Acoustic similarity and repeat rules establish which songs fit. Optional guidance can then favor some of those songs — it never makes an unsuitable track suitable.
 
 <figure class="guide-figure" markdown="1">
 ![Bliss selects musically eligible tracks, then optional guidance favors some of those candidates; an ineligible track remains outside the selection](assets/images/bliss-first.svg)
 <figcaption>Illustrative decision flow, not a score or guaranteed outcome. Repeat rules and other constraints still apply.</figcaption>
 </figure>
 
-The guidance plugins do not play songs on their own or override repeat rules. Install and explicitly enable them in Better Call Bliss or Bliss Mixer Lab. For the Lab, additional guidance applies to its supported DSTM workflow; do not assume every Lab menu action uses it.
+The guidance plugins contribute preferences, not guaranteed selections. They do not play songs on their own, add music from outside your collection or override repeat rules. Install and explicitly enable them in Better Call Bliss or Bliss Mixer Lab. For the Lab, additional guidance applies to its supported DSTM workflow; do not assume every Lab menu action uses it.
 
 <figure class="guide-figure" markdown="1">
 ![One local music collection supports playlists and continuous listening through Bliss](assets/images/listening-worlds.svg)

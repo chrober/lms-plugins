@@ -32,7 +32,7 @@ With API Key mode, you can enter your own key or reuse a saved custom LastMix AP
 4. Start a Bliss (Lab) DSTM session, or preview a Better Call Bliss playlist optimization with additions.
 5. Compare the results with the provider disabled.
 
-Track and artist relationships are two complementary sources of information. They help rank suitable tracks; they do not guarantee that a specific related artist will appear, bring remote tracks into your collection or override repeat rules.
+Artist and track relationships offer two complementary ways to discover connections. Last.fm Guidance works with the music you already own, following the [sound-first principle](understanding-bliss.md#sound-first-additional-knowledge-second).
 
 ## Related music you haven't heard in a while
 

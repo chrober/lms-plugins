@@ -4,7 +4,7 @@
 
 <figure class="guide-figure" markdown="1">
 ![Bliss Mixer supplies both main extensions; Library Signals and Last.fm Guidance are optional providers for either.](assets/images/bliss-ecosystem.svg)
-<figcaption>Install what you need. The original Bliss Mixer remains available; guidance is optional and must be enabled in the host.</figcaption>
+<figcaption>Install what you need. The original Bliss Mixer remains available; guidance is optional and must be enabled in the playlist or mixing plugin.</figcaption>
 </figure>
 
 | Project | Start here |
@@ -34,7 +34,7 @@ Check that Bliss Mixer is enabled, its analysis has completed, and the music fil
 
 ### Why isn't my guidance plugin doing anything?
 
-Installing a guidance provider alone is not enough. Enable it in the settings of Better Call Bliss or Bliss Mixer Lab. For the Lab, use a supported Bliss (Lab) DSTM workflow. Verify the provider's data source and preferences. Compare two previews or listening sessions with the guidance disabled and enabled; missing history or relationship information may contribute no preference, and remember that guidance does not guarantee a particular track.
+Installing a guidance provider alone is not enough. Enable it in the settings of Better Call Bliss or Bliss Mixer Lab. For the Lab, use a supported Bliss (Lab) DSTM workflow. Verify the provider's data source and preferences. Compare two previews or listening sessions with the guidance disabled and enabled; missing history or relationship information may contribute no preference. Guidance does not guarantee a particular track.
 
 ### Why can't I see or use Bliss me there...?
 

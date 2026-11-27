@@ -34,7 +34,10 @@ Start with a moderate influence and listen to a few sessions before changing it 
 
 Better Call Bliss can also use the learned matrix from a compatible, enabled Bliss Mixer Lab installation. In a supported Adaptive playlist workflow, review the **Learned-matrix blend (%)** option and compare previews.
 
-Better Call Bliss still works without the Lab or a trained matrix. Its supported Adaptive fallback uses variance for multi-track contexts and configured Static weights for a single-track context.
+Better Call Bliss still works without the Lab or a trained matrix.
+
+??? info "How Better Call Bliss works without learned preferences"
+    In supported Adaptive workflows, it uses variance for multi-track contexts and the configured Static weights for a single-track context.
 
 ## Combine sound and other preferences
 

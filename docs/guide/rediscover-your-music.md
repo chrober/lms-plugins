@@ -44,7 +44,7 @@ Try the other signals in the same way. For a hidden-gems session, favor lower pl
 <figcaption>Library Signals favors suitable choices; it does not force any particular track to appear.</figcaption>
 </figure>
 
-Bliss still chooses from acoustically suitable local music and respects the host's constraints. Library Signals adds preferences among those eligible tracks. It does not create mixes by itself, introduce otherwise ineligible songs, or override repeat rules.
+Library Signals gives overlooked songs a better chance whenever they fit the music. See [how Bliss and guidance work together](understanding-bliss.md#sound-first-additional-knowledge-second).
 
 ## Try it with playlists, too
 
