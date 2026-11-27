@@ -474,7 +474,9 @@ Place this curated overview within **Getting Started**, after the scenario-based
 
 Mention [piCorePlayer](https://www.picoreplayer.org/) as an optional Raspberry Pi platform for a dedicated Lyrion server, a Squeezelite player or a combined server/player. Link to its [server installation guide](https://docs.picoreplayer.org/how-to/install_lms/). Do not imply that existing Lyrion users need to migrate their server.
 
-Under **Your players**, explain that original Squeezebox and Squeezelite players work directly, and that compatible existing network audio equipment can be integrated using Philippe's (philippe44) optional server-side bridges:
+Under **Your players**, explain that original Squeezebox and Squeezelite players work directly. Mention mobile devices as additional playback options: [Squeezelite for Android](https://github.com/CDrummond/squeezelite) by Craig Drummond turns an Android device into a Lyrion player and complements LMS Material App as a separate controller; [LyrPlay](https://github.com/mtxmiller/LyrPlay) by Eric Miller turns an iPhone or iPad into a player as well as providing the integrated Material Skin control interface. Its Apple TV player is an additional option; refer to the project documentation for platform-specific requirements. Keep LyrPlay in the controller recommendations as well, since it serves both roles.
+
+Compatible existing network audio equipment can also be integrated using Philippe's (philippe44) optional server-side bridges:
 
 | Project | Playback devices |
 | --- | --- |

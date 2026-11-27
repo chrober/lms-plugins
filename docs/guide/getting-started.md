@@ -33,7 +33,18 @@ piCorePlayer can run Lyrion Music Server, act as a Squeezelite music player, or 
 
 ## Your players
 
-You don't need to replace all your audio equipment to enjoy Lyrion. Use an original Squeezebox, a Squeezelite-based player (including piCorePlayer), or bring compatible network audio devices into your Lyrion system with these optional server-side bridge plugins by Philippe (philippe44).
+You don't need to replace all your audio equipment to enjoy Lyrion. Use an original Squeezebox, a Squeezelite-based player (including piCorePlayer), turn your phone or tablet into a player, or connect compatible network audio devices through a bridge.
+
+### Turn your mobile device into a player
+
+| Project | What you can use |
+| --- | --- |
+| [Squeezelite for Android](https://github.com/CDrummond/squeezelite) by Craig Drummond | Turn an Android phone or tablet into a Lyrion audio player, including playback through connected Bluetooth audio equipment. Combine it with LMS Material App if you also want a dedicated controller interface. |
+| [LyrPlay](https://github.com/mtxmiller/LyrPlay) by Eric Miller | Use your iPhone or iPad as a Lyrion audio player, with an integrated Material Skin controller. LyrPlay also offers an Apple TV player; see its documentation for requirements. |
+
+### Bring your existing network audio devices into Lyrion
+
+These optional server-side bridge plugins by Philippe (philippe44) integrate compatible devices into your Lyrion system.
 
 | Project | What you can use |
 | --- | --- |
@@ -62,7 +73,7 @@ The bridges are not required for native Lyrion players. Device discovery, suppor
 | Project | Role |
 | --- | --- |
 | [LMS Material App](https://github.com/CDrummond/lms-material-app) by Craig Drummond | Android controller using Material Skin: browse, select and manage your music and control existing players. |
-| [LyrPlay](https://github.com/mtxmiller/LyrPlay) by Eric Miller | Apple alternative for iPhone/iPad with an integrated Material Skin control interface. Its built-in audio player is an additional capability, not the primary reason for this recommendation. |
+| [LyrPlay](https://github.com/mtxmiller/LyrPlay) by Eric Miller | Apple alternative for iPhone/iPad with an integrated Material Skin control interface. It can also serve as a [music player](#turn-your-mobile-device-into-a-player). |
 | [Lyrion Display](https://github.com/chrober/lyrion-display) | Optional fullscreen read-only Now Playing companion for compatible Fire TV, Android TV and tablets. |
 
 These apps require a reachable Lyrion server with Material Skin. You can also use Material Skin directly in a web browser. None of the apps is needed for the core Bliss extensions. Consult the app repositories for device compatibility and installation.
