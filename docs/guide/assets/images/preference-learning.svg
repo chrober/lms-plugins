@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="408" viewBox="0 0 800 408" role="img" aria-labelledby="title description">
 <title id="title">Learn musical similarity preferences</title><desc id="description">Choose which of two songs sounds closer to the reference, then train a learned similarity matrix from comparisons.</desc>
-<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#627577"/></marker></defs>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" viewBox="0 0 12 10" overflow="visible"><path d="M0 0 L10 5 L0 10 Z" fill="#627577"/></marker></defs>
 <rect width="800" height="408" rx="16" fill="#f3f5f4"/><g font-family="system-ui, -apple-system, Segoe UI, sans-serif" fill="#233435">
 <text x="400" y="40" font-size="23" text-anchor="middle" font-weight="650" fill="#233435">Which song sounds more like A to you?</text>
-<path class="connector" d="M400 141 V168" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path class="connector" d="M400 168 H204 V199" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path class="connector" d="M400 168 H596 V199" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path class="connector" d="M204 278 V299 H400 V318" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path class="connector" d="M400 146 V168" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path class="connector" d="M400 168 H204 V192" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path class="connector" d="M400 168 H596 V192" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path class="connector" d="M204 283 V294 H400 V311" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
 <rect x="245" y="63" width="310" height="78" rx="12" fill="#fff" stroke="#cbd5d3"/>
 <text x="400" y="93" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Reference A</text>
 <text x="400" y="118" font-size="16" text-anchor="middle" font-weight="400" fill="#476060">Listen to the example</text>

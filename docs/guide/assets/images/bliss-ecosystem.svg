@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="510" viewBox="0 0 800 510" role="img" aria-labelledby="title description">
 <title id="title">Bliss plugin ecosystem</title><desc id="description">Bliss Mixer supplies both independent main extensions. Either or both optional guidance providers contribute to either host when enabled.</desc>
-<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#627577"/></marker></defs>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" viewBox="0 0 12 10" overflow="visible"><path d="M0 0 L10 5 L0 10 Z" fill="#627577"/></marker></defs>
 <rect width="800" height="510" rx="16" fill="#f3f5f4"/><g font-family="system-ui, -apple-system, Segoe UI, sans-serif" fill="#233435">
-<path class="connector" d="M400 104 V132" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path class="connector" d="M400 132 H201 V165" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path class="connector" d="M400 132 H599 V165" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
-<path class="connector" d="M201 386 V350 H400" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
-<path class="connector" d="M599 386 V350 H400" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
-<path class="connector" d="M400 350 V303" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-<path class="connector" d="M400 278 V267 H201 V253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-<path class="connector" d="M400 278 V267 H599 V253" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<path class="connector" d="M400 109 V132" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path class="connector" d="M400 132 H201 V158" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path class="connector" d="M400 132 H599 V158" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path class="connector" d="M201 381 V350 H400" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+<path class="connector" d="M599 381 V350 H400" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+<path class="connector" d="M400 350 V310" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<path class="connector" d="M400 273 V268 H201 V260" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<path class="connector" d="M400 273 V268 H599 V260" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
 <rect x="190" y="22" width="420" height="82" rx="12" fill="#e6efeb" stroke="#9fb9ad"/>
 <text x="400" y="52" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Bliss Mixer</text>
 <text x="400" y="77" font-size="16" text-anchor="middle" font-weight="400" fill="#476060">Required acoustic analysis</text>
