@@ -39,11 +39,11 @@ Sometimes the order of your songs matters. Perhaps the first song sets the scene
 3. Let the plugin decide where additions are useful, or request a fixed number per gap.
 4. Preview the new sequence. Check which songs were added, then save a separate copy.
 
-You can also turn a short playlist into a longer listening session by choosing a supported track-count or duration target. Review the preview before applying it.
+You can also [turn a short playlist into a longer listening session](extend-your-playlists.md) by choosing a supported track-count or duration target. Review the preview before applying it.
 
 ## Already listening?
 
-Use a player queue snapshot as your source. Choose the upcoming portion and use **Replace upcoming tracks** when sending it back to the same player; this leaves the current track playing. Review the preview first. The three Material Skin **Bliss me there...** shortcuts are different: they run in the background and apply a successful, validated route automatically rather than asking you to approve an editor preview.
+[Use a player queue snapshot](improve-your-player-queue.md) as your source. Choose the upcoming portion and use **Replace upcoming tracks** when sending it back to the same player; this leaves the current track playing. Review the preview first. The three Material Skin [**Bliss me there...** shortcuts](take-a-musical-journey.md) are different: they run in the background and apply a successful, validated route automatically rather than asking you to approve an editor preview.
 
 !!! tip "Give forgotten tracks a chance"
     [Library Signals](rediscover-your-music.md) can guide compatible playlist additions using your local listening history. Enable it in Better Call Bliss if you want this extra information to influence selection.

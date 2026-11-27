@@ -702,7 +702,7 @@ lms-plugins/
 └── repo.xml
 ```
 
-The initial implementation deliberately publishes only the five completed articles in its navigation. Remaining planned articles are added as they become ready; do not generate empty pages or broken links. Genuine screenshots must be captured from the relevant running plugin versions; do not fabricate interface images when captures are unavailable. Record missing screenshots in the development review checklist.
+The initial five-page review slice has now been expanded to all thirteen planned content pages. Keep the site unpublished until visual, live UI and editorial review is complete. Do not generate empty pages or broken links. Genuine screenshots must be captured from the relevant running plugin versions; do not fabricate interface images when captures are unavailable. Record missing screenshots in the development review checklist.
 
 ## 12. Recommended direction and rollout
 

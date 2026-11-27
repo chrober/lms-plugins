@@ -23,14 +23,14 @@ These independent plugins build on [Lyrion Music Server](https://lyrion.org/) an
 
 Love the songs but not the transitions? Rearrange a playlist, or keep its original order and add suitable songs in between.
 
-[Make your playlists flow →](make-your-playlists-flow.md)
+[Make your playlists flow →](make-your-playlists-flow.md) · [Extend a playlist](extend-your-playlists.md)
 </div>
 <div class="scenario-card" markdown="1">
 ### Keep the music playing
 
 Let Don't Stop the Music continue your listening session. Explore personal preferences or choose a virtual library for a particular mood.
 
-[Find your mixing setup →](getting-started.md#choose-your-plugins)
+[Keep the music playing →](keep-the-music-playing.md) · [Personalize your mixes](personalize-your-mixes.md)
 </div>
 <div class="scenario-card" markdown="1">
 ### Rediscover the music you own
@@ -44,14 +44,14 @@ Give forgotten favorites, rarely played tracks and newly added albums more oppor
 
 Take a musical journey to a song or album, or let Last.fm relationships add another perspective to sound-based selection.
 
-[Understand the plugins →](understanding-bliss.md)
+[Explore musical connections →](explore-musical-connections.md) · [Take a musical journey](take-a-musical-journey.md)
 </div>
 <div class="scenario-card" markdown="1">
 ### Your music, anywhere, under your control
 
 Keep your library and acoustic analysis on a small local server. Bring your music on a trip or listen at home without needing an online recommendation service.
 
-[Build your local setup →](getting-started.md#listen-locally)
+[Your music, anywhere →](your-music-anywhere.md)
 </div>
 </div>
 

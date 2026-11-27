@@ -52,6 +52,18 @@ nav:
   - Getting started:
       - Understanding Bliss: understanding-bliss.md
       - Build your Lyrion setup: getting-started.md
-  - Listening scenarios:
+  - Make more of your playlists:
       - Make your playlists flow: make-your-playlists-flow.md
+      - Extend your playlists: extend-your-playlists.md
+      - Improve your player queue: improve-your-player-queue.md
+      - Take a musical journey: take-a-musical-journey.md
+  - Keep the music playing:
+      - Continuous and seasonal listening: keep-the-music-playing.md
+      - Personalize your mixes: personalize-your-mixes.md
+  - Rediscover and explore:
       - Rediscover your music: rediscover-your-music.md
+      - Explore musical connections: explore-musical-connections.md
+  - Freedom and control: your-music-anywhere.md
+  - Plugins and FAQ: plugins-and-faq.md
+  - Related projects:
+      - Lyrion Display: https://github.com/chrober/lyrion-display

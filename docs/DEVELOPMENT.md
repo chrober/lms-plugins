@@ -1,6 +1,6 @@
 # User guide development
 
-The first five articles are a reviewable vertical slice of the full [editorial concept](WIKI_CONCEPT.md). The remaining eight articles are deliberately not published as empty stubs.
+All thirteen planned articles of the [editorial concept](WIKI_CONCEPT.md) now have a first complete content draft, navigation and conceptual graphics. They are reviewable, but not approved for publication until the live UI and visual review is complete.
 
 ## Preview locally
 
@@ -31,12 +31,12 @@ Open http://localhost:8000/. Serve the files rather than opening the HTML direct
 
 ## Review checklist
 
-- Read the five pages on desktop and a narrow mobile viewport; review navigation, search and both themes.
+- Read all thirteen pages on desktop and a narrow mobile viewport; review navigation, search and both themes.
 - Confirm the actual workflow and wording against the plugin versions installed on a Lyrion 9.1 test server.
 - Review each custom SVG for clear labels and appropriate simplification. No graphs are measured optimization results.
-- Capture actual screenshots for the first release: Better Call Bliss Extras editor (source/strategy), read-only preview showing reorder and bridging; Library Signals settings and host enablement, and the Bliss (Lab) DSTM selector. Capture at a readable scale, anonymize player names, local addresses and private library content when necessary, and give each image useful alt text.
+- Capture actual screenshots for the first release: Better Call Bliss Extras editor (source/strategy), read-only preview showing reorder and bridging; Library Signals settings and host enablement, the Bliss (Lab) DSTM selector; the duration controls and queue outputs; the three Material route actions; the virtual-library creator, library picker, both synchronization directions and Christmas exception; the preference survey and learned matrix controls; Last.fm source, offline preparation and coverage settings. Capture at a readable scale, anonymize player names, local addresses and private library content when necessary, and give each image useful alt text.
 - The reviewed upstream READMEs did not provide these specific UI captures. They are outstanding, not simulated. The conceptual SVGs are included now; add genuine screenshots before approving the relevant practical sections for publication.
-- Review the Home page's introductory summaries; the other eight articles are still planned, including seasonal player libraries, offline/private use, musical routes and preference learning.
+- Review the Home page links and all eight added scenario/reference pages, including seasonal player libraries, offline/private use, musical routes and preference learning.
 
 ## Publish after review
 

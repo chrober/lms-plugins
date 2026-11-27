@@ -56,4 +56,6 @@ Enable Library Signals in Better Call Bliss and preview a playlist or queue opti
 
 Seeing the album cover, artist name or forgotten song title can make rediscovery even more enjoyable. [Lyrion Display](https://github.com/chrober/lyrion-display) is an optional dedicated fullscreen Now Playing display for compatible Android and Fire TV devices. It uses Material Skin and works independently of the music-selection extensions. Control your player with your usual controller; the display is read-only.
 
+You can also [combine listening history with Last.fm relationships](explore-musical-connections.md#related-music-you-havent-heard-in-a-while) or [prepare your local music for travelling](your-music-anywhere.md).
+
 Read more about [Library Signals](https://github.com/chrober/lms-guidance-library-signals) and [the Bliss-first principle](understanding-bliss.md#sound-first-additional-knowledge-second).

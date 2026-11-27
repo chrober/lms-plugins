@@ -13,6 +13,14 @@ REQUIRED = {
     "getting-started": ["setup-map.svg"],
     "make-your-playlists-flow": ["playlist-reorder.svg", "playlist-bridges.svg"],
     "rediscover-your-music": ["rediscovery-signals.svg", "bliss-first.svg"],
+    "extend-your-playlists": ["playlist-extension.svg"],
+    "improve-your-player-queue": ["queue-upcoming.svg"],
+    "take-a-musical-journey": ["route-direct.svg", "route-return.svg", "route-append.svg"],
+    "keep-the-music-playing": ["continuous-mixing.svg", "artist-repeats.svg", "listening-moods.svg", "player-library-sync.svg", "christmas-exception.svg"],
+    "personalize-your-mixes": ["preference-learning.svg"],
+    "explore-musical-connections": ["musical-connections.svg", "combined-guidance.svg"],
+    "your-music-anywhere": ["portable-setup.svg", "local-knowledge.svg"],
+    "plugins-and-faq": ["bliss-ecosystem.svg"],
 }
 
 class References(HTMLParser):

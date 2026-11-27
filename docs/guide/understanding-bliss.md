@@ -38,4 +38,4 @@ No. Choose Better Call Bliss for playlist and queue work, or Bliss Mixer Lab for
 
 The acoustic analysis stays on your server. Library Signals uses local listening data. Last.fm information is optional and may involve online queries; the API Key source can also retain artist relationships locally. Offline preferred is not a strict offline-only guarantee.
 
-[Build your Lyrion setup →](getting-started.md) · [Try a playlist →](make-your-playlists-flow.md)
+[Build your Lyrion setup →](getting-started.md) · [Try a playlist →](make-your-playlists-flow.md) · [Keep the music playing →](keep-the-music-playing.md) · [Explore musical connections →](explore-musical-connections.md)

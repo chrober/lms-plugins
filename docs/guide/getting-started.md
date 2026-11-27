@@ -102,4 +102,4 @@ Local music selection and Library Signals can work without an internet connectio
 
 ## Try your first scenario
 
-[Make your playlists flow](make-your-playlists-flow.md) or [Rediscover your music](rediscover-your-music.md).
+[Make your playlists flow](make-your-playlists-flow.md), [keep the music playing](keep-the-music-playing.md), [rediscover your music](rediscover-your-music.md) or [prepare a portable local setup](your-music-anywhere.md).
