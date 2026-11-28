@@ -43,7 +43,7 @@ Artist and track relationships offer two complementary ways to discover connecti
 
 Enable both Last.fm Guidance and [Library Signals](rediscover-your-music.md) in a supported mixing or playlist plugin. For example, start with a favorite Miles Davis recording. Last.fm might help identify related artists already in your collection, while Library Signals can give a rarely played John Coltrane recording more weight if it is also a suitable musical match. This is an illustrative listening idea, not a predicted recommendation.
 
-Keep the influences moderate at first. These preferences can reinforce each other or point toward different candidates. The host still makes the final selection using its supported rules and acoustic checks.
+You can also favor related artists whose music you haven't heard in a while using Library Signals' artist last-played preference. Keep the influences moderate at first. These preferences can reinforce each other or point toward different candidates. The host still makes the final selection using its supported rules and acoustic checks.
 
 ## Bring some artist knowledge with you
 

@@ -82,7 +82,7 @@ The bridges are not required for native Lyrion players. Device discovery, suppor
 
 | Project | Why it is useful |
 | --- | --- |
-| [Virtual Library Creator](https://github.com/AF-1/lms-virtuallibrarycreator) by AF-1 | Create and manage themed collections, such as Christmas, Summer or Sunday Jazz, in a browser. Particularly useful when you want to switch a player to a different listening mood. |
+| [Virtual Library Creator](https://github.com/AF-1/lms-virtuallibrarycreator) by AF-1 | Create and manage themed collections, such as Christmas, Summer or Sunday Jazz, in a browser. Particularly useful for creating Lyrion's existing virtual-library views before using Lab's convenient player-library switching. |
 | [Alternative Play Count](https://github.com/AF-1/lms-alternativeplaycount) by AF-1 | Alternative source of play counts and last-played information for Library Signals. Native Lyrion listening history is sufficient without it. |
 | [LastMix](https://github.com/michaelherger/LastMix) by Michael Herger | Creates Last.fm-based mixes independently and can supply Last.fm relationships to Last.fm Guidance. The guidance plugin also supports direct API Key access; stored offline artist information requires that source. |
 

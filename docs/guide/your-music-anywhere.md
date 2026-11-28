@@ -29,7 +29,7 @@ Once your system is prepared, the following can remain available locally:
 | Local resource | What it makes possible |
 | --- | --- |
 | Music files and completed Bliss analysis | Sound-based mixes, playlist reordering, additions and routes |
-| Listening history and library age | Library Signals-guided rediscovery |
+| Track, album and artist listening history, plus library age | Library Signals-guided rediscovery using local data |
 | Optional learned preferences | Personal Adaptive similarity where supported |
 | Previously acquired Last.fm artist relationships | Optional partial artist guidance, subject to availability and policy |
 

@@ -35,6 +35,8 @@ The editor also supports the full queue and **Use now-playing and upcoming track
 !!! tip "Keep a favorite song playing"
     If preserving the currently playing track matters, use **Replace upcoming tracks**, not **Replace queue**. Always review the preview before applying.
 
+Moving a queue between rooms instead? Material's queue-transfer actions can also carry the selected virtual library with Lab's optional setting. See [Let your music follow you](music-for-every-season.md#let-your-music-follow-you).
+
 ## Want to hear a specific album next?
 
 The [Bliss me there... shortcuts](take-a-musical-journey.md) are an alternative to the editor. They build a musical route to a selected destination and apply a successfully validated result automatically. They do not ask for preview acceptance.

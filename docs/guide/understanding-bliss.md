@@ -16,7 +16,7 @@ Think about two songs that sound as though they belong together. They might shar
 | [Bliss Mixer](https://github.com/CDrummond/lms-blissmixer) | Creates sound-based mixes and provides the analysis required by the two extensions. |
 | [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss) | Improves saved playlists and queues, inserts or adds suitable tracks, and creates musical routes. |
 | [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab) | Offers experimental mixing, personal preference learning and the separate Bliss (Lab) Don't Stop the Music option. |
-| [Library Signals](https://github.com/chrober/lms-guidance-library-signals) | Gives a compatible playlist or mixing plugin additional knowledge from your play counts, last-played dates and library age. |
+| [Library Signals](https://github.com/chrober/lms-guidance-library-signals) | Gives a compatible playlist or mixing plugin additional knowledge from track, album and artist listening history, plus when tracks were added to your library. |
 | [Last.fm Guidance](https://github.com/chrober/lms-guidance-lastfm) | Adds Last.fm similar-artist and similar-track knowledge to supported selection workflows. |
 
 Don't Stop the Music (DSTM) is Lyrion's way of choosing more tracks when your current queue needs continuing. The Lab adds its own provider without replacing the original Bliss provider. You can try it and return to your usual choice.

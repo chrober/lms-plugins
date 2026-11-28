@@ -34,7 +34,7 @@ Check that Bliss Mixer is enabled, its analysis has completed, and the music fil
 
 ### Why isn't my guidance plugin doing anything?
 
-Installing a guidance provider alone is not enough. Enable it in the settings of Better Call Bliss or Bliss Mixer Lab. For the Lab, use a supported Bliss (Lab) DSTM workflow. Verify the provider's data source and preferences. Compare two previews or listening sessions with the guidance disabled and enabled; missing history or relationship information may contribute no preference. Guidance does not guarantee a particular track.
+Installing a guidance provider alone is not enough. Enable it in the settings of Better Call Bliss or Bliss Mixer Lab. For the Lab, use a supported Bliss (Lab) DSTM workflow. Verify the provider's data source and preferences. Compare two previews or listening sessions with the guidance disabled and enabled; missing history or relationship information may contribute no preference. Guidance does not guarantee a particular track. For album and artist preferences, check the [required plugin versions and artist identity limitations](rediscover-your-music.md#what-you-need).
 
 ### Why can't I see or use Bliss me there...?
 
@@ -51,6 +51,8 @@ A small candidate library, missing analysis, unavailable files, tight repeat win
 ### Why do I still hear songs outside my selected virtual library?
 
 Changing the player's library restricts new candidates in supported workflows, not existing queue entries. Check the actual player library, the two Material synchronization options, and any explicit Better Call Bliss candidate-library selection. See [the seasonal listening scenario](music-for-every-season.md).
+
+If Lab finds no new tracks after switching to a very different library, check **Relax seed genre restriction after a player library change**. It allows one retry without the genre restriction derived from the existing songs, while preserving the selected library and other filters.
 
 ### Can I use the plugins without the internet?
 

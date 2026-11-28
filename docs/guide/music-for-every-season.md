@@ -2,7 +2,9 @@
 
 > "It's snowing outside, the lights are on, and I'm in the mood for Christmas music. I don't want to put together another playlist."
 
-Imagine switching the entire musical character of a player simply by choosing a library in Material Skin.
+Imagine switching the musical mood of a player with just a few clicks or taps in Material Skin.
+
+This is not a new way of organizing music: Lyrion already supports virtual libraries, including assigning them to individual players, and the original Bliss Mixer can use those libraries for music selection. What the extensions improve is the everyday experience. Once your libraries and settings are ready, Bliss Mixer Lab connects Material's library picker to the player's library, so choosing a different musical world becomes a simple part of listening rather than a separate trip to player settings.
 
 <figure class="guide-figure" markdown="1">
 ![Four illustrative virtual libraries: Christmas, Summer surf rock, Sunday Jazz, and Dinner and Lounge.](assets/images/listening-moods.svg)
@@ -21,7 +23,7 @@ A virtual library is a named view of part of your existing collection. Your file
 
 ## Set up your musical world
 
-A browse filter in Material Skin need not be the same as the actual library assigned to a player. Lab's optional synchronization connects these two choices.
+A browsing library in Material Skin and the library assigned to a player are two distinct choices. Lab's optional synchronization brings them together. With both directions enabled, participating Material clients follow the library of their currently selected player, including when you switch between rooms.
 
 <figure class="guide-figure" markdown="1">
 ![Virtual Library Creator supplies collections; Material's picker sets the selected player's library, which restricts new Lab DSTM candidates and determines the default library for new Better Call Bliss tracks.](assets/images/player-library-sync.svg)
@@ -32,10 +34,13 @@ A browse filter in Material Skin need not be the same as the actual library assi
 
 1. Create a library such as **Christmas** in **Extras → Virtual Library Creator**, with appropriate genre, tag or other selection criteria. Enable it and let Lyrion create the view.
 2. In Material Skin, disable its own **Adjust player library** option to avoid conflicts.
-3. Open Bliss Mixer Lab settings. Under **Material player-library synchronization**, enable **Use Material's library selection as the selected player's library**.
-4. Optionally enable **Show the selected player's library in Material** for the reverse direction. Save the settings and reload each Material client.
+3. Open Bliss Mixer Lab settings. Under **Material player-library synchronization**, enable **Change the player's library when selecting a library in Material**.
+4. Optionally enable **Make Material follow the selected player's library** for the reverse direction. Save the settings and reload each Material client.
 5. Select the desired player, then choose your virtual library using the Material library picker.
 6. Start a suitable song and select **Bliss (Lab)** as the DSTM provider. Subsequent new tracks are selected from the player's assigned library.
+
+!!! tip "Switch moods while listening"
+    If the genres of the songs already in your queue don't fit the newly selected library, Lab may initially find no suitable additions. **Relax seed genre restriction after a player library change** lets it retry once without that restriction. The new library and all other filters still apply; normal genre filtering resumes after a successful mix. Your existing queue is not cleared.
 
 ## It's Christmas — let the festive music play
 
@@ -56,10 +61,16 @@ Better Call Bliss also understands virtual libraries for new additions. The edit
 
 Choose Summer for one room and Jazz for another independent player. Changing libraries does not automatically clear already queued music or force all controllers to reflect the change. Switch back to the full library when you want unrestricted selection.
 
+### Let your music follow you
+
+Moving from the living room to the kitchen? Material already lets you copy, move or swap player queues. With Lab's optional **Carry player libraries with queues copied, moved or swapped in Material** setting, the library can follow the queue too. The destination adopts the source library when copying or moving; when swapping, both libraries follow their queues. The source player's library stays unchanged after a move.
+
+Enable the option in Lab settings, keep Material's **Adjust player library** disabled and reload your Material clients. Your Christmas session can then continue in another room with the same library for subsequent selections. Queue transfers have been tested against independent players; synchronized-player behavior still needs verification.
+
 !!! note "The library is a boundary, not a guarantee"
     Bliss acoustic suitability, repeat constraints and other configured filters still apply. If the mix runs out of eligible songs, reconsider the size or rules of the virtual library.
 
-Thanks to AF-1 for Virtual Library Creator and Craig Drummond for Bliss Mixer and Material Skin. The Lab adds the synchronization and scoped Christmas exception described here.
+Thanks to the Lyrion community for virtual libraries and player settings, AF-1 for Virtual Library Creator, and Craig Drummond for Bliss Mixer and Material Skin. The Lab builds on these existing capabilities, adding convenient synchronization, library-aware queue transfers, transition recovery and the scoped Christmas exception. Use Bliss Mixer Lab 0.11.2 or later for the current synchronization labels, queue transfers and genre-restriction retry.
 
 ## Keep exploring
 

@@ -19,18 +19,27 @@ There may be a song that brings back a memory, an album you've hardly played, or
 
 You can also prefer frequently or recently played tracks, or older library additions. Choose a direction that suits your listening goal.
 
+### Rediscover more than individual songs
+
+Perhaps it's not just individual songs you've overlooked, but entire albums or artists. You can give suitable tracks from neglected albums more opportunities to appear, revisit artists you haven't listened to in years, or favor familiar songs by rarely heard artists.
+
+Play-count and last-played preferences can be set independently for tracks, albums and artists. For example, try a negative **Album play-count influence** for less-played albums, or a negative **Artist last-played influence** for artists you haven't heard in a while. Positive values favor the opposite; zero leaves that preference inactive. Date-added preferences remain track-based.
+
+??? info "How album and artist listening history is counted"
+    Play counts are sums of individual track plays, not counts of complete album sessions. Last played is the most recent known play of an associated track. Artist grouping follows **Artist identity for listening history**, with options for shared credited artists or primary artists and, when available, following Lab's artist identity. Exact Bliss-credit artist aggregation is unavailable in Lab's time-limited real-time selection; track and album guidance remain available. Missing history is not treated as a confirmed zero.
+
 ## What you need
 
 - Bliss Mixer with completed library analysis.
 - [Bliss Mixer Lab](https://github.com/chrober/lms-blissmixer-lab) for Don't Stop the Music mixes, or [Better Call Bliss](https://github.com/chrober/lms-better-call-bliss) for supported playlist and queue workflows.
-- [Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals), enabled separately in the playlist or mixing plugin you use.
+- [Bliss Guidance: Library Signals](https://github.com/chrober/lms-guidance-library-signals), enabled separately in the playlist or mixing plugin you use. For album and artist preferences, use Library Signals 0.3.9 or later together with Better Call Bliss 0.22.19 or later, or Bliss Mixer Lab 0.11.3 or later.
 
 Library Signals reads native Lyrion listening data by default. If you use [Alternative Play Count](https://github.com/AF-1/lms-alternativeplaycount), you can select its history as an alternative for play counts and last-played dates; library age still comes from Lyrion. No additional online service is needed. Missing data is treated neutrally, not as evidence that a track was never played.
 
 ## Try a rediscovery session
 
 1. [Install the plugins](getting-started.md#install-the-collection).
-2. Open the **Library Signals** settings and configure the last-played preference to favor music you haven't heard in a long time.
+2. Open the **Library Signals** settings and set **Track last-played influence** to a negative value to favor music you haven't heard in a long time.
 3. Open the **Bliss Mixer Lab** settings, enable Library Signals and review any host-specific overrides.
 4. Select **Bliss (Lab)** as the Don't Stop the Music provider and start with a song you feel like hearing.
 5. Let the session continue, then compare it with a session without the provider enabled.
