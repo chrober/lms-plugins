@@ -636,6 +636,8 @@ Use MkDocs navigation and its shared page layout for consistent navigation. The 
 
 ## 10. Editorial principles
 
+New functionality should enrich existing listening scenarios unless it enables a genuinely different listening experience. Prefer a short paragraph, practical tip or updated UI instructions over a new article or illustration for each feature. Credit existing Lyrion and community-plugin capabilities explicitly; distinguish a new capability from a more convenient way to use an existing one. In particular, seasonal virtual libraries and player-level library selection already exist in Lyrion: Lab improves their everyday usability through Material synchronization and related options.
+
 | Prefer | Avoid where possible |
 | --- | --- |
 | Songs that sound good together | Acoustically eligible candidate pool |

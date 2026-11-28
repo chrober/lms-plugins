@@ -65,7 +65,7 @@ Choose Summer for one room and Jazz for another independent player. Changing lib
 
 Moving from the living room to the kitchen? Material already lets you copy, move or swap player queues. With Lab's optional **Carry player libraries with queues copied, moved or swapped in Material** setting, the library can follow the queue too. The destination adopts the source library when copying or moving; when swapping, both libraries follow their queues. The source player's library stays unchanged after a move.
 
-Enable the option in Lab settings, keep Material's **Adjust player library** disabled and reload your Material clients. Your Christmas session can then continue in another room with the same library for subsequent selections. Queue transfers have been tested against independent players; synchronized-player behavior still needs verification.
+Enable the option in Lab settings, keep Material's **Adjust player library** disabled and reload your Material clients. Your Christmas session can then continue in another room with the same library for subsequent selections. Queue transfers have been tested against independent players through the integration; verification in the Material UI and with synchronized players is still outstanding.
 
 !!! note "The library is a boundary, not a guarantee"
     Bliss acoustic suitability, repeat constraints and other configured filters still apply. If the mix runs out of eligible songs, reconsider the size or rules of the virtual library.
