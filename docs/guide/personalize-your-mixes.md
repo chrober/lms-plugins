@@ -16,7 +16,7 @@ Musical similarity is partly subjective. Perhaps you care more about the atmosph
 1. Open the Lab settings and choose **Open Similarity Survey**.
 2. Listen to the available examples and answer the comparisons according to your own sense of musical similarity.
 3. Complete survey answers and choose **Run Learning** to learn your personal musical preferences.
-4. In the Lab settings, review **Learned matrix influence** and use a supported Adaptive mixing strategy.
+4. Under **Experimental settings → Learned matrix and track selection**, review **Learned matrix influence** and use a supported Adaptive mixing strategy.
 5. Try **Bliss (Lab)** DSTM or the Lab's **Create bliss mix (Lab)** action. Listen and compare with standard Bliss mixing.
 
 The learned model influences how acoustic similarities are evaluated, rather than acting as a list of favorite songs. You can back up and restore your survey training data. If a training run fails, the previous learned matrix remains active.

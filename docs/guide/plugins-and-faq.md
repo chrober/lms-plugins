@@ -50,7 +50,9 @@ A small candidate library, missing analysis, unavailable files, tight repeat win
 
 ### Why do I still hear songs outside my selected virtual library?
 
-Changing the player's library restricts new candidates in supported workflows, not existing queue entries. Check the actual player library, the two Material synchronization options, and any explicit Better Call Bliss candidate-library selection. See [the seasonal listening scenario](music-for-every-season.md).
+Changing the player's library restricts new candidates in supported workflows, not existing queue entries. Check the actual player library, the **Material player-library synchronization** mode, and any explicit Better Call Bliss candidate-library selection. See [the seasonal listening scenario](music-for-every-season.md).
+
+If the Lab synchronization or queue-transfer controls are disabled, follow the link shown in Lab settings and disable Material's conflicting player-library setting. Return to Lab settings, choose the desired mode, save and reload your Material clients.
 
 If Lab finds no new tracks after switching to a very different library, check **Relax seed genre restriction after a player library change**. It allows one retry without the genre restriction derived from the existing songs, while preserving the selected library and other filters.
 

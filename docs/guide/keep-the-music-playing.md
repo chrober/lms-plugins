@@ -13,7 +13,7 @@ Lyrion's **Don't Stop the Music (DSTM)** can choose more tracks when your curren
 
 **What you need:** Bliss Mixer with completed library analysis and Bliss Mixer Lab.
 
-1. Open the **Bliss Mixer Lab** settings page and review the mixing options.
+1. Open the **Bliss Mixer Lab** settings page and review **Experimental settings**, particularly **Learned matrix and track selection**.
 2. Select **Bliss (Lab)** as the Don't Stop the Music provider for your listening session.
 3. Start with a song or a few songs you feel like hearing.
 4. Let the music continue. Compare with the original Bliss DSTM provider if you like.

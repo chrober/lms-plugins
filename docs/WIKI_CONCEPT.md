@@ -243,8 +243,8 @@ These are examples of user-created collections, not built-in mood detection, aut
 **How to set it up**
 
 1. In **Extras → Virtual Library Creator**, create a named virtual library, for example **Christmas**, using suitable criteria such as genres or tags available in your collection. Enable it and let Lyrion finish creating it.
-2. In Material Skin, disable its own **Adjust player library** option to avoid conflicts with Lab's synchronization.
-3. In Bliss Mixer Lab settings, under **Material player-library synchronization**, enable **Use Material's library selection as the selected player's library**. For the reverse direction, also enable **Show the selected player's library in Material** if you want Material clients to follow the selected player's current library.
+2. In Lab's **Experimental settings → Material and player libraries**, follow the conflict notice and link to Material Skin settings if Material's own player-library setting is active. Disable the conflicting setting before configuring Lab.
+3. Set **Material player-library synchronization** to **Synchronize in both directions** (Lab 0.11.4 or later). One-way modes and **Off** are also available. Existing preferences from the earlier checkbox layout are preserved.
 4. Save the settings and reload each Material client. Select the intended player, then choose the desired virtual library in Material's library picker.
 5. For Christmas, under **Allow Christmas tracks in selected virtual libraries**, check the Christmas library if Bliss Mixer's Christmas exclusion would otherwise block those tracks. This exception is specifically for **Bliss (Lab)** DSTM, not a global override or an override for Better Call Bliss.
 6. Start a suitable track from the library and choose **Bliss (Lab)** as the Don't Stop the Music provider. When new music is needed, the mix selects new eligible tracks within the player's virtual library.
@@ -272,7 +272,7 @@ flowchart TB
 - Changing the library is not a request to interrupt playback or replace the already queued songs. Use a suitable seed/current queue and allow subsequent DSTM selections to follow the new scope. Return to the full library when you want unrestricted listening.
 - The Christmas exception is optional, library-specific and not calendar-driven. If no eligible candidates remain, the library or other filters may need adjustment.
 
-**Visual plan:** show the Virtual Library Creator editor, the two Lab synchronization options and the Christmas exception list, followed by Material's library picker before and after selecting a themed library. Use a real example and demonstrate DSTM or a Better Call Bliss preview, clearly identifying new candidate tracks rather than implying all existing queue entries are filtered.
+**Visual plan:** show the Virtual Library Creator editor, the Lab synchronization mode selector and separate queue-transfer checkbox in Material and player libraries, and the Christmas exception list, followed by Material's library picker before and after selecting a themed library. Use a real example and demonstrate DSTM or a Better Call Bliss preview, clearly identifying new candidate tracks rather than implying all existing queue entries are filtered.
 
 Credit AF-1 for Virtual Library Creator and Craig Drummond for Material Skin and Bliss Mixer. This scenario combines their existing functionality with the Lab's synchronization and library-specific Christmas handling and the collection's library-aware music-selection workflows.
 

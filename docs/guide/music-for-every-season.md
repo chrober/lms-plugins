@@ -27,20 +27,22 @@ A browsing library in Material Skin and the library assigned to a player are two
 
 <figure class="guide-figure" markdown="1">
 ![Virtual Library Creator supplies collections; Material's picker sets the selected player's library, which restricts new Lab DSTM candidates and determines the default library for new Better Call Bliss tracks.](assets/images/player-library-sync.svg)
-<figcaption>The change belongs to the selected player, not just the current browser. Reverse synchronization is a separate option; other controllers require their own support.</figcaption>
+<figcaption>The change belongs to the selected player, not just the current browser. Synchronization can be one-way or bidirectional; other controllers require their own support.</figcaption>
 </figure>
 
 **What you need:** Bliss Mixer with completed analysis, Material Skin, Bliss Mixer Lab and at least one virtual library. Virtual Library Creator is recommended but not necessary if your libraries already exist.
 
 1. Create a library such as **Christmas** in **Extras → Virtual Library Creator**, with appropriate genre, tag or other selection criteria. Enable it and let Lyrion create the view.
-2. In Material Skin, disable its own **Adjust player library** option to avoid conflicts.
-3. Open Bliss Mixer Lab settings. Under **Material player-library synchronization**, enable **Change the player's library when selecting a library in Material**.
-4. Optionally enable **Make Material follow the selected player's library** for the reverse direction. Save the settings and reload each Material client.
+2. Open Bliss Mixer Lab settings and locate **Material and player libraries** under **Experimental settings**. If Material's own player-library setting is enabled, the Lab controls are disabled and show a link to the Material Skin settings. Follow that link, disable the conflicting setting and return to Lab settings.
+3. Set **Material player-library synchronization** to **Synchronize in both directions**. This makes the library picker update the player and lets Material follow the player's library when switching players.
+4. Save the settings and reload each Material client.
 5. Select the desired player, then choose your virtual library using the Material library picker.
 6. Start a suitable song and select **Bliss (Lab)** as the DSTM provider. Subsequent new tracks are selected from the player's assigned library.
 
 !!! tip "Switch moods while listening"
-    If the genres of the songs already in your queue don't fit the newly selected library, Lab may initially find no suitable additions. **Relax seed genre restriction after a player library change** lets it retry once without that restriction. The new library and all other filters still apply; normal genre filtering resumes after a successful mix. Your existing queue is not cleared.
+    If the genres of the songs already in your queue don't fit the newly selected library, Lab may initially find no suitable additions. Under **Experimental settings → Learned matrix and track selection**, **Relax seed genre restriction after a player library change** lets it retry once without that restriction. The new library and all other filters still apply; normal genre filtering resumes after a successful mix. Your existing queue is not cleared.
+
+If you prefer one-way synchronization, the same selector offers **Change the player's library when selecting a library in Material** or **Make Material follow the selected player's library**. Choose **Off** to disable Lab synchronization.
 
 ## It's Christmas — let the festive music play
 
@@ -65,12 +67,12 @@ Choose Summer for one room and Jazz for another independent player. Changing lib
 
 Moving from the living room to the kitchen? Material already lets you copy, move or swap player queues. With Lab's optional **Carry player libraries with queues copied, moved or swapped in Material** setting, the library can follow the queue too. The destination adopts the source library when copying or moving; when swapping, both libraries follow their queues. The source player's library stays unchanged after a move.
 
-Enable the option in Lab settings, keep Material's **Adjust player library** disabled and reload your Material clients. Your Christmas session can then continue in another room with the same library for subsequent selections. Queue transfers have been tested against independent players through the integration; verification in the Material UI and with synchronized players is still outstanding.
+Enable the option under **Experimental settings → Material and player libraries**, keep Material's own player-library setting disabled, save and reload your Material clients. Your Christmas session can then continue in another room with the same library for subsequent selections. Queue transfers have been tested against independent players through the integration; verification in the Material UI and with synchronized players is still outstanding.
 
 !!! note "The library is a boundary, not a guarantee"
     Bliss acoustic suitability, repeat constraints and other configured filters still apply. If the mix runs out of eligible songs, reconsider the size or rules of the virtual library.
 
-Thanks to the Lyrion community for virtual libraries and player settings, AF-1 for Virtual Library Creator, and Craig Drummond for Bliss Mixer and Material Skin. The Lab builds on these existing capabilities, adding convenient synchronization, library-aware queue transfers, transition recovery and the scoped Christmas exception. Use Bliss Mixer Lab 0.11.2 or later for the current synchronization labels, queue transfers and genre-restriction retry.
+Thanks to the Lyrion community for virtual libraries and player settings, AF-1 for Virtual Library Creator, and Craig Drummond for Bliss Mixer and Material Skin. The Lab builds on these existing capabilities, adding convenient synchronization, library-aware queue transfers, transition recovery and the scoped Christmas exception. These instructions use the settings layout in Bliss Mixer Lab 0.11.4 or later. Existing synchronization preferences are preserved when upgrading from the earlier checkbox layout.
 
 ## Keep exploring
 
