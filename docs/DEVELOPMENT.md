@@ -50,3 +50,5 @@ The existing plugin feed, validation workflow and other Pages projects are indep
 ## Editorial and visual revision
 
 The guide now has 14 articles, including a separate seasonal listening page. The home page leads with listening scenarios. The desktop illustrations remain local SVGs; three have narrow-screen versions selected at up to 600px. Full-size links open the original illustration in a new tab. Dark mode deliberately retains the readable light illustration palettes with a subtle outline rather than inverting semantic colors. Check home headings, seasonal navigation, full-size links, mobile artwork, and theme switching in the browser before publication. Genuine plugin screenshots remain outstanding.
+
+- Visual review: compare the seasonal, rediscovery and portable icon artwork against the approved warm, flowing icon style. Verify the same motifs on mobile and desktop, the repeated Christmas motif, and unchanged semantic colors in sequence diagrams. The generated reference artwork has been translated into editable SVG shapes rather than embedded as a raster image.
