@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="408" viewBox="0 0 800 408" role="img" aria-labelledby="title description">
+<title id="title">Learn musical similarity preferences</title><desc id="description">Choose which of two songs sounds closer to the reference, then train a learned similarity matrix from comparisons.</desc>
+<rect width="800" height="408" rx="16" fill="#f3f5f4"/><g font-family="system-ui, -apple-system, Segoe UI, sans-serif" fill="#233435">
+<text x="400" y="40" font-size="23" text-anchor="middle" font-weight="650" fill="#233435">Which song sounds more like A to you?</text>
+<path class="connector" d="M400 146 V168" fill="none" stroke="#627577" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="connector"><path d="M400 168 H204 V188" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M199 187 L204 196 L209 187 Z" fill="#627577"/></g>
+<g class="connector"><path d="M400 168 H596 V188" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M591 187 L596 196 L601 187 Z" fill="#627577"/></g>
+<g class="connector"><path d="M204 283 V294 H400 V307" fill="none" stroke="#627577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M395 306 L400 315 L405 306 Z" fill="#627577"/></g>
+<rect x="245" y="63" width="310" height="78" rx="12" fill="#fff" stroke="#cbd5d3"/>
+<text x="400" y="93" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Reference A</text><g transform="translate(267 77) scale(0.66)"><g transform="translate(12 5) scale(1.4)"><path d="M9 25 V6 L34 0 V19 H30 V7 L13 12 V26Z" fill="#ae432a" stroke="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="6" cy="27" rx="8" ry="5.6" fill="#ae432a" stroke="none" stroke-width="2"/><ellipse cx="27" cy="21" rx="8" ry="5.6" fill="#ae432a" stroke="none" stroke-width="2"/></g></g>
+<text x="400" y="118" font-size="16" text-anchor="middle" font-weight="400" fill="#476060">Listen to the example</text>
+<rect x="30" y="199" width="348" height="79" rx="12" fill="#e6efeb" stroke="#789980"/>
+<text x="204" y="229" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Song B</text><g transform="translate(51 214) scale(0.66)"><g transform="translate(12 5) scale(1.4)"><path d="M9 25 V6 L34 0 V19 H30 V7 L13 12 V26Z" fill="#ae432a" stroke="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="6" cy="27" rx="8" ry="5.6" fill="#ae432a" stroke="none" stroke-width="2"/><ellipse cx="27" cy="21" rx="8" ry="5.6" fill="#ae432a" stroke="none" stroke-width="2"/></g></g>
+<text x="204" y="254" font-size="16" text-anchor="middle" font-weight="400" fill="#476060">Your choice in this example</text>
+<rect x="422" y="199" width="348" height="79" rx="12" fill="#fff" stroke="#cbd5d3"/>
+<text x="596" y="229" font-size="21" text-anchor="middle" font-weight="650" fill="#233435">Song C</text><g transform="translate(443 214) scale(0.66)"><g transform="translate(12 5) scale(1.4)"><path d="M9 25 V6 L34 0 V19 H30 V7 L13 12 V26Z" fill="#ae432a" stroke="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="6" cy="27" rx="8" ry="5.6" fill="#ae432a" stroke="none" stroke-width="2"/><ellipse cx="27" cy="21" rx="8" ry="5.6" fill="#ae432a" stroke="none" stroke-width="2"/></g></g>
+<text x="596" y="254" font-size="16" text-anchor="middle" font-weight="400" fill="#476060">Alternative</text>
+<rect x="174" y="318" width="452" height="68" rx="12" fill="#fff" stroke="#9fb9ad"/>
+<text x="400" y="345" font-size="20" text-anchor="middle" font-weight="650" fill="#233435">Your answer helps Bliss learn</text>
+<text x="400" y="368" font-size="16" text-anchor="middle" font-weight="400" fill="#526261">Illustrative — not the actual survey interface.</text>
+</g></svg>

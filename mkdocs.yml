@@ -1,0 +1,72 @@
+site_name: Lyrion Plugins User Guide
+site_description: Make more of your music collection with Bliss extensions for Lyrion Music Server.
+site_url: https://chrober.github.io/lms-plugins/
+repo_url: https://github.com/chrober/lms-plugins
+repo_name: chrober/lms-plugins
+edit_uri: edit/main/docs/guide/
+docs_dir: docs/guide
+site_dir: site
+strict: true
+use_directory_urls: true
+theme:
+  name: material
+  language: en
+  font: false
+  icon:
+    logo: material/music-note
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+extra_css:
+  - assets/stylesheets/guide.css
+extra_javascript:
+  - assets/javascripts/guide.js
+nav:
+  - Home: index.md
+  - Getting started:
+      - Understanding Bliss: understanding-bliss.md
+      - Build your Lyrion setup: getting-started.md
+  - Make more of your playlists:
+      - Make your playlists flow: make-your-playlists-flow.md
+      - Extend your playlists: extend-your-playlists.md
+      - Improve your player queue: improve-your-player-queue.md
+      - Take a musical journey: take-a-musical-journey.md
+  - Keep the music playing:
+      - Continuous listening: keep-the-music-playing.md
+      - Music for every season, mood and moment: music-for-every-season.md
+      - Personalize your mixes: personalize-your-mixes.md
+  - Rediscover and explore:
+      - Rediscover your music: rediscover-your-music.md
+      - Explore musical connections: explore-musical-connections.md
+  - Freedom and control: your-music-anywhere.md
+  - Plugins and FAQ: plugins-and-faq.md
+  - Related projects:
+      - Lyrion Display: https://github.com/chrober/lyrion-display

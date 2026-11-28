@@ -1,0 +1,43 @@
+name: Validate user guide
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - 'scripts/validate-guide.py'
+      - '.github/workflows/validate-docs.yml'
+      - '.github/workflows/publish-docs.yml'
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - 'scripts/validate-guide.py'
+      - '.github/workflows/validate-docs.yml'
+      - '.github/workflows/publish-docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+      - run: python -m pip install -r requirements-docs.txt
+      - run: python -m mkdocs build --strict
+      - run: python scripts/validate-guide.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: user-guide-preview
+          path: site/
+          if-no-files-found: error
+          retention-days: 14
