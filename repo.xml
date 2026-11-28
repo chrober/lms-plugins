@@ -4,33 +4,6 @@
     <title lang="EN">chrober's LMS Plugins</title>
   </details>
   <plugins>
-    <plugin name="LibrarySignals" version="0.3.8" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Library Signals</title>
-      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.8/lms-guidance-library-signals-linux-0.3.8.zip</url>
-      <sha>48724ac5c16a907e5280b49f01bb1aac5a19ad76</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>unix</target>
-    </plugin>
-    <plugin name="LibrarySignals" version="0.3.8" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Library Signals</title>
-      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.8/lms-guidance-library-signals-mac-0.3.8.zip</url>
-      <sha>16fc2d6b6b7e035bcb0e81c0f4e2476c35a1a2d9</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>mac</target>
-    </plugin>
-    <plugin name="LibrarySignals" version="0.3.8" minTarget="8.5" maxTarget="*">
-      <title lang="EN">Bliss Guidance: Library Signals</title>
-      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
-      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.8/lms-guidance-library-signals-windows-0.3.8.zip</url>
-      <sha>2baa129ae13aa1f779da4f914134d0057b1ba7d3</sha>
-      <creator>Christoph O'Bermair</creator>
-      <category>playlists</category>
-      <target>windows</target>
-    </plugin>
     <plugin name="BetterCallBliss" version="0.22.18" minTarget="8.5" maxTarget="*">
       <title lang="EN">Better Call Bliss</title>
       <desc lang="EN">Playlist Breaking Bad? Better Call Bliss. Optimize saved playlists using Bliss analysis, repeat constraints, and optional Last.fm evidence.</desc>
@@ -108,6 +81,33 @@
       <desc lang="EN">Experimental and early-access extensions for Bliss Mixer</desc>
       <url>https://github.com/chrober/lms-blissmixer-lab/releases/download/0.11.3/lms-blissmixer-lab-windows-0.11.3.zip</url>
       <sha>4b34da043f6f1113fc56dea3cd47fb02d0f42e8a</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>windows</target>
+    </plugin>
+    <plugin name="LibrarySignals" version="0.3.9" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Library Signals</title>
+      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.9/lms-guidance-library-signals-linux-0.3.9.zip</url>
+      <sha>72053820a1d86b8d2382dc13a20310e8f5b65998</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>unix</target>
+    </plugin>
+    <plugin name="LibrarySignals" version="0.3.9" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Library Signals</title>
+      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.9/lms-guidance-library-signals-mac-0.3.9.zip</url>
+      <sha>28606041f079ff025db7c8af7bfdad4612a6c0b8</sha>
+      <creator>Christoph O'Bermair</creator>
+      <category>playlists</category>
+      <target>mac</target>
+    </plugin>
+    <plugin name="LibrarySignals" version="0.3.9" minTarget="8.5" maxTarget="*">
+      <title lang="EN">Bliss Guidance: Library Signals</title>
+      <desc lang="EN">Optional listening and library signals for compatible Bliss hosts.</desc>
+      <url>https://github.com/chrober/lms-guidance-library-signals/releases/download/0.3.9/lms-guidance-library-signals-windows-0.3.9.zip</url>
+      <sha>54f4d98d74ecb7c4838bfc5fbb46011be0758be7</sha>
       <creator>Christoph O'Bermair</creator>
       <category>playlists</category>
       <target>windows</target>
